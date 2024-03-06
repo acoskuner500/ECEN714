@@ -1,0 +1,12 @@
+//Spice netlist for an inverter 
+simulator lang=spectre
+subckt IV (input output VDD VSS)
+        parameters wp=0.6u lp=0.2u wn=0.3u ln=0.3u              
+        M1 output input VDD VDD tsmc18P w=wp l=lp
+        M2 output input VSS VSS tsmc18N w=wn l=ln
+ends IV
+
+
+
+
+

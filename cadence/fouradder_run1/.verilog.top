@@ -1,0 +1,19 @@
+
+`timescale 1ns / 1ns
+
+module test;
+
+
+wire  COUT;
+
+reg  CIN;
+
+wire [3:0]  SUM;
+
+reg [3:0]  A;
+reg [3:0]  B;
+
+
+
+fouradder top(COUT, SUM, A, B, CIN); 
+ 

@@ -1,0 +1,76 @@
+
+// Library name: Design
+// Cell name: XOR2
+// View name: extracted
+// View type: maskLayout
+subckt XOR2 A B GND VDD out
+    \+11 (VDD B 9 VDD) tsmc20P w=9e-07 l=2e-07 as=4.5e-13 ad=4.5e-13 \
+        ps=1.9e-06 pd=1.9e-06 m=1 region=sat
+    \+6 (6 A VDD VDD) tsmc20P w=9e-07 l=2e-07 as=4.5e-13 ad=4.5e-13 \
+        ps=1.9e-06 pd=1.9e-06 m=1 region=sat
+    \+44 (GND 9) capacitor c=3.88e-17 m=1
+    \+43 (GND 6) capacitor c=7.857e-17 m=1
+    \+42 (B GND) capacitor c=1.7654e-16 m=1
+    \+41 (A GND) capacitor c=1.6102e-16 m=1
+    \+40 (VDD B) capacitor c=3.104e-17 m=1
+    \+39 (VDD A) capacitor c=3.104e-17 m=1
+    \+38 (GND 9) capacitor c=2.2543e-16 m=1
+    \+37 (GND 6) capacitor c=1.7548e-16 m=1
+    \+36 (B 9) capacitor c=1.6816e-16 m=1
+    \+35 (out GND) capacitor c=1.4564e-16 m=1
+    \+34 (VDD 9) capacitor c=8.925e-17 m=1
+    \+33 (VDD 6) capacitor c=4.264e-17 m=1
+    \+32 (VDD out) capacitor c=3.472e-17 m=1
+    \+31 (10 11) capacitor c=8.536e-17 m=1
+    \+30 (9 10) capacitor c=4.688e-17 m=1
+    \+29 (7 9) capacitor c=4.688e-17 m=1
+    \+28 (7 8) capacitor c=8.498e-17 m=1
+    \+27 (6 10) capacitor c=4.688e-17 m=1
+    \+26 (6 7) capacitor c=4.688e-17 m=1
+    \+25 (GND 7) capacitor c=1.3282e-16 m=1
+    \+24 (B 10) capacitor c=4.688e-17 m=1
+    \+23 (B 7) capacitor c=4.688e-17 m=1
+    \+22 (A 10) capacitor c=4.688e-17 m=1
+    \+21 (A 7) capacitor c=4.688e-17 m=1
+    \+20 (A 6) capacitor c=1.3072e-16 m=1
+    \+19 (A GND) capacitor c=1.4784e-16 m=1
+    \+18 (out 10) capacitor c=8.536e-17 m=1
+    \+17 (out 9) capacitor c=8.384e-17 m=1
+    \+16 (out 7) capacitor c=8.498e-17 m=1
+    \+15 (out GND) capacitor c=3.4676e-16 m=1
+    \+14 (out B) capacitor c=2.2584e-16 m=1
+    \+13 (out A) capacitor c=1.3072e-16 m=1
+    \+12 (VDD 10) capacitor c=8.536e-17 m=1
+    \+5 (GND B 9 GND) tsmc20N w=4e-07 l=2e-07 as=2e-13 ad=2e-13 ps=1.4e-06 \
+        pd=1.4e-06 m=1 region=sat
+    \+0 (6 A GND GND) tsmc20N w=4e-07 l=2e-07 as=2e-13 ad=2e-13 ps=1.4e-06 \
+        pd=1.4e-06 m=1 region=sat
+    \+4 (7 9 GND GND) tsmc20N w=3e-07 l=2e-07 as=1.1e-13 ad=1.9e-13 \
+        ps=7e-07 pd=1.5e-06 m=1 region=sat
+    \+3 (GND B 8 GND) tsmc20N w=3e-07 l=2e-07 as=1.1e-13 ad=1.1e-13 \
+        ps=7e-07 pd=7e-07 m=1 region=sat
+    \+2 (8 A out GND) tsmc20N w=3e-07 l=2e-07 as=1.1e-13 ad=1.1e-13 \
+        ps=7e-07 pd=7e-07 m=1 region=sat
+    \+1 (out 6 7 GND) tsmc20N w=3e-07 l=2e-07 as=1.9e-13 ad=1.1e-13 \
+        ps=1.5e-06 pd=7e-07 m=1 region=sat
+    \+10 (10 B VDD VDD) tsmc20P w=1.5e-06 l=2e-07 as=4.5e-13 ad=7.5e-13 \
+        ps=6e-07 pd=2.5e-06 m=1 region=sat
+    \+9 (VDD 9 11 VDD) tsmc20P w=1.5e-06 l=2e-07 as=4.5e-13 ad=4.5e-13 \
+        ps=6e-07 pd=6e-07 m=1 region=sat
+    \+8 (11 A out VDD) tsmc20P w=1.5e-06 l=2e-07 as=4.5e-13 ad=4.5e-13 \
+        ps=6e-07 pd=6e-07 m=1 region=sat
+    \+7 (out 6 10 VDD) tsmc20P w=1.5e-06 l=2e-07 as=7.5e-13 ad=4.5e-13 \
+        ps=2.5e-06 pd=6e-07 m=1 region=sat
+ends XOR2
+// End of subcircuit definition.
+
+// Library name: Design
+// Cell name: XOR2_simulate
+// View name: schematic
+I0 (inA inB 0 vdd! out) XOR2
+V2 (inB 0) vsource type=pulse val0=0 val1=1.8 period=10n delay=5n \
+        rise=100p fall=100p width=5n
+V1 (inA 0) vsource type=pulse val0=0 val1=1.8 period=20n delay=10n \
+        rise=100p fall=100p width=10n
+C0 (out 0) capacitor c=50f m=1
+V0 (vdd! 0) vsource type=dc dc=1.8

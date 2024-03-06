@@ -1,0 +1,9 @@
+
+// Library name: Design
+// Cell name: inverter_simulate
+// View name: schematic
+I7 (0 vdd! in out) inverter
+V0 (vdd! 0) vsource type=dc dc=1.8
+V1 (in 0) vsource type=pulse dc=1.8 val0=0 val1=1.8 period=12n delay=3n \
+        rise=100p fall=100p width=5n
+C0 (out 0) capacitor c=50f m=1

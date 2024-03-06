@@ -1,0 +1,12 @@
+
+// Library name: Design
+// Cell name: flipflop_simulate_ac
+// View name: schematic
+I0 (clk D 0 Q vdd! _clk) flipflop
+V0 (vdd! 0) vsource type=dc dc=1.8
+V3 (clk 0) vsource type=pulse dc=1.8 val0=0 val1=1.8 period=10.2n delay=0 \
+        rise=100p fall=100p width=5n
+V2 (_clk 0) vsource type=pulse dc=1.8 val0=0 val1=1.8 period=10.2n \
+        delay=5.1n rise=100p fall=100p width=5n
+C0 (Q 0) capacitor c=100f m=1
+V1 (D 0) vsource type=sine dc=0 mag=1

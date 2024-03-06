@@ -1,0 +1,40 @@
+// Library - Design, Cell - eightadder, View - schematic
+// LAST TIME SAVED: Sep  8 19:32:15 2022
+// NETLIST TIME: Sep  8 19:33:33 2022
+`timescale 1ns / 1ns 
+
+module eightadder ( COUT, SUM, CIN, Clk, X, Y );
+
+output  COUT;
+
+input  CIN, Clk;
+
+output [7:0]  SUM;
+
+input [7:0]  Y;
+input [7:0]  X;
+
+// Buses in the design
+
+wire  [0:3]  net8;
+
+wire  [0:3]  net22;
+
+wire  [0:3]  net11;
+
+
+specify 
+    specparam CDS_LIBNAME  = "Design";
+    specparam CDS_CELLNAME = "eightadder";
+    specparam CDS_VIEWNAME = "schematic";
+endspecify
+
+DFF I0 ( net9, net1, Clk, net06);
+fouradder I2 ( COUT, SUM[7:4], net22[0:3], net8[0:3], net9);
+fouradder I1 ( net1, net11[0:3], X[3:0], Y[3:0], CIN);
+fourreg I5 ( SUM[3:0], Clk, net11[0:3], net06);
+fourreg I4 ( net8[0:3], Clk, Y[7:4], net06);
+fourreg I3 ( net22[0:3], Clk, X[7:4], net06);
+inv I7 ( net06, Clk);
+
+endmodule

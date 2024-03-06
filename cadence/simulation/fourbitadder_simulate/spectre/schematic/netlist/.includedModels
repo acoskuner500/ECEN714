@@ -1,0 +1,3 @@
+simulator lang=spectre
+include "tsmc20N.scs"
+include "tsmc20P.scs"

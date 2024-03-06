@@ -1,0 +1,10 @@
+HEADER
+"PSFversion" "1.00"
+"Time Stamp" "Nov 15 20:12:16 2022"
+TYPE
+"variable" STRUCT(
+"value" FLOAT DOUBLE
+) PROP( "key" "element" )
+VALUE
+"temp" "variable" ( 27 ) PROP( )
+END

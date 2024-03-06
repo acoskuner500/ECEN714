@@ -1,0 +1,6 @@
+** Generated for: hspiceD
+** Generated on: Oct  6 17:38:34 2022
+** Design library name: Design
+** Design cell name: NAND2_simulate
+** Design view name: schematic
+.GLOBAL vdd!

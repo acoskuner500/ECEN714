@@ -1,0 +1,10 @@
+HEADER
+"PSFversion" "1.00"
+"design" "(\"Design\" \"NAND2_simulate\" \"schematic\" \"\")"
+"simulator" "hspiceD"
+"temperature" "25.0"
+"host" ""
+"date" "Oct  6 17:38:28 2022"
+"title" ""
+"analysisList" "()"
+END

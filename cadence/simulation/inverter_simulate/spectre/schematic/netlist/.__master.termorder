@@ -1,0 +1,2 @@
+"Design.inverter.schematic.termorder" (("GND" "VDD" "in" "out") ("GND" "VDD" "in" "out"))
+"Design.inverter.extracted.termorder" (("GND" "VDD" "in" "out") ("GND" "VDD" "in" "out"))

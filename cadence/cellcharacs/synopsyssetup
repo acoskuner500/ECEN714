@@ -1,0 +1,190 @@
+
+export SNPSLMD_LICENSE_FILE=27000@license.ece.tamu.edu
+export LM_LICENSE_FILE=27000@license.ece.tamu.edu
+
+export SYS_BASE=/softwares/Common/synopsys
+export SYS_BASE_OLD=$SYS_BASE/Retired
+export ARCH=x86_64
+
+# setup for sentaurus I_2013.12
+#export STROOT=/softwares/Common/synopsys/sentaurus_I_2013.12
+#export PATH="$PATH":$SYS_BASE/sentaurus_I_2013.12/bin:$SYS_BASE/sentaurus_I_2013.12/tcad/I-2013.12/amd64
+
+# setup for sentaurus L_2016.03-SP2
+export STROOT=$SYS_BASE/sentaurus_vL_2016.03-SP2
+export PATH="$PATH":$SYS_BASE/sentaurus_vL_2016.03-SP2/bin:$SYS_BASE/sentaurus_vL_2016.03-SP2/tcad/L-2016.03-SP2/linux64
+
+# setup for hspice C-2009.09-SP1
+# path to the hspice binary
+#export PATH=/softwares/Common/synopsys/Hspice_C-2009.09-SP1/hspice/linux:${PATH}
+
+# setup for hspice L-2016-1
+# path to the hspice binary
+export PATH=/softwares/Common/synopsys/hspice_vL-2016-1/hspice/linux64:${PATH}
+
+# Setting Up the Discovery AMS Simulation Interface Environment
+#export SNPS_SIMIF=/softwares/Common/synopsys/Hspice_C-2009.09-SP1
+#export PATH=/softwares/Common/synopsys/Hspice_C-2009.09-SP1/bin:${PATH}
+
+# Setting Up the Discovery AMS Simulation Interface Environment
+export SNPS_SIMIF=/softwares/Common/synopsys/hspice_vL-2016-1
+export PATH=/softwares/Common/synopsys/hspice_vL-2016-1/hspice/bin:${PATH}
+
+# setup for PrimeTime standalone D-2009.12
+#export PATH="$PATH":$SYS_BASE/PTStandalone_D-2009.12/amd64/syn/bin
+
+# setup for PrimeTime standalone L-2016.06
+export PATH="$PATH":$SYS_BASE/pts_vL-2016.06-SP1/linux64/syn/bin
+
+# setup for simif C-2009.06-SP1
+export PATH="$PATH":$SYS_BASE/SimIf_C-2009.06-SP1/linux/simif/exec
+export LD_LIBRARY_PATH=$SYS_BASE/SimIf_C-2009.06-SP1/SimIf_C-2009.06-SP1/linux/simif/lib
+
+#setup for design vision D-2010.03-SP2
+export PATH="$PATH":$SYS_BASE/DesignVision_vD-2010.03-SP2/bin:$SYS_BASE/DesignVision_vD-2010.03-SP2/amd64/syn/bin:$SYS_BASE/DesignVision_vD-2010.03-SP2/amd64/bin
+
+#setup for TCAD Sentaurus PCM studio  
+export PATH="$PATH":$SYS_BASE/pcm_studio_vD-2010.06/PCMStudio-2010.06/bin:$SYS_BASE/pcm_studio_vD-2010.06/PCMStudio-2010.06/amd64/bin
+
+#setup for taurus tsuprem-4 D_2010.03
+#export PATH="$PATH":$SYS_BASE/tsuprem-4_vD_2010.03/bin:$SYS_BASE/tsuprem-4_vD_2010.03/taurus-tsuprem4_2010.03.0/amd64/bin
+
+#setup for taurus tsuprem-4 L_2016.03
+export PATH="$PATH":$SYS_BASE/taurus_tsuprem4_vL_2016.03/bin:$SYS_BASE/taurus_tsuprem4_vL_2016.03/taurus-tsuprem4_2016.03/linux64/bin
+
+#setup for tetraMAX Standalone I-2013-12-SP1
+export PATH="$PATH":$SYS_BASE/TetraMAX-Standalone_vI-2013.12-SP1/bin:$SYS_BASE/TetraMAX-Standalone_vI-2013.12-SP1/amd64/syn/bin:$SYS_BASE/TetraMAX-Standalone_vI-2013.12-SP1/amd64/bin
+
+#setup for tetraMAX D-2010.03-SP2
+export PATH="$PATH":$SYS_BASE/TetraMAX_vD-2010.03-SP2/bin:$SYS_BASE/TetraMAX_vD-2010.03-SP2/amd64/syn/bin:$SYS_BASE/TetraMAX_vD-2010.03-SP2/amd64/bin:$SYS_BASE/TetraMAX_vD-2010.03-SP2/amd64/iddq/bin
+
+#setup for star-RC D-2010.06
+#export PATH="$PATH":$SYS_BASE/StarRC_vD-2010.06/bin:$SYS_BASE/StarRC_vD-2010.06/amd64_starrc/bin 
+export PATH="$PATH":$SYS_BASE/starrc_vL-2016.06-SP3/bin:$SYS_BASE/starrc_vL-2016.06-SP3/linux64_starrc/bin 
+
+#setup for taurus medici D_2010.03
+#export PATH="$PATH":$SYS_BASE/Taurus_medici_vD_2010.03/bin:$SYS_BASE/Taurus_medici_vD_2010.03/taurus-medici_2010.03.0/amd64/bin
+
+#setup for taurus medici V_2016.03
+export PATH="$PATH":$SYS_BASE/taurus_medici_vL_2016.03/bin:$SYS_BASE/taurus_medici_vL_2016.03/taurus-medici_2016.03.0/linux64/bin
+
+#setup for VCS-MX D-2010.06
+#export PATH="$PATH":$SYS_BASE_OLD/Vcs-MX_vD-2010.06/bin:$SYS_BASE_OLD/Vcs-MX_vD-2010.06/amd64/bin:
+#export LD_LIBRARY_PATH="$LD_LIBRARY_PATH":$SYS_BASE_OLD/Vcs-MX_vD-2010.06/amd64/lib
+#export VCS_ARCH_OVERRIDE=amd64
+#export VCS_HOME=$SYS_BASE_OLD/Vcs-MX_vD-2010.06
+export PATH="$PATH":$SYS_BASE_OLD/C-2009.06/bin:$SYS_BASE_OLD/C-2009.06/linux/bin:
+export LD_LIBRARY_PATH="$LD_LIBRARY_PATH":$SYS_BASE_OLD/C-2009.06/linux/lib
+export VCS_HOME=$SYS_BASE_OLD/C-2009.06
+
+#setup for VCS-MX D-2009.12
+#export PATH="$PATH:$SYS_BASE_OLD/Vcs-MX_vD-2009.12/bin:$SYS_BASE_OLD/Vcs-MX_vD-2009.12/amd64/bin:"
+#export LD_LIBRARY_PATH="$LD_LIBRARY_PATH:$SYS_BASE_OLD/Vcs-MX_vD-2009.12/amd64/lib"
+#export VCS_ARCH_OVERRIDE=amd64
+#export VCS_HOME=$SYS_BASE_OLD/Vcs-MX_vD-2009.12
+
+#export PATH="$PATH":$SYS_BASE/vcs-mx_vL-2016.06/bin:$SYS_BASE/vcs-mx_vL-2016.06/linux64/bin:
+#export LD_LIBRARY_PATH="$LD_LIBRARY_PATH":$SYS_BASE/vcs-mx_vL-2016.06/linux64/lib
+#export VCS_HOME=$SYS_BASE/vcs-mx_vL-2016.06
+#export VCS_ARCH_OVERRIDE=linux64
+
+
+#setup for IC Compiler D-2010.03-SP2
+export PATH="$PATH":$SYS_BASE/IC_compiler_vD-2010.03-SP2/bin:$SYS_BASE/IC_compiler_vD-2010.03-SP2/amd64/bin:$SYS_BASE/IC_compiler_vD-2010.03-SP2/amd64/mc/bin:$SYS_BASE/IC_compiler_vD-2010.03-SP2/amd64/syn/bin
+export LD_LIBRARY_PATH="$LD_LIBRARY_PATH":$SYS_BASE/IC_compiler_vD-2010.03-SP2/mc/lib
+
+#setup for hercules B-2008.09-SP5-HF4
+export PATH="$PATH":$SYS_BASE/Hercules_vB-2008.09-SP5-HF4/bin/amd64
+
+#setup for Milky Way I-2013.12-SP1
+# MIGHT NEED TO SET TCLLIB 
+#export PATH="$PATH":$SYS_BASE/MilkyWay_I-2013.12-SP1/bin/AMD.64
+export PATH="$PATH":$SYS_BASE/mw_vL-2016.03-SP5/bin/linux64
+
+#setup for PrimeRail D-2010.06
+export PATH="$PATH":$SYS_BASE/Primerail_vD-2010.06/bin/AMD.64
+
+## NO LICENSE FOR SYNPLIFY 
+#setup for Synplify premier D-2010.03-SP1
+#setenv PATH "$PATH":$SYS_BASE/Synplify_premier_vD-2010.03-SP1/bin
+#setup for Synplify premier D-2009.12
+#setenv PATH "$PATH":$SYS_BASE/Synplify_premier_vD-2009.12/bin
+
+#setup for CustomDesigner D-2009.12-SP2-2
+export PATH="$PATH":$SYS_BASE/Customdesigner_vD-2009.12-SP2-2/bin
+export LD_LIBRARY_PATH="$LD_LIBRARY_PATH":$SYS_BASE/Customdesigner_vD-2009.12-SP2-2/amd64/lib
+
+#setup for Nanotime D-2010.06
+#setenv PATH "$PATH":$SYS_BASE/Nanotime_vD-2010.06/bin # dont include this else it picks up the linux version of the tool, we need amd64 version
+export PATH="$PATH":$SYS_BASE/Nanotime_vD-2010.06/amd64/nt/bin
+
+#setup for mvtools D-2010.06
+export PATH="$PATH":$SYS_BASE/MVtools_vD-2010.06/bin:$SYS_BASE/MVtools_vD-2010.06/amd64/bin
+export LD_LIBRARY_PATH="$LD_LIBRARY_PATH":$SYS_BASE/MVtools_vD-2010.06/amd64/lib
+export ARCHPRO_ROOT=/softwares/Common/synopsys/MVtools_vD-2010.06
+
+#setup for nanosim_hsim_xa D-2010.03-SP1
+export PATH="$PATH":$SYS_BASE/Nanosim_hsim_xa_vD-2010.03-SP1/amd64/exec
+
+#setup for raphael D_2010.03
+#export PATH="$PATH":$SYS_BASE/Raphael_vD_2010.03/bin:$SYS_BASE/Raphael_vD_2010.03/raphael_2010.03.0/amd64/bin
+
+#setup for raphael L_2016.03
+export PATH="$PATH":$SYS_BASE/raphael_vL_2016.03/bin:$SYS_BASE/raphael_vL_2016.03/raphael_2016.03.0/linux64/bin
+
+#setup for saber D-2010.03-SP1
+export PATH="$PATH":$SYS_BASE/SaberRD_D-2010.03-SP1/ai_bin
+
+#setup for leda D-2010.03
+export PATH="$PATH":$SYS_BASE/Leda_vD-2010.03/amd64/bin
+export LEDA_PATH=$SYS_BASE/Leda_vD-2010.03
+
+#setup for liberty NCX D-2010.06
+export PATH="$PATH":$SYS_BASE/Liberty_NCX_vD-2010.06/ncx/amd64/bin
+
+#setup for astro interactive ultra Z-2007.03-SP12 
+export PATH="$PATH":$SYS_BASE/AstroIU_vZ-2007.03-SP12/bin/AMD.64
+
+#setup for astro  Z-2007.03-SP12 
+#This tool was replaced by IC Compiler 10152016 EJT
+#export PATH="$PATH":$SYS_BASE/AstJxt_Z-2007.03-SP12/bin/AMD.64
+
+#setup for Formality Standalone D-2010.03-SP2
+#This tool was replaced by IC Compiler 10152016 EJT
+#export PATH="$PATH":$SYS_BASE/Formality_vD-2010.03-SP2/amd64/fm/bin:$SYS_BASE/Formality_vD-2010.03-SP2/bin
+
+#setup for Formality ESP
+export PATH="$PATH":$SYS_BASE/FormalityESP_vD-2010.06/amd64/esp/bin:$SYS_BASE/FormalityESP_vD-2010.06/bin
+
+#setup for Magellan D-2010.03
+export PATH="$PATH":$SYS_BASE/Magellan_vD-2010.03/amd64/ctg/bin
+export MG_HOME=$SYS_BASE/Magellan_vD-2010.03
+
+#setup for Confirm Certify D-2009.09SP1
+export PATH="$PATH":$SYS_BASE/Confirma_certify_vD-2009.09SP1/bin
+
+#setup for Jupiter XT Z-2007.03-SP12
+export PATH="$PATH":$SYS_BASE/JupiterXT_vZ-2007.03-SP12/bin/AMD.64
+
+#setup for CosmoScope D-2010.03-SP1
+export PATH="$PATH":$SYS_BASE/CosmosScope_vD-2010.03-SP1/ai_bin
+
+#setup for hsim D-2010.03-SP1
+export PATH="$PATH":$SYS_BASE/Hsim_vD-2010.03-SP1/hsimplus/platform/amd64/bin
+
+#setup for InnovatorS D-2009.12-SP1 (plus analyzer and creator)
+export PATH="$PATH":$SYS_BASE/InnovatorS_vD-2009.12-SP1/VIRTIO_DIST/Innovator/Bin
+export INNOVATOR_CENTRAL=1 # for linux central installation 
+export PATH="$PATH":$SYS_BASE/InnovatorS_vD-2009.12-SP1/analyzer
+export PATH="$PATH":$SYS_BASE/InnovatorS_vD-2009.12-SP1/creator/
+
+#setup for vera D-2009.12-3
+export PATH="$PATH":$SYS_BASE/Vera_vD-2009.12-3/vera_vD-2009.12-3_amd64/bin:$SYS_BASE/Vera_vD-2009.12-3/vera_vD-2009.12-3_amd64/gui/dve/bin
+export VERA_HOME=$SYS_BASE/Vera_vD-2009.12-3/vera_vD-2009.12-3_amd64
+
+#setenv PATH "$PATH":$SYS_BASE/
+#setenv PATH "$PATH":$SYS_BASE/
+ 
+#setup for Custom Explorer (Waveform Viewer) version E-2011.03-1
+export PATH="$PATH":$SYS_BASE/cx_vE-2011.03-1_amd64/platforms/amd64_re4/bin
+

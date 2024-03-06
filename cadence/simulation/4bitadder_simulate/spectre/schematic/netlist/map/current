@@ -1,0 +1,20 @@
+( ( nil
+  version "2.1"
+  mapType "incremental"
+  blockName "4bitadder_simulate"
+  repList "spectre cmos_sch cmos.sch extracted schematic veriloga"
+  stopList "spectre"
+  globalList "gnd! vdd!"
+  hierDelim "."
+  netlistDir "/home/grads/a/acoskuner500/cadence/simulation/4bitadder_simulate/spectre/schematic/netlist"
+ )
+( net
+( "gnd!" "0" )
+ )
+( model
+( "Design/4bitadder/extracted" "Design_4bitadder_extracted" )
+( "Design/4bitadder_simulate/schematic" "Design_4bitadder_simulate_schematic" )
+ )
+( "Design_4bitadder_simulate_schematic" "ihnl/cds1/map" )
+( "Design_4bitadder_extracted" "ihnl/cds0/map" )
+ )

@@ -1,0 +1,2 @@
+"Design.flipflop.extracted.termorder" nil
+"Design.flipflop.schematic.termorder" (("D" "GND" "Q" "VDD" "_clk" "clk") ("D" "GND" "Q" "VDD" "_clk" "clk"))

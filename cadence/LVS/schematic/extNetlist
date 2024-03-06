@@ -1,0 +1,83 @@
+t 6 VDD inputOutput
+t 3 GND inputOutput
+t 12 Q output
+t 0 _CLK input
+t 10 CLK input
+t 8 D input
+
+n 0 /_CLK
+n 1 /net20
+n 2 /net25
+n 3 /GND
+n 4 /net30
+n 5 /net10
+n 6 /VDD
+n 7 /net15
+n 8 /D
+n 9 /net23
+n 10 /CLK
+n 11 /net07
+n 12 /Q
+
+; pmos4 Instance /P9 = auLvs device Q0
+d pmos D G S B (p D S)
+i 0 pmos 2 10 9 6 " m 1 l 200e-9 w 300e-9 "
+
+; pmos4 Instance /P8 = auLvs device Q1
+i 1 pmos 2 4 6 6 " m 1 l 200e-9 w 600e-9 "
+
+; pmos4 Instance /P7 = auLvs device Q2
+i 2 pmos 12 4 6 6 " m 1 l 200e-9 w 600e-9 "
+
+; pmos4 Instance /P6 = auLvs device Q3
+i 3 pmos 4 9 6 6 " m 1 l 200e-9 w 600e-9 "
+
+; pmos4 Instance /P5 = auLvs device Q4
+i 4 pmos 1 0 9 6 " m 1 l 200e-9 w 300e-9 "
+
+; pmos4 Instance /P4 = auLvs device Q5
+i 5 pmos 7 0 11 6 " m 1 l 200e-9 w 300e-9 "
+
+; pmos4 Instance /P3 = auLvs device Q6
+i 6 pmos 7 1 6 6 " m 1 l 200e-9 w 600e-9 "
+
+; pmos4 Instance /P2 = auLvs device Q7
+i 7 pmos 1 11 6 6 " m 1 l 200e-9 w 600e-9 "
+
+; pmos4 Instance /P1 = auLvs device Q8
+i 8 pmos 5 10 11 6 " m 1 l 200e-9 w 300e-9 "
+
+; pmos4 Instance /P0 = auLvs device Q9
+i 9 pmos 5 8 6 6 " m 1 l 200e-9 w 600e-9 "
+
+; nmos4 Instance /N9 = auLvs device Q10
+d nmos D G S B (p D S)
+i 10 nmos 2 0 9 3 " m 1 l 200e-9 w 300e-9 "
+
+; nmos4 Instance /N8 = auLvs device Q11
+i 11 nmos 2 4 3 3 " m 1 l 200e-9 w 300e-9 "
+
+; nmos4 Instance /N7 = auLvs device Q12
+i 12 nmos 12 4 3 3 " m 1 l 200e-9 w 300e-9 "
+
+; nmos4 Instance /N6 = auLvs device Q13
+i 13 nmos 4 9 3 3 " m 1 l 200e-9 w 300e-9 "
+
+; nmos4 Instance /N5 = auLvs device Q14
+i 14 nmos 1 10 9 3 " m 1 l 200e-9 w 300e-9 "
+
+; nmos4 Instance /N4 = auLvs device Q15
+i 15 nmos 7 10 11 3 " m 1 l 200e-9 w 300e-9 "
+
+; nmos4 Instance /N3 = auLvs device Q16
+i 16 nmos 7 1 3 3 " m 1 l 200e-9 w 300e-9 "
+
+; nmos4 Instance /N2 = auLvs device Q17
+i 17 nmos 1 11 3 3 " m 1 l 200e-9 w 300e-9 "
+
+; nmos4 Instance /N1 = auLvs device Q18
+i 18 nmos 5 0 11 3 " m 1 l 200e-9 w 300e-9 "
+
+; nmos4 Instance /N0 = auLvs device Q19
+i 19 nmos 5 8 3 3 " m 1 l 200e-9 w 300e-9 "
+

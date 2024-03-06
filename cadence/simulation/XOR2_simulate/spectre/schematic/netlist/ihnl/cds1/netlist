@@ -1,0 +1,11 @@
+
+// Library name: Design
+// Cell name: XOR2_simulate
+// View name: schematic
+I0 (inA inB 0 vdd! out) XOR2
+V2 (inB 0) vsource type=pulse val0=0 val1=1.8 period=10n delay=5n \
+        rise=100p fall=100p width=5n
+V1 (inA 0) vsource type=pulse val0=0 val1=1.8 period=20n delay=10n \
+        rise=100p fall=100p width=10n
+C0 (out 0) capacitor c=50f m=1
+V0 (vdd! 0) vsource type=dc dc=1.8

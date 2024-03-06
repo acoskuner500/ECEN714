@@ -1,0 +1,31 @@
+// Library - Design, Cell - eightadder, View - schematic
+// LAST TIME SAVED: Sep  8 19:32:15 2022
+// NETLIST TIME: Sep  8 19:33:33 2022
+`timescale 1ns / 1ns 
+
+module eightadder ( COUT, SUM, CIN, Clk, X, Y );
+
+output  COUT;
+
+input  CIN, Clk;
+
+output [7:0]  SUM;
+
+input [7:0]  Y;
+input [7:0]  X;
+
+// Buses in the design
+
+wire  [0:3]  net8;
+
+wire  [0:3]  net22;
+
+wire  [0:3]  net11;
+
+
+specify 
+    specparam CDS_LIBNAME  = "Design";
+    specparam CDS_CELLNAME = "eightadder";
+    specparam CDS_VIEWNAME = "schematic";
+endspecify
+

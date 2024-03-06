@@ -1,0 +1,11 @@
+CADENCE IHNL11140
+$model
+Design/4bitadder/extracted Design_4bitadder_extracted
+Design/4bitadder_simulate/schematic Design_4bitadder_simulate_schematic
+$endmodel
+$net
+gnd! 0
+vdd! vdd!
+$endnet
+$param
+$endparam

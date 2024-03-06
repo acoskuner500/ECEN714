@@ -1,0 +1,10 @@
+HEADER
+"PSFversion" "1.00"
+"design" "(\"Design\" \"flipflop_simulate_ac\" \"schematic\" \"\")"
+"simulator" "spectre"
+"temperature" "27"
+"host" ""
+"date" "Oct 28 18:25:53 2022"
+"title" ""
+"analysisList" "()"
+END

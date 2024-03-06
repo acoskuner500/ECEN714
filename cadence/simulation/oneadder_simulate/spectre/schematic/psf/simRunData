@@ -1,0 +1,10 @@
+HEADER
+"PSFversion" "1.00"
+"design" "(\"Design\" \"oneadder_simulate\" \"schematic\" \"\")"
+"simulator" "spectre"
+"temperature" "27"
+"host" ""
+"date" "Oct  7 13:09:19 2022"
+"title" ""
+"analysisList" "()"
+END

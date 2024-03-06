@@ -1,0 +1,6 @@
+
+// Library name: Design
+// Cell name: XOR2
+// View name: extracted
+// View type: maskLayout
+subckt XOR2 A B GND VDD out

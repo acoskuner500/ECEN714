@@ -1,0 +1,5 @@
+
+** Library name: Design
+** Cell name: NAND2
+** View name: extracted
+.subckt NAND2 a b gnd vdd out

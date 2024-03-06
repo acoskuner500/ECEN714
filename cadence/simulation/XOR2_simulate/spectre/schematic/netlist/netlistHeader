@@ -1,0 +1,7 @@
+// Generated for: spectre
+// Generated on: Oct  6 19:01:49 2022
+// Design library name: Design
+// Design cell name: XOR2_simulate
+// Design view name: schematic
+simulator lang=spectre
+global 0 vdd!

@@ -1,0 +1,26 @@
+HEADER
+"PSFversion" "1.00"
+"simulator" "spectre"
+"version" "18.1.0.421.isr9"
+"date" "4:57:12 PM, Wed Oct 12, 2022"
+"design" "// Generated for: spectre"
+"analysis type" "info.subckts"
+"analysis name" "subckts"
+"analysis description" "Circuit Information"
+"xVecSorted" "unknown"
+"tolerance.relative" 0.00100000
+TYPE
+"subckt" STRUCT(
+"subckt_params" STRING *
+"subckt_terminals" STRING *
+"subckt_instances" STRING *
+) PROP(
+"key" "sub"
+)
+VALUE
+"Design_4bitadder_extracted" "subckt" (
+""
+"A<3> A<2> A<1> A<0> B<3> B<2> B<1> B<0> CIN COUT GND SUM<3> SUM<2> SUM<1> SUM<0> VDD"
+"I0"
+)
+END

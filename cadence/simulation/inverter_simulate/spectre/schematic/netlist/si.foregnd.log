@@ -1,0 +1,9 @@
+Begin Incremental Netlisting Oct  6 16:02:11 2022
+ERROR (OSSHNL-109): The cellview 'Design/inverter_simulate/schematic' has been
+modified since the last extraction. Validate
+that the schematic is correct and
+run Check and Save to correct this error.
+
+End netlisting Oct  6 16:02:12 2022
+Begin Incremental Netlisting Oct  6 16:02:40 2022
+End netlisting Oct  6 16:02:41 2022

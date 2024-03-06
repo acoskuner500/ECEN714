@@ -1,0 +1,20 @@
+( ( nil
+  version "2.1"
+  mapType "incremental"
+  blockName "flipflop_simulate_setup"
+  repList "spectre cmos_sch cmos.sch extracted schematic veriloga"
+  stopList "spectre"
+  globalList "vdd! gnd!"
+  hierDelim "."
+  netlistDir "/home/grads/a/acoskuner500/cadence/simulation/flipflop_simulate_setup/spectre/schematic/netlist"
+ )
+( net
+( "gnd!" "0" )
+ )
+( model
+( "Design/flipflop/extracted" "flipflop" )
+( "Design/flipflop_simulate_setup/schematic" "flipflop_simulate_setup" )
+ )
+( "flipflop_simulate_setup" "ihnl/cds1/map" )
+( "flipflop" "ihnl/cds0/map" )
+ )

@@ -1,0 +1,9 @@
+CADENCE IHNL11140
+$model
+NCSU_Digital_Parts/DFF/schematic DFF
+Design/fourreg/schematic fourreg
+$endmodel
+$net
+$endnet
+$param
+$endparam

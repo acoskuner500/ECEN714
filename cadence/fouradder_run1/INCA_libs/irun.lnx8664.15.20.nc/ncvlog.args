@@ -1,0 +1,26 @@
+//
+// File created by:  ncxlmode
+// Do not modify this file
+//
+-XLMODE
+./INCA_libs/irun.lnx8664.15.20.nc
+-RUNMODE
+/home/grads/a/acoskuner500/ecen714/fouradder_run1/testfixture.template
+/opt/coe/ncsu/ncsu-cdk-1.6.0.beta/lib/NCSU_Digital_Parts/nand2/functional/verilog.v
+/opt/coe/ncsu/ncsu-cdk-1.6.0.beta/lib/NCSU_Digital_Parts/xor2/functional/verilog.v
+ihnl/cds0/netlist
+ihnl/cds1/netlist
+-NOSTDOUT
+-NOCOPYRIGHT
+-neverwarn
+-nostdout
+-nocopyright
+-CDSLIB
+./INCA_libs/irun.lnx8664.15.20.nc/cdsrun.lib
+-HDLVAR
+./INCA_libs/irun.lnx8664.15.20.nc/hdlrun.var
+-MESSAGES
+-UPDATE
+-XLLIBSTORE
+./INCA_libs/irun.lnx8664.15.20.nc/xllibs
+-ALLOWUNBOUND

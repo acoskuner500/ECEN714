@@ -1,0 +1,28 @@
+
+`timescale 1ns / 1ns
+
+module test;
+
+
+wire  COUT;
+
+reg  CIN, Clk;
+
+wire [7:0]  SUM;
+
+reg [7:0]  Y;
+reg [7:0]  X;
+
+
+
+eightadder top(COUT, SUM, CIN, Clk, X, Y); 
+ 
+
+`ifdef verilog
+
+ //please enter any additional verilog stimulus in the /home/grads/a/acoskuner500/ecen714/eightadder_run1/testfixture.verilog file
+`include "/home/grads/a/acoskuner500/ecen714/eightadder_run1/testfixture.verilog"
+
+`endif
+
+endmodule 

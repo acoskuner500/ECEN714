@@ -1,0 +1,7 @@
+// Generated for: spectre
+// Generated on: Oct  7 13:09:20 2022
+// Design library name: Design
+// Design cell name: oneadder_simulate
+// Design view name: schematic
+simulator lang=spectre
+global 0 vdd!

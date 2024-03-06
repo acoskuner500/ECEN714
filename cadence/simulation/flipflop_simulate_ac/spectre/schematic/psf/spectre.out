@@ -1,0 +1,201 @@
+
+Spectre (R) Circuit Simulator
+Version 18.1.0.421.isr9 64bit -- 17 Jul 2019
+Copyright (C) 1989-2019 Cadence Design Systems, Inc. All rights reserved worldwide. Cadence and Spectre are registered trademarks of Cadence Design Systems, Inc. All others are the property of their respective holders.
+
+Includes RSA BSAFE(R) Cryptographic or Security Protocol Software from RSA Security, Inc.
+
+User: acoskuner500   Host: zach-127-28.engr.tamu.edu   HostID: 7D0A56CA   PID: 24656
+Memory  available: 833.6261 MB  physical: 16.4832 GB
+Linux   : CentOS Linux release 7.9.2009 (Core)
+CPU Type: Intel(R) Core(TM) i7-8700T CPU @ 2.40GHz
+        Socket: Processors [Frequency] (Hyperthreaded Processor)
+        0:       0 [3591.7] (  6 ),  1 [3680.0] (  7 ),  2 [3800.1] (  8 )
+                 3 [3280.4] (  9 ),  4 [2974.8] ( 10 ),  5 [3730.1] ( 11 )
+        
+System load averages (1min, 5min, 15min) : 4.5 %, 3.8 %, 3.4 %
+Hyperthreading is enabled
+
+
+Simulating `input.scs' on zach-127-28.engr.tamu.edu at 6:25:55 PM, Fri Oct 28, 2022 (process id: 24656).
+Current working directory: /home/grads/a/acoskuner500/cadence/simulation/flipflop_simulate_ac/spectre/schematic/netlist
+Environment variable:
+    SPECTRE_DEFAULTS=-E
+Command line:
+    /opt/coe/cadence/SPECTRE181/tools.lnx86/bin/spectre -64 input.scs  \
+        +escchars +log ../psf/spectre.out +inter=mpsc  \
+        +mpssession=spectre5_4684_22 -format psfxl -raw ../psf  \
+        +lqtimeout 900 -maxw 5 -maxn 5 -env ade
+spectre pid = 24656
+
+Loading /opt/coe/cadence/SPECTRE181/tools.lnx86/cmi/lib/64bit/5.0/libinfineon_sh.so ...
+Loading /opt/coe/cadence/SPECTRE181/tools.lnx86/cmi/lib/64bit/5.0/libphilips_o_sh.so ...
+Loading /opt/coe/cadence/SPECTRE181/tools.lnx86/cmi/lib/64bit/5.0/libphilips_sh.so ...
+Loading /opt/coe/cadence/SPECTRE181/tools.lnx86/cmi/lib/64bit/5.0/libsparam_sh.so ...
+Loading /opt/coe/cadence/SPECTRE181/tools.lnx86/cmi/lib/64bit/5.0/libstmodels_sh.so ...
+Reading file:  /home/grads/a/acoskuner500/cadence/simulation/flipflop_simulate_ac/spectre/schematic/netlist/input.scs
+Reading file:  /opt/coe/cadence/SPECTRE181/tools.lnx86/spectre/etc/configs/mapsubckt.cfg
+Reading file:  /opt/coe/cadence/SPECTRE181/tools.lnx86/spectre/etc/configs/spectre.cfg
+Reading file:  /usr/include/stdc-predef.h
+Reading file:  /home/grads/a/acoskuner500/cadence/models/spectre/tsmc20N.m
+Reading file:  /home/grads/a/acoskuner500/cadence/models/spectre/tsmc20P.m
+Time for NDB Parsing: CPU = 89.009 ms, elapsed = 192.894 ms.
+Time accumulated: CPU = 136.175 ms, elapsed = 192.9 ms.
+Peak resident memory used = 55.7 Mbytes.
+
+Time for Elaboration: CPU = 43.452 ms, elapsed = 44.2481 ms.
+Time accumulated: CPU = 180.151 ms, elapsed = 237.67 ms.
+Peak resident memory used = 63.1 Mbytes.
+
+
+Warning from spectre during hierarchy flattening.
+    WARNING (SPECTRE-17101): The value 'psf' specified using the 'checklimitdest' option will no longer be supported in future releases.
+
+
+Time for EDB Visiting: CPU = 1.26 ms, elapsed = 1.87397 ms.
+Time accumulated: CPU = 181.602 ms, elapsed = 239.734 ms.
+Peak resident memory used = 63.8 Mbytes.
+
+
+Warning from spectre during initial setup.
+    WARNING (CMI-2426): I0.+10: `Pdiblc2' = -8.75063e-06 is negative.
+
+
+Global user options:
+         psfversion = 1.1.0
+            vabstol = 1e-06
+            iabstol = 1e-12
+               temp = 27
+               gmin = 1e-12
+             rforce = 1
+           maxnotes = 5
+           maxwarns = 5
+             digits = 5
+               cols = 80
+             pivrel = 0.001
+           sensfile = ../psf/sens.output
+     checklimitdest = psf
+               save = allpub
+             reltol = 0.001
+               tnom = 27
+             scalem = 1
+              scale = 1
+
+Scoped user options:
+
+Circuit inventory:
+              nodes 12
+            bsim3v3 20    
+          capacitor 1     
+            vsource 4     
+
+Analysis and control statement inventory:
+                 ac 1     
+               info 6     
+
+Output statements:
+             .probe 0     
+           .measure 0     
+               save 1     
+
+
+Warning from spectre during initial setup.
+    WARNING (CMI-2426): I0.+10: `Pdiblc2' = -8.75063e-06 is negative.
+
+Time for parsing: CPU = 5.431 ms, elapsed = 12.2349 ms.
+Time accumulated: CPU = 187.193 ms, elapsed = 252.129 ms.
+Peak resident memory used = 65.6 Mbytes.
+
+~~~~~~~~~~~~~~~~~~~~~~
+Pre-Simulation Summary
+~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~
+Entering remote command mode using MPSC service (spectre, ipi, v0.0, spectre5_4684_22, ).
+
+****************************************
+AC Analysis `ac': freq = (1 Hz -> 1 GHz)
+****************************************
+Trying `homotopy = gmin'.
+DC simulation time: CPU = 7.334 ms, elapsed = 3.77202 ms.
+
+Opening the PSF file ../psf/ac.ac ...
+    ac: freq = 2.291 Hz       (4 %), step = 777.3 mHz       (2 %)
+    ac: freq = 3.467 Hz       (6 %), step = 1.177 Hz        (2 %)
+    ac: freq = 5.248 Hz       (8 %), step = 1.781 Hz        (2 %)
+    ac: freq = 7.943 Hz      (10 %), step = 2.695 Hz        (2 %)
+    ac: freq = 12.02 Hz      (12 %), step = 4.079 Hz        (2 %)
+    ac: freq = 18.2 Hz       (14 %), step = 6.174 Hz        (2 %)
+    ac: freq = 27.54 Hz      (16 %), step = 9.345 Hz        (2 %)
+    ac: freq = 41.69 Hz      (18 %), step = 14.14 Hz        (2 %)
+    ac: freq = 63.1 Hz       (20 %), step = 21.41 Hz        (2 %)
+    ac: freq = 95.5 Hz       (22 %), step = 32.4 Hz         (2 %)
+    ac: freq = 144.5 Hz      (24 %), step = 49.04 Hz        (2 %)
+    ac: freq = 218.8 Hz      (26 %), step = 74.23 Hz        (2 %)
+    ac: freq = 331.1 Hz      (28 %), step = 112.4 Hz        (2 %)
+    ac: freq = 501.2 Hz      (30 %), step = 170.1 Hz        (2 %)
+    ac: freq = 758.6 Hz      (32 %), step = 257.4 Hz        (2 %)
+    ac: freq = 1.148 kHz     (34 %), step = 389.6 Hz        (2 %)
+    ac: freq = 1.738 kHz     (36 %), step = 589.6 Hz        (2 %)
+    ac: freq = 2.63 kHz      (38 %), step = 892.5 Hz        (2 %)
+    ac: freq = 3.981 kHz     (40 %), step = 1.351 kHz       (2 %)
+    ac: freq = 6.026 kHz     (42 %), step = 2.045 kHz       (2 %)
+    ac: freq = 9.12 kHz      (44 %), step = 3.095 kHz       (2 %)
+    ac: freq = 13.8 kHz      (46 %), step = 4.684 kHz       (2 %)
+    ac: freq = 20.89 kHz     (48 %), step = 7.089 kHz       (2 %)
+    ac: freq = 31.62 kHz     (50 %), step = 10.73 kHz       (2 %)
+    ac: freq = 47.86 kHz     (52 %), step = 16.24 kHz       (2 %)
+    ac: freq = 72.44 kHz     (54 %), step = 24.58 kHz       (2 %)
+    ac: freq = 109.6 kHz     (56 %), step = 37.2 kHz        (2 %)
+    ac: freq = 166 kHz       (58 %), step = 56.31 kHz       (2 %)
+    ac: freq = 251.2 kHz     (60 %), step = 85.23 kHz       (2 %)
+    ac: freq = 380.2 kHz     (62 %), step = 129 kHz         (2 %)
+    ac: freq = 575.4 kHz     (64 %), step = 195.3 kHz       (2 %)
+    ac: freq = 871 kHz       (66 %), step = 295.5 kHz       (2 %)
+    ac: freq = 1.318 MHz     (68 %), step = 447.3 kHz       (2 %)
+    ac: freq = 1.995 MHz     (70 %), step = 677 kHz         (2 %)
+    ac: freq = 3.02 MHz      (72 %), step = 1.025 MHz       (2 %)
+    ac: freq = 4.571 MHz     (74 %), step = 1.551 MHz       (2 %)
+    ac: freq = 6.918 MHz     (76 %), step = 2.347 MHz       (2 %)
+    ac: freq = 10.47 MHz     (78 %), step = 3.553 MHz       (2 %)
+    ac: freq = 15.85 MHz     (80 %), step = 5.378 MHz       (2 %)
+    ac: freq = 23.99 MHz     (82 %), step = 8.139 MHz       (2 %)
+    ac: freq = 36.31 MHz     (84 %), step = 12.32 MHz       (2 %)
+    ac: freq = 54.95 MHz     (86 %), step = 18.65 MHz       (2 %)
+    ac: freq = 83.18 MHz     (88 %), step = 28.22 MHz       (2 %)
+    ac: freq = 125.9 MHz     (90 %), step = 42.72 MHz       (2 %)
+    ac: freq = 190.5 MHz     (92 %), step = 64.65 MHz       (2 %)
+    ac: freq = 288.4 MHz     (94 %), step = 97.86 MHz       (2 %)
+    ac: freq = 436.5 MHz     (96 %), step = 148.1 MHz       (2 %)
+    ac: freq = 660.7 MHz     (98 %), step = 224.2 MHz       (2 %)
+    ac: freq = 1 GHz        (100 %), step = 339.3 MHz       (2 %)
+Accumulated DC solution time =            0 s.
+Intrinsic ac analysis time =              0 s.
+Total time required for ac analysis `ac': CPU = 16.476 ms, elapsed = 14.477 ms.
+Time accumulated: CPU = 265.645 ms, elapsed = 330.871 ms.
+Peak resident memory used = 68.8 Mbytes.
+
+modelParameter: writing model parameter values to rawfile.
+
+Opening the PSF file ../psf/modelParameter.info ...
+element: writing instance parameter values to rawfile.
+
+Opening the PSF file ../psf/element.info ...
+outputParameter: writing output parameter values to rawfile.
+
+Opening the PSF file ../psf/outputParameter.info ...
+designParamVals: writing netlist parameters to rawfile.
+
+Opening the PSFASCII file ../psf/designParamVals.info ...
+primitives: writing primitives to rawfile.
+
+Opening the PSFASCII file ../psf/primitives.info.primitives ...
+subckts: writing subcircuits to rawfile.
+
+Opening the PSFASCII file ../psf/subckts.info.subckts ...
+
+Aggregate audit (6:44:05 PM, Fri Oct 28, 2022):
+Time used: CPU = 343 ms, elapsed = 1.09 ks (18m  10.5s), util. = 31.5e-03%.
+Time spent in licensing: elapsed = 35.6 ms.
+Peak memory used = 70.1 Mbytes.
+Simulation started at: 6:25:55 PM, Fri Oct 28, 2022, ended at: 6:44:05 PM, Fri Oct 28, 2022, with elapsed time (wall clock): 1.09 ks (18m  10.5s).
+spectre completes with 0 errors, 3 warnings, and 1 notice.

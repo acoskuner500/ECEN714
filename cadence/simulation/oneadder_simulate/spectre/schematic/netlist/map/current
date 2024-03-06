@@ -1,0 +1,20 @@
+( ( nil
+  version "2.1"
+  mapType "incremental"
+  blockName "oneadder_simulate"
+  repList "spectre cmos_sch cmos.sch extracted schematic veriloga"
+  stopList "spectre"
+  globalList "vdd! gnd!"
+  hierDelim "."
+  netlistDir "/home/grads/a/acoskuner500/cadence/simulation/oneadder_simulate/spectre/schematic/netlist"
+ )
+( net
+( "gnd!" "0" )
+ )
+( model
+( "Design/oneadder_simulate/schematic" "oneadder_simulate" )
+( "Design/oneadder/extracted" "oneadder" )
+ )
+( "oneadder" "ihnl/cds0/map" )
+( "oneadder_simulate" "ihnl/cds1/map" )
+ )

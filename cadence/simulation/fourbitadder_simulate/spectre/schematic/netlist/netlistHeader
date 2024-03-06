@@ -1,0 +1,7 @@
+// Generated for: spectre
+// Generated on: Nov 15 20:12:16 2022
+// Design library name: Design
+// Design cell name: fourbitadder_simulate
+// Design view name: schematic
+simulator lang=spectre
+global 0 vdd!

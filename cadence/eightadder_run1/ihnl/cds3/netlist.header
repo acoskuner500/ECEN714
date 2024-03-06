@@ -1,0 +1,21 @@
+// Library - Design, Cell - fourreg, View - schematic
+// LAST TIME SAVED: Sep  8 19:22:35 2022
+// NETLIST TIME: Sep  8 19:33:32 2022
+`timescale 1ns / 1ns 
+
+module fourreg ( Q, Clk, D, _Clk );
+
+
+input  Clk, _Clk;
+
+output [3:0]  Q;
+
+input [3:0]  D;
+
+
+specify 
+    specparam CDS_LIBNAME  = "Design";
+    specparam CDS_CELLNAME = "fourreg";
+    specparam CDS_VIEWNAME = "schematic";
+endspecify
+

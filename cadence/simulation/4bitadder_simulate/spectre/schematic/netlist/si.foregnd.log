@@ -1,0 +1,11 @@
+Begin Incremental Netlisting Oct 12 16:57:07 2022
+INFO (OSSHNL-251): Mismatch found in the direction of terminal 'SUM<3:0>' in the
+placed master
+'Design/4bitadder/symbol' and its corresponding terminal in the
+switch master 'Design/4bitadder/extracted',
+however, this terminal is printed in
+the netlist because the variable
+simCheckTermDirectionMismatch is either set to
+'ignore' or is not set.
+
+End netlisting Oct 12 16:57:07 2022

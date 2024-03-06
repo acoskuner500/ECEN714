@@ -1,0 +1,84 @@
+// Generated for: spectre
+// Generated on: Oct 28 18:20:35 2022
+// Design library name: Design
+// Design cell name: flipflop_simulate
+// Design view name: schematic
+simulator lang=spectre
+global 0 vdd!
+include "/home/grads/a/acoskuner500/cadence/models/spectre/tsmc20N.m"
+include "/home/grads/a/acoskuner500/cadence/models/spectre/tsmc20P.m"
+
+// Library name: Design
+// Cell name: flipflop
+// View name: extracted
+// View type: maskLayout
+subckt flipflop_extracted CLK D GND Q VDD _CLK
+    \+19 (Q 12 VDD VDD) tsmc20P w=9e-07 l=2e-07 as=4.5e-13 ad=4.5e-13 \
+        ps=1.9e-06 pd=1.9e-06 m=1 region=sat
+    \+18 (10 CLK 13 VDD) tsmc20P w=9e-07 l=2e-07 as=2.7e-13 ad=4.5e-13 \
+        ps=6e-07 pd=1.9e-06 m=1 region=sat
+    \+17 (13 12 VDD VDD) tsmc20P w=9e-07 l=2e-07 as=4.5e-13 ad=2.7e-13 \
+        ps=1.9e-06 pd=6e-07 m=1 region=sat
+    \+16 (12 10 VDD VDD) tsmc20P w=9e-07 l=2e-07 as=4.5e-13 ad=4.5e-13 \
+        ps=1.9e-06 pd=1.9e-06 m=1 region=sat
+    \+15 (8 _CLK 11 VDD) tsmc20P w=9e-07 l=2e-07 as=2.7e-13 ad=4.5e-13 \
+        ps=6e-07 pd=1.9e-06 m=1 region=sat
+    \+14 (11 9 VDD VDD) tsmc20P w=9e-07 l=2e-07 as=4.5e-13 ad=2.7e-13 \
+        ps=1.9e-06 pd=6e-07 m=1 region=sat
+    \+13 (10 _CLK 9 VDD) tsmc20P w=9e-07 l=2e-07 as=2.7e-13 ad=4.5e-13 \
+        ps=6e-07 pd=1.9e-06 m=1 region=sat
+    \+12 (9 8 VDD VDD) tsmc20P w=9e-07 l=2e-07 as=4.5e-13 ad=2.7e-13 \
+        ps=1.9e-06 pd=6e-07 m=1 region=sat
+    \+11 (8 CLK 7 VDD) tsmc20P w=9e-07 l=2e-07 as=2.7e-13 ad=4.5e-13 \
+        ps=6e-07 pd=1.9e-06 m=1 region=sat
+    \+10 (7 D VDD VDD) tsmc20P w=9e-07 l=2e-07 as=4.5e-13 ad=2.7e-13 \
+        ps=1.9e-06 pd=6e-07 m=1 region=sat
+    \+9 (Q 12 GND GND) tsmc20N w=3e-07 l=2e-07 as=1.9e-13 ad=1.9e-13 \
+        ps=1.5e-06 pd=1.5e-06 m=1 region=sat
+    \+8 (10 _CLK 13 GND) tsmc20N w=3e-07 l=2e-07 as=1.1e-13 ad=1.9e-13 \
+        ps=7e-07 pd=1.5e-06 m=1 region=sat
+    \+7 (13 12 GND GND) tsmc20N w=3e-07 l=2e-07 as=1.9e-13 ad=1.1e-13 \
+        ps=1.5e-06 pd=7e-07 m=1 region=sat
+    \+6 (12 10 GND GND) tsmc20N w=3e-07 l=2e-07 as=1.9e-13 ad=1.9e-13 \
+        ps=1.5e-06 pd=1.5e-06 m=1 region=sat
+    \+5 (8 CLK 11 GND) tsmc20N w=3e-07 l=2e-07 as=1.1e-13 ad=1.9e-13 \
+        ps=7e-07 pd=1.5e-06 m=1 region=sat
+    \+4 (11 9 GND GND) tsmc20N w=3e-07 l=2e-07 as=1.9e-13 ad=1.1e-13 \
+        ps=1.5e-06 pd=7e-07 m=1 region=sat
+    \+3 (10 CLK 9 GND) tsmc20N w=3e-07 l=2e-07 as=1.1e-13 ad=1.9e-13 \
+        ps=7e-07 pd=1.5e-06 m=1 region=sat
+    \+2 (9 8 GND GND) tsmc20N w=3e-07 l=2e-07 as=1.9e-13 ad=1.1e-13 \
+        ps=1.5e-06 pd=7e-07 m=1 region=sat
+    \+1 (8 _CLK 7 GND) tsmc20N w=3e-07 l=2e-07 as=1.1e-13 ad=1.9e-13 \
+        ps=7e-07 pd=1.5e-06 m=1 region=sat
+    \+0 (7 D GND GND) tsmc20N w=3e-07 l=2e-07 as=1.9e-13 ad=1.1e-13 \
+        ps=1.5e-06 pd=7e-07 m=1 region=sat
+ends flipflop_extracted
+// End of subcircuit definition.
+
+// Library name: Design
+// Cell name: flipflop_simulate
+// View name: schematic
+I0 (clk D 0 Q vdd! _clk) flipflop_extracted
+V0 (vdd! 0) vsource type=dc dc=1.8
+V3 (clk 0) vsource type=pulse dc=1.8 val0=0 val1=1.8 period=10.2n delay=0 \
+        rise=100p fall=100p width=5n
+V2 (_clk 0) vsource type=pulse dc=1.8 val0=0 val1=1.8 period=10.2n \
+        delay=5.1n rise=100p fall=100p width=5n
+V1 (D 0) vsource type=pulse dc=1.8 val0=0 val1=1.8 period=32n delay=3n \
+        rise=100p fall=100p width=15n
+C0 (Q 0) capacitor c=100f m=1
+simulatorOptions options psfversion="1.1.0" reltol=1e-3 vabstol=1e-6 \
+    iabstol=1e-12 temp=27 tnom=27 scalem=1.0 scale=1.0 gmin=1e-12 rforce=1 \
+    maxnotes=5 maxwarns=5 digits=5 cols=80 pivrel=1e-3 \
+    sensfile="../psf/sens.output" checklimitdest=psf 
+tran tran stop=30n write="spectre.ic" writefinal="spectre.fc" \
+    annotate=status maxiters=5 
+finalTimeOP info what=oppoint where=rawfile
+modelParameter info what=models where=rawfile
+element info what=inst where=rawfile
+outputParameter info what=output where=rawfile
+designParamVals info what=parameters where=rawfile
+primitives info what=primitives where=rawfile
+subckts info what=subckts where=rawfile
+saveOptions options save=allpub

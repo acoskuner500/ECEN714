@@ -1,0 +1,29 @@
+//Spice netlist for an inverter 
+simulator lang=spectre
+subckt IV (input output VDD VSS)
+        parameters wp=0.6u lp=0.2u wn=0.3u ln=0.3u              
+        M1 output input VDD VDD tsmc18P w=wp l=lp
+        M2 output input VSS VSS tsmc18N w=wn l=ln
+ends IV
+subckt NAND2 (A B output VDD VSS)
+	parameters wp=0.6u lp=0.2u wn=0.3u ln=0.3u
+	M1 output A VDD VDD tsmc18p w=wp l=lp
+	M2 output B VDD VDD tsmc18p w=wp l=lp
+	M3 output A n1  VSS tsmc18n w=wn l=ln
+	M4 n1     B VSS VSS tsmc18n w=wn l=ln
+ends
+subckt XOR2 (A B output VDD VSS)
+	parameters wp=0.6u lp=0.2u wn=0.3u ln=0.3u
+	Ainv (A Abar VDD VSS) IV wp=wp lp=lp wn=wn ln=ln
+	Binv (B Bbar VDD VSS) IV wp=wp lp=lp wn=wn ln=ln
+
+	M1 n13    B    VDD VDD tsmc18p w=wp l=lp // B pmos
+	M2 n24    Bbar VDD VDD tsmc18p w=wp l=lp // Bbar pmos
+	M3 output Abar n13 VDD tsmc18p w=wp l=lp // Abar pmos
+	M4 output A    n24 VDD tsmc18p w=wp l=lp // A pmos
+
+	M5 output Abar n57 VSS tsmc18n w=wn l=ln // Abar nmos
+	M6 output A    n68 VSS tsmc18n w=wn l=ln // A nmos
+	M7 n57    Bbar VSS VSS tsmc18n w=wn l=ln // Bbar nmos
+	M8 n68    B    VSS VSS tsmc18n w=wn l=ln // B nmos
+ends

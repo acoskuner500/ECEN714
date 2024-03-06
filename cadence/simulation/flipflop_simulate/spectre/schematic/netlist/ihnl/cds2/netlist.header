@@ -1,0 +1,6 @@
+
+// Library name: Design
+// Cell name: flipflop
+// View name: extracted
+// View type: maskLayout
+subckt flipflop_extracted CLK D GND Q VDD _CLK

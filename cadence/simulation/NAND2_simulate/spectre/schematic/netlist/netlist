@@ -1,0 +1,26 @@
+
+// Library name: Design
+// Cell name: NAND2
+// View name: extracted
+// View type: maskLayout
+subckt NAND2 A B GND VDD out
+    \+3 (VDD B out VDD) tsmc20P w=6e-07 l=2e-07 as=1.8e-13 ad=3e-13 ps=6e-07 pd=1.6e-06 m=1 region=sat
+    \+2 (out A VDD VDD) tsmc20P w=6e-07 l=2e-07 as=3e-13 ad=1.8e-13 ps=1.6e-06 pd=6e-07 m=1 region=sat
+    \+8 (B GND) capacitor c=1.2416e-16 m=1
+    \+7 (A GND) capacitor c=1.2804e-16 m=1
+    \+6 (out GND) capacitor c=2.2992e-16 m=1
+    \+5 (out B) capacitor c=7.687e-17 m=1
+    \+4 (VDD out) capacitor c=4.82e-17 m=1
+    \+1 (out B 6 GND) tsmc20N w=6e-07 l=2e-07 as=1.8e-13 ad=3e-13 ps=6e-07 pd=1.6e-06 m=1 region=sat
+    \+0 (6 A GND GND) tsmc20N w=6e-07 l=2e-07 as=3e-13 ad=1.8e-13 ps=1.6e-06 pd=6e-07 m=1 region=sat
+ends NAND2
+// End of subcircuit definition.
+
+// Library name: Design
+// Cell name: NAND2_simulate
+// View name: schematic
+I0 (inA inB 0 vdd! out) NAND2
+V0 (vdd! 0) vsource type=dc dc=1.8
+V2 (inB 0) vsource type=pulse val0=0 val1=1.8 period=10n delay=5n rise=100p fall=100p width=5n
+V1 (inA 0) vsource type=pulse val0=0 val1=1.8 period=20n delay=10n rise=100p fall=100p width=10n
+C0 (out 0) capacitor c=50f m=1

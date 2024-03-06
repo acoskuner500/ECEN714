@@ -1,0 +1,24 @@
+
+// Library name: Design
+// Cell name: inverter
+// View name: extracted
+// View type: maskLayout
+subckt inverter GND VDD in out
+    \+1 (out in VDD VDD) tsmc20P w=9e-07 l=2e-07 as=4.5e-13 ad=4.5e-13 \
+        ps=1.9e-06 pd=1.9e-06 m=1 region=sat
+    \+4 (in GND) capacitor c=1.067e-16 m=1
+    \+3 (out GND) capacitor c=1.662e-16 m=1
+    \+2 (VDD out) capacitor c=3.472e-17 m=1
+    \+0 (out in GND GND) tsmc20N w=3e-07 l=2e-07 as=1.9e-13 ad=1.9e-13 \
+        ps=1.5e-06 pd=1.5e-06 m=1 region=sat
+ends inverter
+// End of subcircuit definition.
+
+// Library name: Design
+// Cell name: inverter_simulate
+// View name: schematic
+I7 (0 vdd! in out) inverter
+V0 (vdd! 0) vsource type=dc dc=1.8
+V1 (in 0) vsource type=pulse dc=1.8 val0=0 val1=1.8 period=12n delay=3n \
+        rise=100p fall=100p width=5n
+C0 (out 0) capacitor c=50f m=1

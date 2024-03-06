@@ -1,0 +1,706 @@
+// Generated for: spectre
+// Generated on: Oct 12 16:57:07 2022
+// Design library name: Design
+// Design cell name: 4bitadder_simulate
+// Design view name: schematic
+simulator lang=spectre
+global 0 vdd!
+include "/home/grads/a/acoskuner500/cadence/models/spectre/tsmc20N.m"
+include "/home/grads/a/acoskuner500/cadence/models/spectre/tsmc20P.m"
+
+// Library name: Design
+// Cell name: 4bitadder
+// View name: extracted
+// View type: maskLayout
+subckt Design_4bitadder_extracted A\<3\> A\<2\> A\<1\> A\<0\> B\<3\> \
+        B\<2\> B\<1\> B\<0\> CIN COUT GND SUM\<3\> SUM\<2\> SUM\<1\> \
+        SUM\<0\> VDD
+    \+143 (VDD 66 COUT VDD) tsmc20P w=6e-07 l=2e-07 as=1.8e-13 ad=3e-13 \
+        ps=6e-07 pd=1.6e-06 m=1 region=sat
+    \+142 (COUT 72 VDD VDD) tsmc20P w=6e-07 l=2e-07 as=3e-13 ad=1.8e-13 \
+        ps=1.6e-06 pd=6e-07 m=1 region=sat
+    \+136 (VDD 61 72 VDD) tsmc20P w=6e-07 l=2e-07 as=1.8e-13 ad=3e-13 \
+        ps=6e-07 pd=1.6e-06 m=1 region=sat
+    \+135 (72 65 VDD VDD) tsmc20P w=6e-07 l=2e-07 as=3e-13 ad=1.8e-13 \
+        ps=1.6e-06 pd=6e-07 m=1 region=sat
+    \+129 (VDD B\<3\> 66 VDD) tsmc20P w=6e-07 l=2e-07 as=1.8e-13 ad=3e-13 \
+        ps=6e-07 pd=1.6e-06 m=1 region=sat
+    \+127 (66 A\<3\> VDD VDD) tsmc20P w=6e-07 l=2e-07 as=3e-13 ad=1.8e-13 \
+        ps=1.6e-06 pd=6e-07 m=1 region=sat
+    \+125 (VDD 51 61 VDD) tsmc20P w=6e-07 l=2e-07 as=1.8e-13 ad=3e-13 \
+        ps=6e-07 pd=1.6e-06 m=1 region=sat
+    \+124 (61 57 VDD VDD) tsmc20P w=6e-07 l=2e-07 as=3e-13 ad=1.8e-13 \
+        ps=1.6e-06 pd=6e-07 m=1 region=sat
+    \+118 (VDD 46 57 VDD) tsmc20P w=6e-07 l=2e-07 as=1.8e-13 ad=3e-13 \
+        ps=6e-07 pd=1.6e-06 m=1 region=sat
+    \+117 (57 50 VDD VDD) tsmc20P w=6e-07 l=2e-07 as=3e-13 ad=1.8e-13 \
+        ps=1.6e-06 pd=6e-07 m=1 region=sat
+    \+111 (VDD B\<2\> 51 VDD) tsmc20P w=6e-07 l=2e-07 as=1.8e-13 ad=3e-13 \
+        ps=6e-07 pd=1.6e-06 m=1 region=sat
+    \+109 (51 A\<2\> VDD VDD) tsmc20P w=6e-07 l=2e-07 as=3e-13 ad=1.8e-13 \
+        ps=1.6e-06 pd=6e-07 m=1 region=sat
+    \+107 (VDD 36 46 VDD) tsmc20P w=6e-07 l=2e-07 as=1.8e-13 ad=3e-13 \
+        ps=6e-07 pd=1.6e-06 m=1 region=sat
+    \+106 (46 42 VDD VDD) tsmc20P w=6e-07 l=2e-07 as=3e-13 ad=1.8e-13 \
+        ps=1.6e-06 pd=6e-07 m=1 region=sat
+    \+100 (VDD 31 42 VDD) tsmc20P w=6e-07 l=2e-07 as=1.8e-13 ad=3e-13 \
+        ps=6e-07 pd=1.6e-06 m=1 region=sat
+    \+99 (42 35 VDD VDD) tsmc20P w=6e-07 l=2e-07 as=3e-13 ad=1.8e-13 \
+        ps=1.6e-06 pd=6e-07 m=1 region=sat
+    \+93 (VDD B\<1\> 36 VDD) tsmc20P w=6e-07 l=2e-07 as=1.8e-13 ad=3e-13 \
+        ps=6e-07 pd=1.6e-06 m=1 region=sat
+    \+91 (36 A\<1\> VDD VDD) tsmc20P w=6e-07 l=2e-07 as=3e-13 ad=1.8e-13 \
+        ps=1.6e-06 pd=6e-07 m=1 region=sat
+    \+89 (VDD 21 31 VDD) tsmc20P w=6e-07 l=2e-07 as=1.8e-13 ad=3e-13 \
+        ps=6e-07 pd=1.6e-06 m=1 region=sat
+    \+88 (31 27 VDD VDD) tsmc20P w=6e-07 l=2e-07 as=3e-13 ad=1.8e-13 \
+        ps=1.6e-06 pd=6e-07 m=1 region=sat
+    \+82 (VDD CIN 27 VDD) tsmc20P w=6e-07 l=2e-07 as=1.8e-13 ad=3e-13 \
+        ps=6e-07 pd=1.6e-06 m=1 region=sat
+    \+81 (27 20 VDD VDD) tsmc20P w=6e-07 l=2e-07 as=3e-13 ad=1.8e-13 \
+        ps=1.6e-06 pd=6e-07 m=1 region=sat
+    \+75 (VDD B\<0\> 21 VDD) tsmc20P w=6e-07 l=2e-07 as=1.8e-13 ad=3e-13 \
+        ps=6e-07 pd=1.6e-06 m=1 region=sat
+    \+73 (21 A\<0\> VDD VDD) tsmc20P w=6e-07 l=2e-07 as=3e-13 ad=1.8e-13 \
+        ps=1.6e-06 pd=6e-07 m=1 region=sat
+    \+497 (GND 74) capacitor c=3.88e-17 m=1
+    \+496 (GND 72) capacitor c=1.2804e-16 m=1
+    \+495 (GND 69) capacitor c=7.857e-17 m=1
+    \+494 (GND 68) capacitor c=3.88e-17 m=1
+    \+493 (GND 66) capacitor c=1.2416e-16 m=1
+    \+492 (GND 65) capacitor c=2.8906e-16 m=1
+    \+491 (GND 62) capacitor c=7.857e-17 m=1
+    \+490 (GND 61) capacitor c=8.3226e-16 m=1
+    \+489 (GND 59) capacitor c=3.88e-17 m=1
+    \+488 (GND 57) capacitor c=1.2804e-16 m=1
+    \+487 (GND 54) capacitor c=7.857e-17 m=1
+    \+486 (GND 53) capacitor c=3.88e-17 m=1
+    \+485 (GND 51) capacitor c=1.2416e-16 m=1
+    \+484 (GND 50) capacitor c=2.8906e-16 m=1
+    \+483 (GND 47) capacitor c=7.857e-17 m=1
+    \+482 (GND 46) capacitor c=8.3226e-16 m=1
+    \+481 (GND 44) capacitor c=3.88e-17 m=1
+    \+480 (GND 42) capacitor c=1.2804e-16 m=1
+    \+479 (GND 39) capacitor c=7.857e-17 m=1
+    \+478 (GND 38) capacitor c=3.88e-17 m=1
+    \+477 (GND 36) capacitor c=1.2416e-16 m=1
+    \+476 (GND 35) capacitor c=2.8906e-16 m=1
+    \+475 (GND 32) capacitor c=7.857e-17 m=1
+    \+474 (GND 31) capacitor c=8.3226e-16 m=1
+    \+473 (GND 29) capacitor c=3.88e-17 m=1
+    \+472 (GND 27) capacitor c=1.2804e-16 m=1
+    \+471 (GND 24) capacitor c=7.857e-17 m=1
+    \+470 (GND 23) capacitor c=3.88e-17 m=1
+    \+469 (GND 21) capacitor c=1.2416e-16 m=1
+    \+468 (GND 20) capacitor c=2.8906e-16 m=1
+    \+467 (GND 17) capacitor c=7.857e-17 m=1
+    \+466 (GND A\<3\>) capacitor c=7.7406e-16 m=1
+    \+465 (GND A\<2\>) capacitor c=7.7406e-16 m=1
+    \+464 (A\<1\> GND) capacitor c=7.7406e-16 m=1
+    \+463 (A\<0\> GND) capacitor c=7.7406e-16 m=1
+    \+462 (B\<3\> GND) capacitor c=8.2062e-16 m=1
+    \+461 (CIN GND) capacitor c=8.4778e-16 m=1
+    \+460 (B\<2\> GND) capacitor c=8.2062e-16 m=1
+    \+459 (B\<1\> GND) capacitor c=8.2062e-16 m=1
+    \+458 (VDD 65) capacitor c=4.947e-17 m=1
+    \+457 (VDD 61) capacitor c=4.947e-17 m=1
+    \+456 (VDD 50) capacitor c=4.947e-17 m=1
+    \+455 (VDD 46) capacitor c=4.947e-17 m=1
+    \+454 (VDD 35) capacitor c=4.947e-17 m=1
+    \+453 (VDD 31) capacitor c=4.947e-17 m=1
+    \+452 (VDD 20) capacitor c=4.947e-17 m=1
+    \+451 (VDD A\<3\>) capacitor c=4.947e-17 m=1
+    \+450 (VDD A\<2\>) capacitor c=4.947e-17 m=1
+    \+449 (VDD A\<1\>) capacitor c=4.947e-17 m=1
+    \+448 (VDD A\<0\>) capacitor c=4.947e-17 m=1
+    \+447 (VDD B\<3\>) capacitor c=4.947e-17 m=1
+    \+446 (VDD CIN) capacitor c=4.947e-17 m=1
+    \+445 (VDD B\<2\>) capacitor c=4.947e-17 m=1
+    \+444 (VDD B\<1\>) capacitor c=4.947e-17 m=1
+    \+443 (B\<0\> GND) capacitor c=8.2062e-16 m=1
+    \+442 (B\<0\> VDD) capacitor c=4.947e-17 m=1
+    \+441 (61 74) capacitor c=1.6816e-16 m=1
+    \+440 (61 72) capacitor c=7.687e-17 m=1
+    \+439 (51 61) capacitor c=7.687e-17 m=1
+    \+438 (46 59) capacitor c=1.6816e-16 m=1
+    \+437 (46 57) capacitor c=7.687e-17 m=1
+    \+436 (36 46) capacitor c=7.687e-17 m=1
+    \+435 (31 44) capacitor c=1.6816e-16 m=1
+    \+434 (31 42) capacitor c=7.687e-17 m=1
+    \+433 (21 31) capacitor c=7.687e-17 m=1
+    \+432 (GND 74) capacitor c=2.2543e-16 m=1
+    \+431 (GND 72) capacitor c=4.7107e-16 m=1
+    \+430 (GND 69) capacitor c=1.7548e-16 m=1
+    \+429 (GND 68) capacitor c=2.2543e-16 m=1
+    \+428 (GND 66) capacitor c=2.3228e-16 m=1
+    \+427 (GND 65) capacitor c=1.4564e-16 m=1
+    \+426 (GND 62) capacitor c=1.7548e-16 m=1
+    \+425 (GND 61) capacitor c=3.0929e-16 m=1
+    \+424 (GND 59) capacitor c=2.2543e-16 m=1
+    \+423 (GND 57) capacitor c=4.7107e-16 m=1
+    \+422 (GND 54) capacitor c=1.7548e-16 m=1
+    \+421 (GND 53) capacitor c=2.2543e-16 m=1
+    \+420 (GND 51) capacitor c=2.3228e-16 m=1
+    \+419 (GND 50) capacitor c=1.4564e-16 m=1
+    \+418 (GND 47) capacitor c=1.7548e-16 m=1
+    \+417 (GND 46) capacitor c=3.0929e-16 m=1
+    \+416 (GND 44) capacitor c=2.2543e-16 m=1
+    \+415 (GND 42) capacitor c=4.7107e-16 m=1
+    \+414 (GND 39) capacitor c=1.7548e-16 m=1
+    \+413 (GND 38) capacitor c=2.2543e-16 m=1
+    \+412 (GND 36) capacitor c=2.3228e-16 m=1
+    \+411 (GND 35) capacitor c=1.4564e-16 m=1
+    \+410 (GND 32) capacitor c=1.7548e-16 m=1
+    \+409 (GND 31) capacitor c=3.0929e-16 m=1
+    \+408 (GND 29) capacitor c=2.2543e-16 m=1
+    \+407 (GND 27) capacitor c=4.7107e-16 m=1
+    \+406 (GND 24) capacitor c=1.7548e-16 m=1
+    \+405 (GND 23) capacitor c=2.2543e-16 m=1
+    \+404 (GND 21) capacitor c=2.3228e-16 m=1
+    \+403 (GND 20) capacitor c=1.4564e-16 m=1
+    \+402 (GND 17) capacitor c=1.7548e-16 m=1
+    \+401 (GND SUM\<3\>) capacitor c=1.4564e-16 m=1
+    \+400 (SUM\<2\> GND) capacitor c=1.4564e-16 m=1
+    \+399 (SUM\<1\> GND) capacitor c=1.4564e-16 m=1
+    \+398 (SUM\<0\> GND) capacitor c=1.4564e-16 m=1
+    \+397 (B\<3\> 68) capacitor c=1.6816e-16 m=1
+    \+396 (B\<3\> 66) capacitor c=7.687e-17 m=1
+    \+395 (B\<3\> A\<3\>) capacitor c=1.1536e-16 m=1
+    \+394 (B\<3\> GND) capacitor c=5.4892e-16 m=1
+    \+393 (COUT 66) capacitor c=7.687e-17 m=1
+    \+392 (COUT GND) capacitor c=3.0693e-16 m=1
+    \+391 (CIN 29) capacitor c=1.6816e-16 m=1
+    \+390 (CIN 27) capacitor c=7.687e-17 m=1
+    \+389 (B\<2\> 53) capacitor c=1.6816e-16 m=1
+    \+388 (B\<2\> 51) capacitor c=7.687e-17 m=1
+    \+387 (B\<2\> A\<2\>) capacitor c=1.1536e-16 m=1
+    \+386 (B\<2\> GND) capacitor c=5.4892e-16 m=1
+    \+385 (B\<1\> 38) capacitor c=1.6816e-16 m=1
+    \+384 (B\<1\> 36) capacitor c=7.687e-17 m=1
+    \+383 (B\<1\> GND) capacitor c=5.4892e-16 m=1
+    \+382 (B\<1\> A\<1\>) capacitor c=1.1536e-16 m=1
+    \+381 (VDD 74) capacitor c=8.925e-17 m=1
+    \+380 (VDD 72) capacitor c=4.82e-17 m=1
+    \+379 (VDD 69) capacitor c=4.264e-17 m=1
+    \+378 (VDD 68) capacitor c=8.925e-17 m=1
+    \+377 (VDD 66) capacitor c=4.82e-17 m=1
+    \+376 (VDD 65) capacitor c=3.472e-17 m=1
+    \+375 (VDD 62) capacitor c=4.264e-17 m=1
+    \+374 (VDD 61) capacitor c=1.6356e-16 m=1
+    \+373 (VDD 59) capacitor c=8.925e-17 m=1
+    \+372 (VDD 57) capacitor c=4.82e-17 m=1
+    \+371 (VDD 54) capacitor c=4.264e-17 m=1
+    \+370 (VDD 53) capacitor c=8.925e-17 m=1
+    \+369 (VDD 51) capacitor c=4.82e-17 m=1
+    \+368 (VDD 50) capacitor c=3.472e-17 m=1
+    \+367 (VDD 47) capacitor c=4.264e-17 m=1
+    \+366 (VDD 46) capacitor c=1.6356e-16 m=1
+    \+365 (VDD 44) capacitor c=8.925e-17 m=1
+    \+364 (VDD 42) capacitor c=4.82e-17 m=1
+    \+363 (VDD 39) capacitor c=4.264e-17 m=1
+    \+362 (VDD 38) capacitor c=8.925e-17 m=1
+    \+361 (VDD 36) capacitor c=4.82e-17 m=1
+    \+360 (VDD 35) capacitor c=3.472e-17 m=1
+    \+359 (VDD 32) capacitor c=4.264e-17 m=1
+    \+358 (VDD 31) capacitor c=1.6356e-16 m=1
+    \+357 (VDD 29) capacitor c=8.925e-17 m=1
+    \+356 (VDD 27) capacitor c=4.82e-17 m=1
+    \+355 (VDD 24) capacitor c=4.264e-17 m=1
+    \+354 (VDD 23) capacitor c=8.925e-17 m=1
+    \+353 (VDD 21) capacitor c=4.82e-17 m=1
+    \+352 (VDD 20) capacitor c=3.472e-17 m=1
+    \+351 (VDD 17) capacitor c=4.264e-17 m=1
+    \+350 (VDD SUM\<3\>) capacitor c=3.472e-17 m=1
+    \+349 (VDD GND) capacitor c=4.21916e-15 m=1
+    \+348 (VDD SUM\<2\>) capacitor c=3.472e-17 m=1
+    \+347 (VDD SUM\<1\>) capacitor c=3.472e-17 m=1
+    \+346 (VDD SUM\<0\>) capacitor c=3.472e-17 m=1
+    \+345 (VDD B\<3\>) capacitor c=1.1536e-16 m=1
+    \+344 (VDD COUT) capacitor c=4.82e-17 m=1
+    \+343 (VDD CIN) capacitor c=1.1536e-16 m=1
+    \+342 (VDD B\<2\>) capacitor c=1.1536e-16 m=1
+    \+341 (VDD B\<1\>) capacitor c=1.1536e-16 m=1
+    \+340 (B\<0\> 23) capacitor c=1.6816e-16 m=1
+    \+339 (B\<0\> 21) capacitor c=7.687e-17 m=1
+    \+338 (B\<0\> GND) capacitor c=5.4892e-16 m=1
+    \+337 (B\<0\> A\<0\>) capacitor c=1.1536e-16 m=1
+    \+336 (B\<0\> VDD) capacitor c=1.1536e-16 m=1
+    \+335 (90 91) capacitor c=8.536e-17 m=1
+    \+334 (88 89) capacitor c=8.536e-17 m=1
+    \+333 (86 87) capacitor c=8.536e-17 m=1
+    \+332 (84 85) capacitor c=8.536e-17 m=1
+    \+331 (82 83) capacitor c=8.536e-17 m=1
+    \+330 (80 81) capacitor c=8.536e-17 m=1
+    \+329 (78 79) capacitor c=8.536e-17 m=1
+    \+328 (76 77) capacitor c=8.536e-17 m=1
+    \+327 (74 90) capacitor c=4.688e-17 m=1
+    \+326 (71 74) capacitor c=4.688e-17 m=1
+    \+325 (71 73) capacitor c=8.498e-17 m=1
+    \+324 (69 90) capacitor c=4.688e-17 m=1
+    \+323 (69 71) capacitor c=4.688e-17 m=1
+    \+322 (68 88) capacitor c=4.688e-17 m=1
+    \+321 (65 90) capacitor c=4.688e-17 m=1
+    \+320 (65 88) capacitor c=8.536e-17 m=1
+    \+319 (65 71) capacitor c=4.688e-17 m=1
+    \+318 (65 69) capacitor c=1.3072e-16 m=1
+    \+317 (65 68) capacitor c=8.384e-17 m=1
+    \+316 (63 68) capacitor c=4.688e-17 m=1
+    \+315 (63 67) capacitor c=8.498e-17 m=1
+    \+314 (63 65) capacitor c=8.498e-17 m=1
+    \+313 (62 88) capacitor c=4.688e-17 m=1
+    \+312 (62 63) capacitor c=4.688e-17 m=1
+    \+311 (61 90) capacitor c=4.688e-17 m=1
+    \+310 (61 71) capacitor c=4.688e-17 m=1
+    \+309 (59 86) capacitor c=4.688e-17 m=1
+    \+308 (56 59) capacitor c=4.688e-17 m=1
+    \+307 (56 58) capacitor c=8.498e-17 m=1
+    \+306 (54 86) capacitor c=4.688e-17 m=1
+    \+305 (54 56) capacitor c=4.688e-17 m=1
+    \+304 (53 84) capacitor c=4.688e-17 m=1
+    \+303 (51 61) capacitor c=7.826e-17 m=1
+    \+302 (50 86) capacitor c=4.688e-17 m=1
+    \+301 (50 84) capacitor c=8.536e-17 m=1
+    \+300 (50 56) capacitor c=4.688e-17 m=1
+    \+299 (50 54) capacitor c=1.3072e-16 m=1
+    \+298 (50 53) capacitor c=8.384e-17 m=1
+    \+297 (48 53) capacitor c=4.688e-17 m=1
+    \+296 (48 52) capacitor c=8.498e-17 m=1
+    \+295 (48 50) capacitor c=8.498e-17 m=1
+    \+294 (47 84) capacitor c=4.688e-17 m=1
+    \+293 (47 48) capacitor c=4.688e-17 m=1
+    \+292 (46 86) capacitor c=4.688e-17 m=1
+    \+291 (46 56) capacitor c=4.688e-17 m=1
+    \+290 (44 82) capacitor c=4.688e-17 m=1
+    \+289 (41 44) capacitor c=4.688e-17 m=1
+    \+288 (41 43) capacitor c=8.498e-17 m=1
+    \+287 (39 82) capacitor c=4.688e-17 m=1
+    \+286 (39 41) capacitor c=4.688e-17 m=1
+    \+285 (38 80) capacitor c=4.688e-17 m=1
+    \+284 (36 46) capacitor c=7.826e-17 m=1
+    \+283 (35 82) capacitor c=4.688e-17 m=1
+    \+282 (35 80) capacitor c=8.536e-17 m=1
+    \+281 (35 41) capacitor c=4.688e-17 m=1
+    \+280 (35 39) capacitor c=1.3072e-16 m=1
+    \+279 (35 38) capacitor c=8.384e-17 m=1
+    \+278 (33 38) capacitor c=4.688e-17 m=1
+    \+277 (33 37) capacitor c=8.498e-17 m=1
+    \+276 (33 35) capacitor c=8.498e-17 m=1
+    \+275 (32 80) capacitor c=4.688e-17 m=1
+    \+274 (32 33) capacitor c=4.688e-17 m=1
+    \+273 (31 82) capacitor c=4.688e-17 m=1
+    \+272 (31 41) capacitor c=4.688e-17 m=1
+    \+271 (29 78) capacitor c=4.688e-17 m=1
+    \+270 (26 29) capacitor c=4.688e-17 m=1
+    \+269 (26 28) capacitor c=8.498e-17 m=1
+    \+268 (24 78) capacitor c=4.688e-17 m=1
+    \+267 (24 26) capacitor c=4.688e-17 m=1
+    \+266 (23 76) capacitor c=4.688e-17 m=1
+    \+265 (21 31) capacitor c=7.826e-17 m=1
+    \+264 (20 78) capacitor c=4.688e-17 m=1
+    \+263 (20 76) capacitor c=8.536e-17 m=1
+    \+262 (20 26) capacitor c=4.688e-17 m=1
+    \+261 (20 24) capacitor c=1.3072e-16 m=1
+    \+260 (20 23) capacitor c=8.384e-17 m=1
+    \+259 (18 23) capacitor c=4.688e-17 m=1
+    \+258 (18 22) capacitor c=8.498e-17 m=1
+    \+257 (18 20) capacitor c=8.498e-17 m=1
+    \+256 (17 76) capacitor c=4.688e-17 m=1
+    \+255 (17 18) capacitor c=4.688e-17 m=1
+    \+254 (A\<3\> 88) capacitor c=4.688e-17 m=1
+    \+253 (A\<3\> 65) capacitor c=1.3072e-16 m=1
+    \+252 (A\<3\> 63) capacitor c=4.688e-17 m=1
+    \+251 (A\<3\> 62) capacitor c=1.3072e-16 m=1
+    \+250 (A\<2\> 84) capacitor c=4.688e-17 m=1
+    \+249 (A\<2\> 50) capacitor c=1.3072e-16 m=1
+    \+248 (A\<2\> 48) capacitor c=4.688e-17 m=1
+    \+247 (A\<2\> 47) capacitor c=1.3072e-16 m=1
+    \+246 (SUM\<3\> 90) capacitor c=8.536e-17 m=1
+    \+245 (SUM\<3\> 74) capacitor c=8.384e-17 m=1
+    \+244 (SUM\<3\> 71) capacitor c=8.498e-17 m=1
+    \+243 (SUM\<3\> 65) capacitor c=1.3072e-16 m=1
+    \+242 (SUM\<3\> 61) capacitor c=2.2584e-16 m=1
+    \+241 (GND 71) capacitor c=1.3282e-16 m=1
+    \+240 (GND 66) capacitor c=3.08376e-15 m=1
+    \+239 (GND 65) capacitor c=2.06588e-15 m=1
+    \+238 (GND 63) capacitor c=1.3282e-16 m=1
+    \+237 (GND 56) capacitor c=1.3282e-16 m=1
+    \+236 (GND 51) capacitor c=3.11832e-15 m=1
+    \+235 (GND 50) capacitor c=2.06588e-15 m=1
+    \+234 (GND 48) capacitor c=1.3282e-16 m=1
+    \+233 (GND 41) capacitor c=1.3282e-16 m=1
+    \+232 (GND 36) capacitor c=3.11832e-15 m=1
+    \+231 (GND 35) capacitor c=2.06588e-15 m=1
+    \+230 (GND 33) capacitor c=1.3282e-16 m=1
+    \+229 (GND 26) capacitor c=1.3282e-16 m=1
+    \+228 (GND 21) capacitor c=3.11832e-15 m=1
+    \+227 (GND 20) capacitor c=2.06588e-15 m=1
+    \+226 (GND 18) capacitor c=1.3282e-16 m=1
+    \+225 (GND A\<3\>) capacitor c=1.4784e-16 m=1
+    \+224 (GND A\<2\>) capacitor c=1.4784e-16 m=1
+    \+223 (GND SUM\<3\>) capacitor c=8.026e-16 m=1
+    \+222 (A\<1\> 80) capacitor c=4.688e-17 m=1
+    \+221 (A\<1\> 35) capacitor c=1.3072e-16 m=1
+    \+220 (A\<1\> 33) capacitor c=4.688e-17 m=1
+    \+219 (A\<1\> 32) capacitor c=1.3072e-16 m=1
+    \+218 (A\<1\> GND) capacitor c=1.4784e-16 m=1
+    \+217 (SUM\<2\> 86) capacitor c=8.536e-17 m=1
+    \+216 (SUM\<2\> 59) capacitor c=8.384e-17 m=1
+    \+215 (SUM\<2\> 56) capacitor c=8.498e-17 m=1
+    \+214 (SUM\<2\> 50) capacitor c=1.3072e-16 m=1
+    \+213 (SUM\<2\> 46) capacitor c=2.2584e-16 m=1
+    \+212 (SUM\<2\> GND) capacitor c=8.026e-16 m=1
+    \+211 (A\<0\> 76) capacitor c=4.688e-17 m=1
+    \+210 (A\<0\> 20) capacitor c=1.3072e-16 m=1
+    \+209 (A\<0\> 18) capacitor c=4.688e-17 m=1
+    \+208 (A\<0\> 17) capacitor c=1.3072e-16 m=1
+    \+207 (A\<0\> GND) capacitor c=1.4784e-16 m=1
+    \+206 (SUM\<1\> 82) capacitor c=8.536e-17 m=1
+    \+205 (SUM\<1\> 44) capacitor c=8.384e-17 m=1
+    \+204 (SUM\<1\> 41) capacitor c=8.498e-17 m=1
+    \+203 (SUM\<1\> 35) capacitor c=1.3072e-16 m=1
+    \+202 (SUM\<1\> 31) capacitor c=2.2584e-16 m=1
+    \+201 (SUM\<1\> GND) capacitor c=8.026e-16 m=1
+    \+200 (SUM\<0\> 78) capacitor c=8.536e-17 m=1
+    \+199 (SUM\<0\> 29) capacitor c=8.384e-17 m=1
+    \+198 (SUM\<0\> 26) capacitor c=8.498e-17 m=1
+    \+197 (SUM\<0\> 20) capacitor c=1.3072e-16 m=1
+    \+196 (SUM\<0\> GND) capacitor c=8.026e-16 m=1
+    \+195 (B\<3\> 88) capacitor c=4.688e-17 m=1
+    \+194 (B\<3\> 65) capacitor c=2.2584e-16 m=1
+    \+193 (B\<3\> 63) capacitor c=4.688e-17 m=1
+    \+192 (COUT 66) capacitor c=7.826e-17 m=1
+    \+191 (CIN 78) capacitor c=4.688e-17 m=1
+    \+190 (CIN 26) capacitor c=4.688e-17 m=1
+    \+189 (CIN SUM\<0\>) capacitor c=2.2584e-16 m=1
+    \+188 (B\<2\> 84) capacitor c=4.688e-17 m=1
+    \+187 (B\<2\> 50) capacitor c=2.2584e-16 m=1
+    \+186 (B\<2\> 48) capacitor c=4.688e-17 m=1
+    \+185 (B\<1\> 80) capacitor c=4.688e-17 m=1
+    \+184 (B\<1\> 35) capacitor c=2.2584e-16 m=1
+    \+183 (B\<1\> 33) capacitor c=4.688e-17 m=1
+    \+182 (VDD 90) capacitor c=8.536e-17 m=1
+    \+181 (VDD 88) capacitor c=8.536e-17 m=1
+    \+180 (VDD 86) capacitor c=8.536e-17 m=1
+    \+179 (VDD 84) capacitor c=8.536e-17 m=1
+    \+178 (VDD 82) capacitor c=8.536e-17 m=1
+    \+177 (VDD 80) capacitor c=8.536e-17 m=1
+    \+176 (VDD 78) capacitor c=8.536e-17 m=1
+    \+175 (VDD 76) capacitor c=8.536e-17 m=1
+    \+174 (VDD 65) capacitor c=8.384e-17 m=1
+    \+173 (VDD 50) capacitor c=8.384e-17 m=1
+    \+172 (VDD 35) capacitor c=8.384e-17 m=1
+    \+171 (VDD 20) capacitor c=8.384e-17 m=1
+    \+170 (VDD GND) capacitor c=3.3536e-16 m=1
+    \+169 (B\<0\> 76) capacitor c=4.688e-17 m=1
+    \+168 (B\<0\> 20) capacitor c=2.2584e-16 m=1
+    \+167 (B\<0\> 18) capacitor c=4.688e-17 m=1
+    \+166 (61 72) capacitor c=5.648e-17 m=1
+    \+165 (61 66) capacitor c=5.648e-17 m=1
+    \+164 (61 65) capacitor c=1.1368e-16 m=1
+    \+163 (46 57) capacitor c=5.648e-17 m=1
+    \+162 (46 51) capacitor c=5.648e-17 m=1
+    \+161 (46 50) capacitor c=1.1368e-16 m=1
+    \+160 (31 42) capacitor c=5.648e-17 m=1
+    \+159 (31 36) capacitor c=5.648e-17 m=1
+    \+158 (31 35) capacitor c=1.1368e-16 m=1
+    \+157 (A\<3\> 61) capacitor c=8.056e-17 m=1
+    \+156 (A\<2\> 46) capacitor c=8.056e-17 m=1
+    \+155 (GND 61) capacitor c=2.19772e-15 m=1
+    \+154 (GND 46) capacitor c=2.19772e-15 m=1
+    \+153 (GND 31) capacitor c=2.19772e-15 m=1
+    \+152 (A\<1\> 31) capacitor c=8.056e-17 m=1
+    \+151 (B\<3\> 61) capacitor c=8.056e-17 m=1
+    \+150 (B\<2\> 46) capacitor c=8.056e-17 m=1
+    \+149 (B\<1\> 31) capacitor c=8.056e-17 m=1
+    \+148 (VDD 65) capacitor c=7.936e-17 m=1
+    \+147 (VDD 50) capacitor c=7.936e-17 m=1
+    \+146 (VDD 35) capacitor c=7.936e-17 m=1
+    \+145 (VDD 20) capacitor c=7.936e-17 m=1
+    \+144 (VDD GND) capacitor c=3.73984e-15 m=1
+    \+71 (COUT 66 75 GND) tsmc20N w=6e-07 l=2e-07 as=1.8e-13 ad=3e-13 \
+        ps=6e-07 pd=1.6e-06 m=1 region=sat
+    \+70 (75 72 GND GND) tsmc20N w=6e-07 l=2e-07 as=3e-13 ad=1.8e-13 \
+        ps=1.6e-06 pd=6e-07 m=1 region=sat
+    \+64 (72 61 70 GND) tsmc20N w=6e-07 l=2e-07 as=1.8e-13 ad=3e-13 \
+        ps=6e-07 pd=1.6e-06 m=1 region=sat
+    \+63 (70 65 GND GND) tsmc20N w=6e-07 l=2e-07 as=3e-13 ad=1.8e-13 \
+        ps=1.6e-06 pd=6e-07 m=1 region=sat
+    \+57 (66 B\<3\> 64 GND) tsmc20N w=6e-07 l=2e-07 as=1.8e-13 ad=3e-13 \
+        ps=6e-07 pd=1.6e-06 m=1 region=sat
+    \+55 (64 A\<3\> GND GND) tsmc20N w=6e-07 l=2e-07 as=3e-13 ad=1.8e-13 \
+        ps=1.6e-06 pd=6e-07 m=1 region=sat
+    \+53 (61 51 60 GND) tsmc20N w=6e-07 l=2e-07 as=1.8e-13 ad=3e-13 \
+        ps=6e-07 pd=1.6e-06 m=1 region=sat
+    \+52 (60 57 GND GND) tsmc20N w=6e-07 l=2e-07 as=3e-13 ad=1.8e-13 \
+        ps=1.6e-06 pd=6e-07 m=1 region=sat
+    \+46 (57 46 55 GND) tsmc20N w=6e-07 l=2e-07 as=1.8e-13 ad=3e-13 \
+        ps=6e-07 pd=1.6e-06 m=1 region=sat
+    \+45 (55 50 GND GND) tsmc20N w=6e-07 l=2e-07 as=3e-13 ad=1.8e-13 \
+        ps=1.6e-06 pd=6e-07 m=1 region=sat
+    \+39 (51 B\<2\> 49 GND) tsmc20N w=6e-07 l=2e-07 as=1.8e-13 ad=3e-13 \
+        ps=6e-07 pd=1.6e-06 m=1 region=sat
+    \+37 (49 A\<2\> GND GND) tsmc20N w=6e-07 l=2e-07 as=3e-13 ad=1.8e-13 \
+        ps=1.6e-06 pd=6e-07 m=1 region=sat
+    \+35 (46 36 45 GND) tsmc20N w=6e-07 l=2e-07 as=1.8e-13 ad=3e-13 \
+        ps=6e-07 pd=1.6e-06 m=1 region=sat
+    \+34 (45 42 GND GND) tsmc20N w=6e-07 l=2e-07 as=3e-13 ad=1.8e-13 \
+        ps=1.6e-06 pd=6e-07 m=1 region=sat
+    \+28 (42 31 40 GND) tsmc20N w=6e-07 l=2e-07 as=1.8e-13 ad=3e-13 \
+        ps=6e-07 pd=1.6e-06 m=1 region=sat
+    \+27 (40 35 GND GND) tsmc20N w=6e-07 l=2e-07 as=3e-13 ad=1.8e-13 \
+        ps=1.6e-06 pd=6e-07 m=1 region=sat
+    \+21 (36 B\<1\> 34 GND) tsmc20N w=6e-07 l=2e-07 as=1.8e-13 ad=3e-13 \
+        ps=6e-07 pd=1.6e-06 m=1 region=sat
+    \+19 (34 A\<1\> GND GND) tsmc20N w=6e-07 l=2e-07 as=3e-13 ad=1.8e-13 \
+        ps=1.6e-06 pd=6e-07 m=1 region=sat
+    \+17 (31 21 30 GND) tsmc20N w=6e-07 l=2e-07 as=1.8e-13 ad=3e-13 \
+        ps=6e-07 pd=1.6e-06 m=1 region=sat
+    \+16 (30 27 GND GND) tsmc20N w=6e-07 l=2e-07 as=3e-13 ad=1.8e-13 \
+        ps=1.6e-06 pd=6e-07 m=1 region=sat
+    \+10 (27 CIN 25 GND) tsmc20N w=6e-07 l=2e-07 as=1.8e-13 ad=3e-13 \
+        ps=6e-07 pd=1.6e-06 m=1 region=sat
+    \+9 (25 20 GND GND) tsmc20N w=6e-07 l=2e-07 as=3e-13 ad=1.8e-13 \
+        ps=1.6e-06 pd=6e-07 m=1 region=sat
+    \+3 (21 B\<0\> 19 GND) tsmc20N w=6e-07 l=2e-07 as=1.8e-13 ad=3e-13 \
+        ps=6e-07 pd=1.6e-06 m=1 region=sat
+    \+1 (19 A\<0\> GND GND) tsmc20N w=6e-07 l=2e-07 as=3e-13 ad=1.8e-13 \
+        ps=1.6e-06 pd=6e-07 m=1 region=sat
+    \+69 (GND 61 74 GND) tsmc20N w=4e-07 l=2e-07 as=2e-13 ad=2e-13 \
+        ps=1.4e-06 pd=1.4e-06 m=1 region=sat
+    \+62 (69 65 GND GND) tsmc20N w=4e-07 l=2e-07 as=2e-13 ad=2e-13 \
+        ps=1.4e-06 pd=1.4e-06 m=1 region=sat
+    \+61 (GND B\<3\> 68 GND) tsmc20N w=4e-07 l=2e-07 as=2e-13 ad=2e-13 \
+        ps=1.4e-06 pd=1.4e-06 m=1 region=sat
+    \+54 (62 A\<3\> GND GND) tsmc20N w=4e-07 l=2e-07 as=2e-13 ad=2e-13 \
+        ps=1.4e-06 pd=1.4e-06 m=1 region=sat
+    \+51 (GND 46 59 GND) tsmc20N w=4e-07 l=2e-07 as=2e-13 ad=2e-13 \
+        ps=1.4e-06 pd=1.4e-06 m=1 region=sat
+    \+44 (54 50 GND GND) tsmc20N w=4e-07 l=2e-07 as=2e-13 ad=2e-13 \
+        ps=1.4e-06 pd=1.4e-06 m=1 region=sat
+    \+43 (GND B\<2\> 53 GND) tsmc20N w=4e-07 l=2e-07 as=2e-13 ad=2e-13 \
+        ps=1.4e-06 pd=1.4e-06 m=1 region=sat
+    \+36 (47 A\<2\> GND GND) tsmc20N w=4e-07 l=2e-07 as=2e-13 ad=2e-13 \
+        ps=1.4e-06 pd=1.4e-06 m=1 region=sat
+    \+33 (GND 31 44 GND) tsmc20N w=4e-07 l=2e-07 as=2e-13 ad=2e-13 \
+        ps=1.4e-06 pd=1.4e-06 m=1 region=sat
+    \+26 (39 35 GND GND) tsmc20N w=4e-07 l=2e-07 as=2e-13 ad=2e-13 \
+        ps=1.4e-06 pd=1.4e-06 m=1 region=sat
+    \+25 (GND B\<1\> 38 GND) tsmc20N w=4e-07 l=2e-07 as=2e-13 ad=2e-13 \
+        ps=1.4e-06 pd=1.4e-06 m=1 region=sat
+    \+18 (32 A\<1\> GND GND) tsmc20N w=4e-07 l=2e-07 as=2e-13 ad=2e-13 \
+        ps=1.4e-06 pd=1.4e-06 m=1 region=sat
+    \+15 (GND CIN 29 GND) tsmc20N w=4e-07 l=2e-07 as=2e-13 ad=2e-13 \
+        ps=1.4e-06 pd=1.4e-06 m=1 region=sat
+    \+8 (24 20 GND GND) tsmc20N w=4e-07 l=2e-07 as=2e-13 ad=2e-13 \
+        ps=1.4e-06 pd=1.4e-06 m=1 region=sat
+    \+7 (GND B\<0\> 23 GND) tsmc20N w=4e-07 l=2e-07 as=2e-13 ad=2e-13 \
+        ps=1.4e-06 pd=1.4e-06 m=1 region=sat
+    \+0 (17 A\<0\> GND GND) tsmc20N w=4e-07 l=2e-07 as=2e-13 ad=2e-13 \
+        ps=1.4e-06 pd=1.4e-06 m=1 region=sat
+    \+68 (71 74 GND GND) tsmc20N w=3e-07 l=2e-07 as=1.1e-13 ad=1.9e-13 \
+        ps=7e-07 pd=1.5e-06 m=1 region=sat
+    \+67 (GND 61 73 GND) tsmc20N w=3e-07 l=2e-07 as=1.1e-13 ad=1.1e-13 \
+        ps=7e-07 pd=7e-07 m=1 region=sat
+    \+66 (73 65 SUM\<3\> GND) tsmc20N w=3e-07 l=2e-07 as=1.1e-13 \
+        ad=1.1e-13 ps=7e-07 pd=7e-07 m=1 region=sat
+    \+65 (SUM\<3\> 69 71 GND) tsmc20N w=3e-07 l=2e-07 as=1.9e-13 \
+        ad=1.1e-13 ps=1.5e-06 pd=7e-07 m=1 region=sat
+    \+60 (63 68 GND GND) tsmc20N w=3e-07 l=2e-07 as=1.1e-13 ad=1.9e-13 \
+        ps=7e-07 pd=1.5e-06 m=1 region=sat
+    \+59 (GND B\<3\> 67 GND) tsmc20N w=3e-07 l=2e-07 as=1.1e-13 ad=1.1e-13 \
+        ps=7e-07 pd=7e-07 m=1 region=sat
+    \+58 (67 A\<3\> 65 GND) tsmc20N w=3e-07 l=2e-07 as=1.1e-13 ad=1.1e-13 \
+        ps=7e-07 pd=7e-07 m=1 region=sat
+    \+56 (65 62 63 GND) tsmc20N w=3e-07 l=2e-07 as=1.9e-13 ad=1.1e-13 \
+        ps=1.5e-06 pd=7e-07 m=1 region=sat
+    \+50 (56 59 GND GND) tsmc20N w=3e-07 l=2e-07 as=1.1e-13 ad=1.9e-13 \
+        ps=7e-07 pd=1.5e-06 m=1 region=sat
+    \+49 (GND 46 58 GND) tsmc20N w=3e-07 l=2e-07 as=1.1e-13 ad=1.1e-13 \
+        ps=7e-07 pd=7e-07 m=1 region=sat
+    \+48 (58 50 SUM\<2\> GND) tsmc20N w=3e-07 l=2e-07 as=1.1e-13 \
+        ad=1.1e-13 ps=7e-07 pd=7e-07 m=1 region=sat
+    \+47 (SUM\<2\> 54 56 GND) tsmc20N w=3e-07 l=2e-07 as=1.9e-13 \
+        ad=1.1e-13 ps=1.5e-06 pd=7e-07 m=1 region=sat
+    \+42 (48 53 GND GND) tsmc20N w=3e-07 l=2e-07 as=1.1e-13 ad=1.9e-13 \
+        ps=7e-07 pd=1.5e-06 m=1 region=sat
+    \+41 (GND B\<2\> 52 GND) tsmc20N w=3e-07 l=2e-07 as=1.1e-13 ad=1.1e-13 \
+        ps=7e-07 pd=7e-07 m=1 region=sat
+    \+40 (52 A\<2\> 50 GND) tsmc20N w=3e-07 l=2e-07 as=1.1e-13 ad=1.1e-13 \
+        ps=7e-07 pd=7e-07 m=1 region=sat
+    \+38 (50 47 48 GND) tsmc20N w=3e-07 l=2e-07 as=1.9e-13 ad=1.1e-13 \
+        ps=1.5e-06 pd=7e-07 m=1 region=sat
+    \+32 (41 44 GND GND) tsmc20N w=3e-07 l=2e-07 as=1.1e-13 ad=1.9e-13 \
+        ps=7e-07 pd=1.5e-06 m=1 region=sat
+    \+31 (GND 31 43 GND) tsmc20N w=3e-07 l=2e-07 as=1.1e-13 ad=1.1e-13 \
+        ps=7e-07 pd=7e-07 m=1 region=sat
+    \+30 (43 35 SUM\<1\> GND) tsmc20N w=3e-07 l=2e-07 as=1.1e-13 \
+        ad=1.1e-13 ps=7e-07 pd=7e-07 m=1 region=sat
+    \+29 (SUM\<1\> 39 41 GND) tsmc20N w=3e-07 l=2e-07 as=1.9e-13 \
+        ad=1.1e-13 ps=1.5e-06 pd=7e-07 m=1 region=sat
+    \+24 (33 38 GND GND) tsmc20N w=3e-07 l=2e-07 as=1.1e-13 ad=1.9e-13 \
+        ps=7e-07 pd=1.5e-06 m=1 region=sat
+    \+23 (GND B\<1\> 37 GND) tsmc20N w=3e-07 l=2e-07 as=1.1e-13 ad=1.1e-13 \
+        ps=7e-07 pd=7e-07 m=1 region=sat
+    \+22 (37 A\<1\> 35 GND) tsmc20N w=3e-07 l=2e-07 as=1.1e-13 ad=1.1e-13 \
+        ps=7e-07 pd=7e-07 m=1 region=sat
+    \+20 (35 32 33 GND) tsmc20N w=3e-07 l=2e-07 as=1.9e-13 ad=1.1e-13 \
+        ps=1.5e-06 pd=7e-07 m=1 region=sat
+    \+14 (26 29 GND GND) tsmc20N w=3e-07 l=2e-07 as=1.1e-13 ad=1.9e-13 \
+        ps=7e-07 pd=1.5e-06 m=1 region=sat
+    \+13 (GND CIN 28 GND) tsmc20N w=3e-07 l=2e-07 as=1.1e-13 ad=1.1e-13 \
+        ps=7e-07 pd=7e-07 m=1 region=sat
+    \+12 (28 20 SUM\<0\> GND) tsmc20N w=3e-07 l=2e-07 as=1.1e-13 \
+        ad=1.1e-13 ps=7e-07 pd=7e-07 m=1 region=sat
+    \+11 (SUM\<0\> 24 26 GND) tsmc20N w=3e-07 l=2e-07 as=1.9e-13 \
+        ad=1.1e-13 ps=1.5e-06 pd=7e-07 m=1 region=sat
+    \+6 (18 23 GND GND) tsmc20N w=3e-07 l=2e-07 as=1.1e-13 ad=1.9e-13 \
+        ps=7e-07 pd=1.5e-06 m=1 region=sat
+    \+5 (GND B\<0\> 22 GND) tsmc20N w=3e-07 l=2e-07 as=1.1e-13 ad=1.1e-13 \
+        ps=7e-07 pd=7e-07 m=1 region=sat
+    \+4 (22 A\<0\> 20 GND) tsmc20N w=3e-07 l=2e-07 as=1.1e-13 ad=1.1e-13 \
+        ps=7e-07 pd=7e-07 m=1 region=sat
+    \+2 (20 17 18 GND) tsmc20N w=3e-07 l=2e-07 as=1.9e-13 ad=1.1e-13 \
+        ps=1.5e-06 pd=7e-07 m=1 region=sat
+    \+141 (VDD 61 74 VDD) tsmc20P w=9e-07 l=2e-07 as=4.5e-13 ad=4.5e-13 \
+        ps=1.9e-06 pd=1.9e-06 m=1 region=sat
+    \+134 (69 65 VDD VDD) tsmc20P w=9e-07 l=2e-07 as=4.5e-13 ad=4.5e-13 \
+        ps=1.9e-06 pd=1.9e-06 m=1 region=sat
+    \+133 (VDD B\<3\> 68 VDD) tsmc20P w=9e-07 l=2e-07 as=4.5e-13 \
+        ad=4.5e-13 ps=1.9e-06 pd=1.9e-06 m=1 region=sat
+    \+126 (62 A\<3\> VDD VDD) tsmc20P w=9e-07 l=2e-07 as=4.5e-13 \
+        ad=4.5e-13 ps=1.9e-06 pd=1.9e-06 m=1 region=sat
+    \+123 (VDD 46 59 VDD) tsmc20P w=9e-07 l=2e-07 as=4.5e-13 ad=4.5e-13 \
+        ps=1.9e-06 pd=1.9e-06 m=1 region=sat
+    \+116 (54 50 VDD VDD) tsmc20P w=9e-07 l=2e-07 as=4.5e-13 ad=4.5e-13 \
+        ps=1.9e-06 pd=1.9e-06 m=1 region=sat
+    \+115 (VDD B\<2\> 53 VDD) tsmc20P w=9e-07 l=2e-07 as=4.5e-13 \
+        ad=4.5e-13 ps=1.9e-06 pd=1.9e-06 m=1 region=sat
+    \+108 (47 A\<2\> VDD VDD) tsmc20P w=9e-07 l=2e-07 as=4.5e-13 \
+        ad=4.5e-13 ps=1.9e-06 pd=1.9e-06 m=1 region=sat
+    \+105 (VDD 31 44 VDD) tsmc20P w=9e-07 l=2e-07 as=4.5e-13 ad=4.5e-13 \
+        ps=1.9e-06 pd=1.9e-06 m=1 region=sat
+    \+98 (39 35 VDD VDD) tsmc20P w=9e-07 l=2e-07 as=4.5e-13 ad=4.5e-13 \
+        ps=1.9e-06 pd=1.9e-06 m=1 region=sat
+    \+97 (VDD B\<1\> 38 VDD) tsmc20P w=9e-07 l=2e-07 as=4.5e-13 ad=4.5e-13 \
+        ps=1.9e-06 pd=1.9e-06 m=1 region=sat
+    \+90 (32 A\<1\> VDD VDD) tsmc20P w=9e-07 l=2e-07 as=4.5e-13 ad=4.5e-13 \
+        ps=1.9e-06 pd=1.9e-06 m=1 region=sat
+    \+87 (VDD CIN 29 VDD) tsmc20P w=9e-07 l=2e-07 as=4.5e-13 ad=4.5e-13 \
+        ps=1.9e-06 pd=1.9e-06 m=1 region=sat
+    \+80 (24 20 VDD VDD) tsmc20P w=9e-07 l=2e-07 as=4.5e-13 ad=4.5e-13 \
+        ps=1.9e-06 pd=1.9e-06 m=1 region=sat
+    \+79 (VDD B\<0\> 23 VDD) tsmc20P w=9e-07 l=2e-07 as=4.5e-13 ad=4.5e-13 \
+        ps=1.9e-06 pd=1.9e-06 m=1 region=sat
+    \+72 (17 A\<0\> VDD VDD) tsmc20P w=9e-07 l=2e-07 as=4.5e-13 ad=4.5e-13 \
+        ps=1.9e-06 pd=1.9e-06 m=1 region=sat
+    \+140 (90 61 VDD VDD) tsmc20P w=1.5e-06 l=2e-07 as=4.5e-13 ad=7.5e-13 \
+        ps=6e-07 pd=2.5e-06 m=1 region=sat
+    \+139 (VDD 74 91 VDD) tsmc20P w=1.5e-06 l=2e-07 as=4.5e-13 ad=4.5e-13 \
+        ps=6e-07 pd=6e-07 m=1 region=sat
+    \+138 (91 65 SUM\<3\> VDD) tsmc20P w=1.5e-06 l=2e-07 as=4.5e-13 \
+        ad=4.5e-13 ps=6e-07 pd=6e-07 m=1 region=sat
+    \+137 (SUM\<3\> 69 90 VDD) tsmc20P w=1.5e-06 l=2e-07 as=7.5e-13 \
+        ad=4.5e-13 ps=2.5e-06 pd=6e-07 m=1 region=sat
+    \+132 (88 B\<3\> VDD VDD) tsmc20P w=1.5e-06 l=2e-07 as=4.5e-13 \
+        ad=7.5e-13 ps=6e-07 pd=2.5e-06 m=1 region=sat
+    \+131 (VDD 68 89 VDD) tsmc20P w=1.5e-06 l=2e-07 as=4.5e-13 ad=4.5e-13 \
+        ps=6e-07 pd=6e-07 m=1 region=sat
+    \+130 (89 A\<3\> 65 VDD) tsmc20P w=1.5e-06 l=2e-07 as=4.5e-13 \
+        ad=4.5e-13 ps=6e-07 pd=6e-07 m=1 region=sat
+    \+128 (65 62 88 VDD) tsmc20P w=1.5e-06 l=2e-07 as=7.5e-13 ad=4.5e-13 \
+        ps=2.5e-06 pd=6e-07 m=1 region=sat
+    \+122 (86 46 VDD VDD) tsmc20P w=1.5e-06 l=2e-07 as=4.5e-13 ad=7.5e-13 \
+        ps=6e-07 pd=2.5e-06 m=1 region=sat
+    \+121 (VDD 59 87 VDD) tsmc20P w=1.5e-06 l=2e-07 as=4.5e-13 ad=4.5e-13 \
+        ps=6e-07 pd=6e-07 m=1 region=sat
+    \+120 (87 50 SUM\<2\> VDD) tsmc20P w=1.5e-06 l=2e-07 as=4.5e-13 \
+        ad=4.5e-13 ps=6e-07 pd=6e-07 m=1 region=sat
+    \+119 (SUM\<2\> 54 86 VDD) tsmc20P w=1.5e-06 l=2e-07 as=7.5e-13 \
+        ad=4.5e-13 ps=2.5e-06 pd=6e-07 m=1 region=sat
+    \+114 (84 B\<2\> VDD VDD) tsmc20P w=1.5e-06 l=2e-07 as=4.5e-13 \
+        ad=7.5e-13 ps=6e-07 pd=2.5e-06 m=1 region=sat
+    \+113 (VDD 53 85 VDD) tsmc20P w=1.5e-06 l=2e-07 as=4.5e-13 ad=4.5e-13 \
+        ps=6e-07 pd=6e-07 m=1 region=sat
+    \+112 (85 A\<2\> 50 VDD) tsmc20P w=1.5e-06 l=2e-07 as=4.5e-13 \
+        ad=4.5e-13 ps=6e-07 pd=6e-07 m=1 region=sat
+    \+110 (50 47 84 VDD) tsmc20P w=1.5e-06 l=2e-07 as=7.5e-13 ad=4.5e-13 \
+        ps=2.5e-06 pd=6e-07 m=1 region=sat
+    \+104 (82 31 VDD VDD) tsmc20P w=1.5e-06 l=2e-07 as=4.5e-13 ad=7.5e-13 \
+        ps=6e-07 pd=2.5e-06 m=1 region=sat
+    \+103 (VDD 44 83 VDD) tsmc20P w=1.5e-06 l=2e-07 as=4.5e-13 ad=4.5e-13 \
+        ps=6e-07 pd=6e-07 m=1 region=sat
+    \+102 (83 35 SUM\<1\> VDD) tsmc20P w=1.5e-06 l=2e-07 as=4.5e-13 \
+        ad=4.5e-13 ps=6e-07 pd=6e-07 m=1 region=sat
+    \+101 (SUM\<1\> 39 82 VDD) tsmc20P w=1.5e-06 l=2e-07 as=7.5e-13 \
+        ad=4.5e-13 ps=2.5e-06 pd=6e-07 m=1 region=sat
+    \+96 (80 B\<1\> VDD VDD) tsmc20P w=1.5e-06 l=2e-07 as=4.5e-13 \
+        ad=7.5e-13 ps=6e-07 pd=2.5e-06 m=1 region=sat
+    \+95 (VDD 38 81 VDD) tsmc20P w=1.5e-06 l=2e-07 as=4.5e-13 ad=4.5e-13 \
+        ps=6e-07 pd=6e-07 m=1 region=sat
+    \+94 (81 A\<1\> 35 VDD) tsmc20P w=1.5e-06 l=2e-07 as=4.5e-13 \
+        ad=4.5e-13 ps=6e-07 pd=6e-07 m=1 region=sat
+    \+92 (35 32 80 VDD) tsmc20P w=1.5e-06 l=2e-07 as=7.5e-13 ad=4.5e-13 \
+        ps=2.5e-06 pd=6e-07 m=1 region=sat
+    \+86 (78 CIN VDD VDD) tsmc20P w=1.5e-06 l=2e-07 as=4.5e-13 ad=7.5e-13 \
+        ps=6e-07 pd=2.5e-06 m=1 region=sat
+    \+85 (VDD 29 79 VDD) tsmc20P w=1.5e-06 l=2e-07 as=4.5e-13 ad=4.5e-13 \
+        ps=6e-07 pd=6e-07 m=1 region=sat
+    \+84 (79 20 SUM\<0\> VDD) tsmc20P w=1.5e-06 l=2e-07 as=4.5e-13 \
+        ad=4.5e-13 ps=6e-07 pd=6e-07 m=1 region=sat
+    \+83 (SUM\<0\> 24 78 VDD) tsmc20P w=1.5e-06 l=2e-07 as=7.5e-13 \
+        ad=4.5e-13 ps=2.5e-06 pd=6e-07 m=1 region=sat
+    \+78 (76 B\<0\> VDD VDD) tsmc20P w=1.5e-06 l=2e-07 as=4.5e-13 \
+        ad=7.5e-13 ps=6e-07 pd=2.5e-06 m=1 region=sat
+    \+77 (VDD 23 77 VDD) tsmc20P w=1.5e-06 l=2e-07 as=4.5e-13 ad=4.5e-13 \
+        ps=6e-07 pd=6e-07 m=1 region=sat
+    \+76 (77 A\<0\> 20 VDD) tsmc20P w=1.5e-06 l=2e-07 as=4.5e-13 \
+        ad=4.5e-13 ps=6e-07 pd=6e-07 m=1 region=sat
+    \+74 (20 17 76 VDD) tsmc20P w=1.5e-06 l=2e-07 as=7.5e-13 ad=4.5e-13 \
+        ps=2.5e-06 pd=6e-07 m=1 region=sat
+ends Design_4bitadder_extracted
+// End of subcircuit definition.
+
+// Library name: Design
+// Cell name: 4bitadder_simulate
+// View name: schematic
+I0 (A\<3\> A\<2\> A\<1\> A\<0\> B\<3\> B\<2\> B\<1\> B\<0\> CIN COUT 0 \
+        SUM\<3\> SUM\<2\> SUM\<1\> SUM\<0\> vdd!) \
+        Design_4bitadder_extracted
+V0 (vdd! 0) vsource type=dc dc=1.8
+V9 (CIN 0) vsource type=pulse val0=1.8 val1=0 delay=5n rise=100p fall=100p
+V8 (B\<3\> 0) vsource type=pulse val0=0 val1=1.8 delay=5n rise=100p \
+        fall=100p
+V7 (B\<2\> 0) vsource type=pulse val0=1.8 val1=0 delay=5n rise=100p \
+        fall=100p
+V6 (B\<1\> 0) vsource type=pulse val0=1.8 val1=0 delay=5n rise=100p \
+        fall=100p
+V5 (B\<0\> 0) vsource type=pulse val0=1.8 val1=0 delay=5n rise=100p \
+        fall=100p
+V4 (A\<3\> 0) vsource type=pulse val0=0 val1=1.8 delay=5n rise=100p \
+        fall=100p
+V3 (A\<2\> 0) vsource type=pulse val0=0 val1=1.8 delay=5n rise=100p \
+        fall=100p
+V1 (A\<0\> 0) vsource type=pulse val0=1.8 val1=0 delay=5n rise=100p \
+        fall=100p
+V2 (A\<1\> 0) vsource type=pulse val0=1.8 val1=0 delay=5n rise=100p \
+        fall=100p
+C4 (COUT 0) capacitor c=50f m=1
+C3 (SUM\<3\> 0) capacitor c=50f m=1
+C2 (SUM\<2\> 0) capacitor c=50f m=1
+C1 (SUM\<1\> 0) capacitor c=50f m=1
+C0 (SUM\<0\> 0) capacitor c=50f m=1
+simulatorOptions options psfversion="1.1.0" reltol=1e-3 vabstol=1e-6 \
+    iabstol=1e-12 temp=27 tnom=27 scalem=1.0 scale=1.0 gmin=1e-12 rforce=1 \
+    maxnotes=5 maxwarns=5 digits=5 cols=80 pivrel=1e-3 \
+    sensfile="../psf/sens.output" checklimitdest=psf 
+tran tran stop=10n write="spectre.ic" writefinal="spectre.fc" \
+    annotate=status maxiters=5 
+finalTimeOP info what=oppoint where=rawfile
+modelParameter info what=models where=rawfile
+element info what=inst where=rawfile
+outputParameter info what=output where=rawfile
+designParamVals info what=parameters where=rawfile
+primitives info what=primitives where=rawfile
+subckts info what=subckts where=rawfile
+save V0:p 
+saveOptions options save=allpub

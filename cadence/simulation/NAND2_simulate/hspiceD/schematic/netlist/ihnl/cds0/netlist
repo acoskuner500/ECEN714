@@ -1,0 +1,11 @@
+_inst0 tsmc20P
+_inst1 tsmc20P
+_inst2 pcapacitor
+_inst3 pcapacitor
+_inst4 pcapacitor
+_inst5 pcapacitor
+_inst6 pcapacitor
+_inst7 tsmc20N
+_inst8 tsmc20N
+.ends NAND2
+** End of subcircuit definition.

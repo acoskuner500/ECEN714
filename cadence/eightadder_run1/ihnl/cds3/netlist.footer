@@ -1,0 +1,6 @@
+DFF I3 ( Q[3], D[3], Clk, _Clk);
+DFF I2 ( Q[2], D[2], Clk, _Clk);
+DFF I1 ( Q[1], D[1], Clk, _Clk);
+DFF I0 ( Q[0], D[0], Clk, _Clk);
+
+endmodule

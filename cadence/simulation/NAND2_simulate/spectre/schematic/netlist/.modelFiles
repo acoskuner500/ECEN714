@@ -1,0 +1,2 @@
+include "/home/grads/a/acoskuner500/cadence/models/spectre/tsmc20N.m"
+include "/home/grads/a/acoskuner500/cadence/models/spectre/tsmc20P.m"

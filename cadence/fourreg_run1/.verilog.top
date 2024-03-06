@@ -1,0 +1,17 @@
+
+`timescale 1ns / 1ns
+
+module test;
+
+
+
+reg  Clk;
+
+wire [3:0]  Q;
+
+reg [3:0]  D;
+
+
+
+fourreg top(Q, Clk, D); 
+ 

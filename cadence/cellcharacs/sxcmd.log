@@ -1,0 +1,159 @@
+### Custom WaveView ADV log file, revision O-2018.09 (build Aug 27, ) ###
+### created at 16:54:45 on Thu Oct  6 2022 (Linux AMD64) ###
+### Host Name: zach-127-12.engr.tamu.edu   User ID: acoskuner500   PID: 8751   ###
+wv_start_log
+# (0) running in waveview only mode
+# (0) SW_SX_PERL_LIB defined
+# (0) SW_SX_TCL_LIB defined
+# (0) HOME defined
+wv_resize_window {Custom WaveView} 821 460
+wv_move_window {Custom WaveView} {} -2 28
+wv_resize_window {Custom WaveView} 800 400
+wv_select_window {Custom WaveView} 
+wv_select_tab {Custom WaveView} {} {RBMenu} {Bar.Tools}
+wv_select_tab {Custom WaveView} {} {RBMenu} {Bar.File}
+wv_press_tool_button {Custom WaveView} {} {OpenWaveform0} 
+wv_move_window {FileDialog} {} 1575 604
+wv_select_dialog {FileDialog} 
+wv_select_list_item {FileDialog} {} {FileList} {NAND2.raw} 2
+wv_dclick_list_item {FileDialog} {} {FileList} {NAND2.raw} 2
+wv_select_list_item {FileDialog} {} {FileList} {TransientAnalysis.tran.tran} 2
+wv_dclick_list_item {FileDialog} {} {FileList} {TransientAnalysis.tran.tran} 2
+wv_drag_tree_item {Custom WaveView} {} {hierview} {D0:TransientAnalysis.tran.tran(0)} {+sep=@}
+wv_select_tree_item {Custom WaveView} {} {hierview} {D0:TransientAnalysis.tran.tran(0)} {0} {+sep=@}
+wv_drag_enter WV1
+wv_drop_on WV1
+wv_move_window {Custom WaveView} {} 1007 393
+wv_move_window {Custom WaveView} {} 1014 387
+wv_move_window {Custom WaveView} {} 1014 379
+wv_move_window {Custom WaveView} {} 1014 368
+wv_move_window {Custom WaveView} {} 1046 364
+wv_move_window {Custom WaveView} {} 1049 361
+wv_move_window {Custom WaveView} {} 1056 356
+wv_move_window {Custom WaveView} {} 1057 353
+wv_move_window {Custom WaveView} {} 1060 352
+wv_press_tool_button {Custom WaveView} {} {WaveformMeasurementTool0} 
+wv_move_window {MeasurementTool} {} 881 320
+wv_move_window {MeasurementTool} {} 1449 486
+wv_select_dialog {MeasurementTool} 
+wv_resize_window {MeasurementTool} 758 698
+wv_press_button {MeasurementTool} {} {Apply} 
+wv_set_radion {MeasurementTool} {} {RiseEdge} 
+wv_press_button {MeasurementTool} {} {Apply} 
+wv_press_button {MeasurementTool} {} {Close} 
+wv_select_window {Custom WaveView} 
+wv_select_waveview 1 {waveview 1}
+wv_select_wv_item WV1.MEAS1
+wv_drag_item_to WV1 513 216
+wv_move_wv_item WV1.MEAS1 844 203
+wv_select_waveview 1 {waveview 1}
+wv_select_wv_item WV1.MEAS2
+wv_drag_item_to WV1 495 223
+wv_move_wv_item WV1.MEAS2 304 204
+wv_move_window {Custom WaveView} {} 1059 353
+wv_move_window {Custom WaveView} {} 1041 390
+wv_move_window {Custom WaveView} {} 1031 411
+wv_move_window {Custom WaveView} {} 1022 438
+wv_move_window {Custom WaveView} {} 1017 445
+wv_move_window {Custom WaveView} {} 1015 453
+wv_move_window {Custom WaveView} {} 1014 461
+wv_move_window {Custom WaveView} {} 1014 467
+wv_move_window {Custom WaveView} {} 1014 468
+wv_move_window {Custom WaveView} {} 1014 448
+wv_move_window {Custom WaveView} {} 1014 439
+wv_move_window {Custom WaveView} {} 1014 437
+wv_move_window {Custom WaveView} {} 1014 433
+wv_move_window {Custom WaveView} {} 1014 431
+wv_move_window {Custom WaveView} {} 1014 429
+wv_move_window {Custom WaveView} {} 1014 427
+wv_move_window {Custom WaveView} {} 1014 425
+wv_move_window {Custom WaveView} {} 1014 423
+wv_move_window {Custom WaveView} {} 1014 421
+wv_move_window {Custom WaveView} {} 1014 419
+wv_move_window {Custom WaveView} {} 1014 421
+wv_move_window {Custom WaveView} {} 1014 425
+wv_move_window {Custom WaveView} {} 1014 431
+wv_move_window {Custom WaveView} {} 1014 437
+wv_move_window {Custom WaveView} {} 1014 442
+wv_move_window {Custom WaveView} {} 1014 445
+wv_move_window {Custom WaveView} {} 1014 449
+wv_move_window {Custom WaveView} {} 1014 453
+wv_move_window {Custom WaveView} {} 997 455
+wv_move_window {Custom WaveView} {} 997 459
+wv_move_window {Custom WaveView} {} 997 463
+wv_move_window {Custom WaveView} {} 997 465
+wv_move_window {Custom WaveView} {} 997 467
+wv_move_window {Custom WaveView} {} 996 468
+wv_move_window {Custom WaveView} {} 995 468
+wv_move_window {Custom WaveView} {} 996 468
+wv_move_window {Custom WaveView} {} 998 468
+wv_move_window {Custom WaveView} {} 1000 468
+wv_move_window {Custom WaveView} {} 1002 468
+wv_move_window {Custom WaveView} {} 1004 468
+wv_move_window {Custom WaveView} {} 1006 468
+wv_move_window {Custom WaveView} {} 1008 468
+wv_move_window {Custom WaveView} {} 1010 468
+wv_move_window {Custom WaveView} {} 1012 468
+wv_move_window {Custom WaveView} {} 1014 468
+wv_select_window {Custom WaveView} 
+wv_press_tool_button {Custom WaveView} {} {UpdateWave0} 
+wv_select_dialog {ReloadFiles} 
+wv_press_button {ReloadFiles} {} {Yes} 
+wv_select_waveview 1 {waveview 1}
+wv_select_panel WV1.PANEL1:1 2.99206e-09 1.49106
+wv_press_tool_button {Custom WaveView} {} {UpdateWave0} 
+wv_select_dialog {ReloadFiles} 
+wv_press_button {ReloadFiles} {} {KeepOld} 
+wv_press_tool_button {Custom WaveView} {} {UpdateWave0} 
+wv_press_tool_button {Custom WaveView} {} {UpdateWave0} 
+wv_press_tool_button {Custom WaveView} {} {UpdateWave0} 
+wv_press_tool_button {Custom WaveView} {} {UpdateWave0} 
+wv_press_tool_button {Custom WaveView} {} {UpdateWave0} 
+wv_press_tool_button {Custom WaveView} {} {UpdateWave0} 
+wv_press_tool_button {Custom WaveView} {} {UpdateWave0} 
+wv_select_tree_item {Custom WaveView} {} {hierview} {D0:TransientAnalysis.tran.tran(0)} {0} {+sep=@}
+wv_select_tree_item {Custom WaveView} {} {hierview} {D0:TransientAnalysis.tran.tran(1)} {0} {+sep=@}
+wv_tree_context_menu {Custom WaveView} {} {hierview} 97 30 {D0:TransientAnalysis.tran.tran(1)} {+sep=@}
+wv_select_menu_item {Custom WaveView} {} {FileViewPopMenu.Close This File} 
+wv_move_window {Confirmation} {} 1700 874
+wv_select_dialog {Confirmation} 
+wv_press_button {Confirmation} {} {Ok} 
+wv_tree_context_menu {Custom WaveView} {} {hierview} 139 7 {D0:TransientAnalysis.tran.tran(0)} {+sep=@}
+wv_select_menu_item {Custom WaveView} {} {FileViewPopMenu.Close This File} 
+wv_move_window {Confirmation} {} 1700 874
+wv_select_dialog {Confirmation} 
+wv_press_button {Confirmation} {} {Ok} 
+wv_select_window {Custom WaveView} 
+wv_press_tool_button {Custom WaveView} {} {OpenWaveformFile0} 
+wv_move_window {FileDialog} {} 1587 672
+wv_select_dialog {FileDialog} 
+wv_select_list_item {FileDialog} {} {FileList} {TransientAnalysis.tran.tran} 2
+wv_dclick_list_item {FileDialog} {} {FileList} {TransientAnalysis.tran.tran} 2
+wv_drag_tree_item {Custom WaveView} {} {hierview} {D0:TransientAnalysis.tran.tran(0)} {+sep=@}
+wv_select_tree_item {Custom WaveView} {} {hierview} {D0:TransientAnalysis.tran.tran(0)} {0} {+sep=@}
+wv_drag_enter WV1
+wv_drop_on WV1
+wv_press_tool_button {Custom WaveView} {} {WaveformMeasurementTool0} 
+wv_move_window {MeasurementTool} {} 1403 602
+wv_select_dialog {MeasurementTool} 
+wv_resize_window {MeasurementTool} 758 698
+wv_press_button {MeasurementTool} {} {Apply} 
+wv_set_radion {MeasurementTool} {} {FallEdge} 
+wv_press_button {MeasurementTool} {} {Apply} 
+wv_press_button {MeasurementTool} {} {Close} 
+wv_select_window {Custom WaveView} 
+wv_select_waveview 1 {waveview 1}
+wv_select_wv_item WV1.MEAS1
+wv_drag_item_to WV1 561 224
+wv_move_wv_item WV1.MEAS1 298 202
+wv_select_waveview 1 {waveview 1}
+wv_select_wv_item WV1.MEAS2
+wv_drag_item_to WV1 525 223
+wv_move_wv_item WV1.MEAS2 848 205
+wv_select_waveview 1 {waveview 1}
+wv_select_panel WV1.PANEL1:1 3.75993e-09 1.50441
+wv_close_window {Custom WaveView} 
+wv_move_window {Confirmation} {} 1700 874
+wv_select_dialog {Confirmation} 
+#wv_press_button {Confirmation} {} {Ok} 
+#*WARNING* Can not remove '/home/grads/a/acoskuner500/.cx_hostport/.cx_hostport_zach-127-12.engr.tamu.edu_8751'.

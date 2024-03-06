@@ -1,0 +1,28 @@
+
+// Verilog stimulus file.
+// Please do not create a module in this file.
+
+
+// Default verilog stimulus. 
+always #5 Clk = ~Clk;
+
+initial 
+$monitor ($time," X=%b, Y=%b, CIN=%b, SUM=%b, COUT=%b", X, Y, CIN, SUM, COUT); 
+
+
+initial
+begin 
+
+   CIN = 1'b0;
+   Clk = 1'b0;
+   X[7:0] = 8'b00000000;
+
+   Y[7:0] = 8'b00000000;
+
+#50 X[7:0]=8'b0111_1110; Y[7:0]=8'b1110_0111; CIN=1'b0;	// {COUT, SUM} = 1_0110_0101
+#50 X[7:0]=8'b1111_1111; Y[7:0]=8'b0000_0000; CIN=1'b1;	// {COUT, SUM} = 1_0000_0000
+#50 X[7:0]=8'b1010_1010; Y[7:0]=8'b0101_0101; CIN=1'b0;	// {COUT, SUM} = 0_1111_1111
+#50 X[7:0]=8'b1010_1010; Y[7:0]=8'b0101_0101; CIN=1'b1;	// {COUT, SUM} = 1_0000_0000
+#50 X[7:0]=8'b1100_1100; Y[7:0]=8'b0011_0011; CIN=1'b0;	// {COUT, SUM} = 0_1111_1111
+#50 X[7:0]=8'b1100_1100; Y[7:0]=8'b0011_0011; CIN=1'b1;	// {COUT, SUM} = 1_0000_0000
+end 

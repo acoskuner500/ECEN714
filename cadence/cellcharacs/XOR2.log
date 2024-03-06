@@ -1,0 +1,184 @@
+
+Spectre (R) Circuit Simulator
+Version 18.1.0.421.isr9 32bit -- 17 Jul 2019
+Copyright (C) 1989-2019 Cadence Design Systems, Inc. All rights reserved worldwide. Cadence and Spectre are registered trademarks of Cadence Design Systems, Inc. All others are the property of their respective holders.
+
+Includes RSA BSAFE(R) Cryptographic or Security Protocol Software from RSA Security, Inc.
+
+User: acoskuner500   Host: zach-127-11.engr.tamu.edu   HostID: 7D0A22CA   PID: 2385
+Memory  available: 480.5713 MB  physical: 16.4832 GB
+Linux   : CentOS Linux release 7.9.2009 (Core)
+CPU Type: Intel(R) Core(TM) i7-8700T CPU @ 2.40GHz
+        Socket: Processors [Frequency] (Hyperthreaded Processor)
+        0:       0 [3746.8] (  6 ),  1 [2811.8] (  7 ),  2 [2338.6] (  8 )
+                 3 [2288.2] (  9 ),  4 [2517.6] ( 10 ),  5 [2483.6] ( 11 )
+        
+System load averages (1min, 5min, 15min) : 1.9 %, 2.5 %, 2.5 %
+Hyperthreading is enabled
+
+
+Simulating `XOR2.spi' on zach-127-11.engr.tamu.edu at 6:36:22 PM, Thur Sep 22, 2022 (process id: 2385).
+Current working directory: /home/grads/a/acoskuner500/cadence/cellcharacs
+Command line:
+    /opt/coe/cadence/SPECTRE181/tools.lnx86/bin/spectre XOR2.spi
+
+Loading /opt/coe/cadence/SPECTRE181/tools.lnx86/cmi/lib/5.0/libinfineon_sh.so ...
+Loading /opt/coe/cadence/SPECTRE181/tools.lnx86/cmi/lib/5.0/libphilips_o_sh.so ...
+Loading /opt/coe/cadence/SPECTRE181/tools.lnx86/cmi/lib/5.0/libphilips_sh.so ...
+Loading /opt/coe/cadence/SPECTRE181/tools.lnx86/cmi/lib/5.0/libsparam_sh.so ...
+Loading /opt/coe/cadence/SPECTRE181/tools.lnx86/cmi/lib/5.0/libstmodels_sh.so ...
+Reading file:  /home/grads/a/acoskuner500/cadence/cellcharacs/XOR2.spi
+Reading file:  /opt/coe/cadence/SPECTRE181/tools.lnx86/spectre/etc/configs/mapsubckt.cfg
+Reading file:  /opt/coe/cadence/SPECTRE181/tools.lnx86/spectre/etc/configs/spectre.cfg
+Reading file:  /home/grads/a/acoskuner500/cadence/cellcharacs/model18.spi
+Reading file:  /home/grads/a/acoskuner500/cadence/cellcharacs/cell18.spi
+Time for NDB Parsing: CPU = 94.272 ms, elapsed = 168.219 ms.
+Time accumulated: CPU = 140.528 ms, elapsed = 168.223 ms.
+Peak resident memory used = 41.7 Mbytes.
+
+Time for Elaboration: CPU = 12.383 ms, elapsed = 13.2639 ms.
+Time accumulated: CPU = 153.042 ms, elapsed = 181.637 ms.
+Peak resident memory used = 46.7 Mbytes.
+
+
+Time for EDB Visiting: CPU = 647 us, elapsed = 650.883 us.
+Time accumulated: CPU = 153.828 ms, elapsed = 182.442 ms.
+Peak resident memory used = 47.3 Mbytes.
+
+
+Warning from spectre during initial setup.
+    WARNING (CMI-2426): XOR1.M4: `Pdiblc2' = -8.75063e-06 is negative.
+
+
+Global user options:
+
+Scoped user options:
+
+Circuit inventory:
+              nodes 11
+            bsim3v3 12    
+          capacitor 1     
+           resistor 1     
+            vsource 3     
+
+Analysis and control statement inventory:
+               tran 1     
+
+Output statements:
+             .probe 0     
+           .measure 0     
+               save 1     
+
+
+Warning from spectre during initial setup.
+    WARNING (CMI-2426): XOR1.M4: `Pdiblc2' = -8.75063e-06 is negative.
+
+Time for parsing: CPU = 23.743 ms, elapsed = 37.493 ms.
+Time accumulated: CPU = 177.685 ms, elapsed = 220.06 ms.
+Peak resident memory used = 49.6 Mbytes.
+
+~~~~~~~~~~~~~~~~~~~~~~
+Pre-Simulation Summary
+~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~
+
+*************************************************************
+Transient Analysis `TransientAnalysis': time = (0 s -> 10 ns)
+*************************************************************
+DC simulation time: CPU = 498 us, elapsed = 467.062 us.
+
+Opening the PSF file XOR2.raw/TransientAnalysis.tran.tran ...
+Important parameter values:
+    start = 0 s
+    outputstart = 0 s
+    stop = 10 ns
+    step = 1 ps
+    maxstep = 200 ps
+    ic = all
+    useprevic = no
+    skipdc = no
+    reltol = 1e-03
+    abstol(V) = 1 uV
+    abstol(I) = 1 pA
+    temp = 27 C
+    tnom = 27 C
+    tempeffects = all
+    errpreset = moderate
+    method = traponly
+    lteratio = 3.5
+    relref = sigglobal
+    cmin = 0 F
+    gmin = 1 pS
+
+
+Output and IC/nodeset summary:
+                 save   2       (voltage)
+
+......9......8......7......6......5......4......3......2.
+
+Notice from spectre at time = 8.37477 ns during transient analysis `TransientAnalysis'.
+    Found trapezoidal ringing on node XOR1.n68.
+
+......9......8......7......6......5......4......3......2...
+
+Notice from spectre at time = 8.57477 ns during transient analysis `TransientAnalysis'.
+    Found trapezoidal ringing on node XOR1.n68.
+
+......9......8......7......6......5......4......3......2....
+
+Notice from spectre at time = 8.77477 ns during transient analysis `TransientAnalysis'.
+    Found trapezoidal ringing on node XOR1.n68.
+
+......9......8......7......6......5......4......3......2.....
+
+Notice from spectre at time = 8.97477 ns during transient analysis `TransientAnalysis'.
+    Found trapezoidal ringing on node XOR1.n68.
+
+......9......8......7......6......5......4......3......2......1
+
+Notice from spectre at time = 9.17477 ns during transient analysis `TransientAnalysis'.
+    Found trapezoidal ringing on node XOR1.n68.
+        Further occurrences of this notice will be suppressed.
+
+......9......8......7......6......5......4......3......2......1......0
+Number of accepted tran steps =             129
+
+Notice from spectre during transient analysis `TransientAnalysis'.
+    Trapezoidal ringing is detected during tran analysis.
+        Please use method=trap for better results and performance.
+
+
+Maximum value achieved for any signal of each quantity: 
+V: V(XOR1.Abar) = 1.838 V
+I: I(vgnd:p) = 255.8 uA
+If your circuit contains signals of the same quantity that are vastly different in size (such as high voltage circuitry combined with low voltage control circuitry), you should consider specifying global option `bin_relref=yes'.
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Post-Transient Simulation Summary
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   -   To further speed up simulation, consider
+          add ++aps on command line
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+During simulation, the CPU load for active processors is :
+        Spectre  0 (15.0 %)      2 (5.0 %)       3 (15.0 %)      4 (9.5 %)
+                 5 (5.0 %)       8 (57.1 %)      9 (4.8 %)      
+        Other   
+Initial condition solution time: CPU = 552 us, elapsed = 517.845 us.
+Intrinsic tran analysis time:    CPU = 11.705 ms, elapsed = 17.0979 ms.
+Total time required for tran analysis `TransientAnalysis': CPU = 14.371 ms, elapsed = 24.735 ms.
+Time accumulated: CPU = 221.397 ms, elapsed = 272.814 ms.
+Peak resident memory used = 53.2 Mbytes.
+
+
+Notice from spectre.
+    5 notices suppressed.
+
+
+Aggregate audit (6:36:23 PM, Thur Sep 22, 2022):
+Time used: CPU = 235 ms, elapsed = 284 ms, util. = 82.5%.
+Time spent in licensing: elapsed = 44.8 ms, percentage of total = 15.7%.
+Peak memory used = 53.8 Mbytes.
+Simulation started at: 6:36:22 PM, Thur Sep 22, 2022, ended at: 6:36:23 PM, Thur Sep 22, 2022, with elapsed time (wall clock): 284 ms.
+spectre completes with 0 errors, 2 warnings, and 8 notices.

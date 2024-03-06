@@ -1,0 +1,11 @@
+CADENCE IHNL11140
+$model
+Design/XOR2_simulate/schematic XOR2_simulate
+Design/XOR2/extracted XOR2
+$endmodel
+$net
+gnd! 0
+vdd! vdd!
+$endnet
+$param
+$endparam

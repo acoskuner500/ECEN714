@@ -1,0 +1,162 @@
+    \+35 (VDD 12 CARRY VDD) tsmc20P w=6e-07 l=2e-07 as=1.8e-13 ad=3e-13 \
+        ps=6e-07 pd=1.6e-06 m=1 region=sat
+    \+34 (CARRY 18 VDD VDD) tsmc20P w=6e-07 l=2e-07 as=3e-13 ad=1.8e-13 \
+        ps=1.6e-06 pd=6e-07 m=1 region=sat
+    \+28 (VDD C 18 VDD) tsmc20P w=6e-07 l=2e-07 as=1.8e-13 ad=3e-13 \
+        ps=6e-07 pd=1.6e-06 m=1 region=sat
+    \+27 (18 11 VDD VDD) tsmc20P w=6e-07 l=2e-07 as=3e-13 ad=1.8e-13 \
+        ps=1.6e-06 pd=6e-07 m=1 region=sat
+    \+21 (VDD B 12 VDD) tsmc20P w=6e-07 l=2e-07 as=1.8e-13 ad=3e-13 \
+        ps=6e-07 pd=1.6e-06 m=1 region=sat
+    \+19 (12 A VDD VDD) tsmc20P w=6e-07 l=2e-07 as=3e-13 ad=1.8e-13 \
+        ps=1.6e-06 pd=6e-07 m=1 region=sat
+    \+123 (GND 20) capacitor c=3.88e-17 m=1
+    \+122 (GND 18) capacitor c=1.2804e-16 m=1
+    \+121 (GND 15) capacitor c=7.857e-17 m=1
+    \+120 (GND 14) capacitor c=3.88e-17 m=1
+    \+119 (GND 12) capacitor c=1.2416e-16 m=1
+    \+118 (GND 11) capacitor c=2.8906e-16 m=1
+    \+117 (GND 8) capacitor c=7.857e-17 m=1
+    \+116 (C GND) capacitor c=1.03596e-15 m=1
+    \+115 (B GND) capacitor c=8.2062e-16 m=1
+    \+114 (A GND) capacitor c=7.4302e-16 m=1
+    \+113 (VDD 11) capacitor c=4.947e-17 m=1
+    \+112 (VDD C) capacitor c=4.947e-17 m=1
+    \+111 (VDD B) capacitor c=4.947e-17 m=1
+    \+110 (VDD A) capacitor c=4.947e-17 m=1
+    \+109 (GND 20) capacitor c=2.2543e-16 m=1
+    \+108 (GND 18) capacitor c=4.7107e-16 m=1
+    \+107 (GND 15) capacitor c=1.7548e-16 m=1
+    \+106 (GND 14) capacitor c=2.2543e-16 m=1
+    \+105 (GND 12) capacitor c=2.3228e-16 m=1
+    \+104 (GND 11) capacitor c=1.4564e-16 m=1
+    \+103 (GND 8) capacitor c=1.7548e-16 m=1
+    \+102 (C 20) capacitor c=1.6816e-16 m=1
+    \+101 (C 18) capacitor c=7.687e-17 m=1
+    \+100 (SUM GND) capacitor c=1.4564e-16 m=1
+    \+99 (B 14) capacitor c=1.6816e-16 m=1
+    \+98 (B 12) capacitor c=7.687e-17 m=1
+    \+97 (B GND) capacitor c=5.3004e-16 m=1
+    \+96 (A GND) capacitor c=2.528e-17 m=1
+    \+95 (A B) capacitor c=1.1536e-16 m=1
+    \+94 (VDD 20) capacitor c=8.925e-17 m=1
+    \+93 (VDD 18) capacitor c=4.82e-17 m=1
+    \+92 (VDD 15) capacitor c=4.264e-17 m=1
+    \+91 (VDD 14) capacitor c=8.925e-17 m=1
+    \+90 (VDD 12) capacitor c=4.82e-17 m=1
+    \+89 (VDD 11) capacitor c=3.472e-17 m=1
+    \+88 (VDD 8) capacitor c=4.264e-17 m=1
+    \+87 (VDD GND) capacitor c=7.828e-16 m=1
+    \+86 (VDD C) capacitor c=1.1536e-16 m=1
+    \+85 (VDD SUM) capacitor c=3.472e-17 m=1
+    \+84 (VDD B) capacitor c=1.1536e-16 m=1
+    \+83 (CARRY 12) capacitor c=7.687e-17 m=1
+    \+82 (CARRY GND) capacitor c=3.2958e-16 m=1
+    \+81 (CARRY VDD) capacitor c=4.82e-17 m=1
+    \+80 (24 25) capacitor c=8.536e-17 m=1
+    \+79 (22 23) capacitor c=8.536e-17 m=1
+    \+78 (20 24) capacitor c=4.688e-17 m=1
+    \+77 (17 20) capacitor c=4.688e-17 m=1
+    \+76 (17 19) capacitor c=8.498e-17 m=1
+    \+75 (15 24) capacitor c=4.688e-17 m=1
+    \+74 (15 17) capacitor c=4.688e-17 m=1
+    \+73 (14 22) capacitor c=4.688e-17 m=1
+    \+72 (11 24) capacitor c=4.688e-17 m=1
+    \+71 (11 22) capacitor c=8.536e-17 m=1
+    \+70 (11 17) capacitor c=4.688e-17 m=1
+    \+69 (11 15) capacitor c=1.3072e-16 m=1
+    \+68 (11 14) capacitor c=8.384e-17 m=1
+    \+67 (9 14) capacitor c=4.688e-17 m=1
+    \+66 (9 13) capacitor c=8.498e-17 m=1
+    \+65 (9 11) capacitor c=8.498e-17 m=1
+    \+64 (8 22) capacitor c=4.688e-17 m=1
+    \+63 (8 9) capacitor c=4.688e-17 m=1
+    \+62 (GND 17) capacitor c=1.3282e-16 m=1
+    \+61 (GND 12) capacitor c=3.08376e-15 m=1
+    \+60 (GND 11) capacitor c=2.06588e-15 m=1
+    \+59 (GND 9) capacitor c=1.3282e-16 m=1
+    \+58 (C 24) capacitor c=4.688e-17 m=1
+    \+57 (C 17) capacitor c=4.688e-17 m=1
+    \+56 (SUM 24) capacitor c=8.536e-17 m=1
+    \+55 (SUM 20) capacitor c=8.384e-17 m=1
+    \+54 (SUM 17) capacitor c=8.498e-17 m=1
+    \+53 (SUM 11) capacitor c=1.3072e-16 m=1
+    \+52 (SUM GND) capacitor c=7.5332e-16 m=1
+    \+51 (SUM C) capacitor c=2.892e-16 m=1
+    \+50 (B 22) capacitor c=4.688e-17 m=1
+    \+49 (B 11) capacitor c=2.2584e-16 m=1
+    \+48 (B 9) capacitor c=4.688e-17 m=1
+    \+47 (A 22) capacitor c=4.688e-17 m=1
+    \+46 (A 11) capacitor c=1.3072e-16 m=1
+    \+45 (A 9) capacitor c=4.688e-17 m=1
+    \+44 (A 8) capacitor c=1.3072e-16 m=1
+    \+43 (A GND) capacitor c=1.4784e-16 m=1
+    \+42 (VDD 24) capacitor c=8.536e-17 m=1
+    \+41 (VDD 22) capacitor c=8.536e-17 m=1
+    \+40 (VDD 11) capacitor c=8.384e-17 m=1
+    \+39 (VDD GND) capacitor c=8.384e-17 m=1
+    \+38 (CARRY 12) capacitor c=7.826e-17 m=1
+    \+37 (VDD 11) capacitor c=7.936e-17 m=1
+    \+36 (VDD GND) capacitor c=9.3496e-16 m=1
+    \+17 (CARRY 12 21 GND) tsmc20N w=6e-07 l=2e-07 as=1.8e-13 ad=3e-13 \
+        ps=6e-07 pd=1.6e-06 m=1 region=sat
+    \+16 (21 18 GND GND) tsmc20N w=6e-07 l=2e-07 as=3e-13 ad=1.8e-13 \
+        ps=1.6e-06 pd=6e-07 m=1 region=sat
+    \+10 (18 C 16 GND) tsmc20N w=6e-07 l=2e-07 as=1.8e-13 ad=3e-13 \
+        ps=6e-07 pd=1.6e-06 m=1 region=sat
+    \+9 (16 11 GND GND) tsmc20N w=6e-07 l=2e-07 as=3e-13 ad=1.8e-13 \
+        ps=1.6e-06 pd=6e-07 m=1 region=sat
+    \+3 (12 B 10 GND) tsmc20N w=6e-07 l=2e-07 as=1.8e-13 ad=3e-13 ps=6e-07 \
+        pd=1.6e-06 m=1 region=sat
+    \+1 (10 A GND GND) tsmc20N w=6e-07 l=2e-07 as=3e-13 ad=1.8e-13 \
+        ps=1.6e-06 pd=6e-07 m=1 region=sat
+    \+15 (GND C 20 GND) tsmc20N w=4e-07 l=2e-07 as=2e-13 ad=2e-13 \
+        ps=1.4e-06 pd=1.4e-06 m=1 region=sat
+    \+8 (15 11 GND GND) tsmc20N w=4e-07 l=2e-07 as=2e-13 ad=2e-13 \
+        ps=1.4e-06 pd=1.4e-06 m=1 region=sat
+    \+7 (GND B 14 GND) tsmc20N w=4e-07 l=2e-07 as=2e-13 ad=2e-13 \
+        ps=1.4e-06 pd=1.4e-06 m=1 region=sat
+    \+0 (8 A GND GND) tsmc20N w=4e-07 l=2e-07 as=2e-13 ad=2e-13 ps=1.4e-06 \
+        pd=1.4e-06 m=1 region=sat
+    \+14 (17 20 GND GND) tsmc20N w=3e-07 l=2e-07 as=1.1e-13 ad=1.9e-13 \
+        ps=7e-07 pd=1.5e-06 m=1 region=sat
+    \+13 (GND C 19 GND) tsmc20N w=3e-07 l=2e-07 as=1.1e-13 ad=1.1e-13 \
+        ps=7e-07 pd=7e-07 m=1 region=sat
+    \+12 (19 11 SUM GND) tsmc20N w=3e-07 l=2e-07 as=1.1e-13 ad=1.1e-13 \
+        ps=7e-07 pd=7e-07 m=1 region=sat
+    \+11 (SUM 15 17 GND) tsmc20N w=3e-07 l=2e-07 as=1.9e-13 ad=1.1e-13 \
+        ps=1.5e-06 pd=7e-07 m=1 region=sat
+    \+6 (9 14 GND GND) tsmc20N w=3e-07 l=2e-07 as=1.1e-13 ad=1.9e-13 \
+        ps=7e-07 pd=1.5e-06 m=1 region=sat
+    \+5 (GND B 13 GND) tsmc20N w=3e-07 l=2e-07 as=1.1e-13 ad=1.1e-13 \
+        ps=7e-07 pd=7e-07 m=1 region=sat
+    \+4 (13 A 11 GND) tsmc20N w=3e-07 l=2e-07 as=1.1e-13 ad=1.1e-13 \
+        ps=7e-07 pd=7e-07 m=1 region=sat
+    \+2 (11 8 9 GND) tsmc20N w=3e-07 l=2e-07 as=1.9e-13 ad=1.1e-13 \
+        ps=1.5e-06 pd=7e-07 m=1 region=sat
+    \+33 (VDD C 20 VDD) tsmc20P w=9e-07 l=2e-07 as=4.5e-13 ad=4.5e-13 \
+        ps=1.9e-06 pd=1.9e-06 m=1 region=sat
+    \+26 (15 11 VDD VDD) tsmc20P w=9e-07 l=2e-07 as=4.5e-13 ad=4.5e-13 \
+        ps=1.9e-06 pd=1.9e-06 m=1 region=sat
+    \+25 (VDD B 14 VDD) tsmc20P w=9e-07 l=2e-07 as=4.5e-13 ad=4.5e-13 \
+        ps=1.9e-06 pd=1.9e-06 m=1 region=sat
+    \+18 (8 A VDD VDD) tsmc20P w=9e-07 l=2e-07 as=4.5e-13 ad=4.5e-13 \
+        ps=1.9e-06 pd=1.9e-06 m=1 region=sat
+    \+32 (24 C VDD VDD) tsmc20P w=1.5e-06 l=2e-07 as=4.5e-13 ad=7.5e-13 \
+        ps=6e-07 pd=2.5e-06 m=1 region=sat
+    \+31 (VDD 20 25 VDD) tsmc20P w=1.5e-06 l=2e-07 as=4.5e-13 ad=4.5e-13 \
+        ps=6e-07 pd=6e-07 m=1 region=sat
+    \+30 (25 11 SUM VDD) tsmc20P w=1.5e-06 l=2e-07 as=4.5e-13 ad=4.5e-13 \
+        ps=6e-07 pd=6e-07 m=1 region=sat
+    \+29 (SUM 15 24 VDD) tsmc20P w=1.5e-06 l=2e-07 as=7.5e-13 ad=4.5e-13 \
+        ps=2.5e-06 pd=6e-07 m=1 region=sat
+    \+24 (22 B VDD VDD) tsmc20P w=1.5e-06 l=2e-07 as=4.5e-13 ad=7.5e-13 \
+        ps=6e-07 pd=2.5e-06 m=1 region=sat
+    \+23 (VDD 14 23 VDD) tsmc20P w=1.5e-06 l=2e-07 as=4.5e-13 ad=4.5e-13 \
+        ps=6e-07 pd=6e-07 m=1 region=sat
+    \+22 (23 A 11 VDD) tsmc20P w=1.5e-06 l=2e-07 as=4.5e-13 ad=4.5e-13 \
+        ps=6e-07 pd=6e-07 m=1 region=sat
+    \+20 (11 8 22 VDD) tsmc20P w=1.5e-06 l=2e-07 as=7.5e-13 ad=4.5e-13 \
+        ps=2.5e-06 pd=6e-07 m=1 region=sat
+ends oneadder
+// End of subcircuit definition.

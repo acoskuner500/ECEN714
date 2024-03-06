@@ -1,0 +1,349 @@
+// Generated for: spectre
+// Generated on: Nov 15 20:12:16 2022
+// Design library name: Design
+// Design cell name: fourbitadder_simulate
+// Design view name: schematic
+simulator lang=spectre
+global 0 vdd!
+include "/home/grads/a/acoskuner500/cadence/models/spectre/tsmc20N.m"
+include "/home/grads/a/acoskuner500/cadence/models/spectre/tsmc20P.m"
+
+// Library name: Design
+// Cell name: fourbitadder
+// View name: schematic
+subckt fourbitadder A\<3\> A\<2\> A\<1\> A\<0\> B\<3\> B\<2\> B\<1\> \
+        B\<0\> CIN COUT GND SUM\<3\> SUM\<2\> SUM\<1\> SUM\<0\> VDD
+    N124 (net0312 net0267 GND GND) tsmc20N w=600n l=200n as=3e-13 ad=3e-13 \
+        ps=2.2u pd=2.2u m=1 region=sat
+    N125 (COUT net0275 net0312 GND) tsmc20N w=600n l=200n as=3e-13 \
+        ad=3e-13 ps=2.2u pd=2.2u m=1 region=sat
+    N123 (net0275 net0281 net0313 GND) tsmc20N w=600n l=200n as=3e-13 \
+        ad=3e-13 ps=2.2u pd=2.2u m=1 region=sat
+    N122 (net0313 net0272 GND GND) tsmc20N w=600n l=200n as=3e-13 ad=3e-13 \
+        ps=2.2u pd=2.2u m=1 region=sat
+    N121 (SUM\<3\> net0272 net0311 GND) tsmc20N w=300n l=200n as=1.5e-13 \
+        ad=1.5e-13 ps=1.6u pd=1.6u m=1 region=sat
+    N120 (SUM\<3\> net0279 net0316 GND) tsmc20N w=300n l=200n as=1.5e-13 \
+        ad=1.5e-13 ps=1.6u pd=1.6u m=1 region=sat
+    N119 (net0278 net0281 GND GND) tsmc20N w=400n l=200n as=2e-13 ad=2e-13 \
+        ps=1.8u pd=1.8u m=1 region=sat
+    N118 (net0316 net0278 GND GND) tsmc20N w=300n l=200n as=1.5e-13 \
+        ad=1.5e-13 ps=1.6u pd=1.6u m=1 region=sat
+    N117 (net0267 B\<3\> net0310 GND) tsmc20N w=600n l=200n as=3e-13 \
+        ad=3e-13 ps=2.2u pd=2.2u m=1 region=sat
+    N116 (net0310 A\<3\> GND GND) tsmc20N w=600n l=200n as=3e-13 ad=3e-13 \
+        ps=2.2u pd=2.2u m=1 region=sat
+    N115 (net0311 net0281 GND GND) tsmc20N w=300n l=200n as=1.5e-13 \
+        ad=1.5e-13 ps=1.6u pd=1.6u m=1 region=sat
+    N114 (net0266 A\<3\> GND GND) tsmc20N w=400n l=200n as=2e-13 ad=2e-13 \
+        ps=1.8u pd=1.8u m=1 region=sat
+    N113 (net0272 A\<3\> net0318 GND) tsmc20N w=300n l=200n as=1.5e-13 \
+        ad=1.5e-13 ps=1.6u pd=1.6u m=1 region=sat
+    N112 (net0272 net0266 net0320 GND) tsmc20N w=300n l=200n as=1.5e-13 \
+        ad=1.5e-13 ps=1.6u pd=1.6u m=1 region=sat
+    N111 (net0265 B\<3\> GND GND) tsmc20N w=400n l=200n as=2e-13 ad=2e-13 \
+        ps=1.8u pd=1.8u m=1 region=sat
+    N110 (net0320 net0265 GND GND) tsmc20N w=300n l=200n as=1.5e-13 \
+        ad=1.5e-13 ps=1.6u pd=1.6u m=1 region=sat
+    N109 (net0318 B\<3\> GND GND) tsmc20N w=300n l=200n as=1.5e-13 \
+        ad=1.5e-13 ps=1.6u pd=1.6u m=1 region=sat
+    N108 (net0279 net0272 GND GND) tsmc20N w=400n l=200n as=2e-13 ad=2e-13 \
+        ps=1.8u pd=1.8u m=1 region=sat
+    N107 (net0281 net0245 net0323 GND) tsmc20N w=600n l=200n as=3e-13 \
+        ad=3e-13 ps=2.2u pd=2.2u m=1 region=sat
+    N106 (net0323 net0237 GND GND) tsmc20N w=600n l=200n as=3e-13 ad=3e-13 \
+        ps=2.2u pd=2.2u m=1 region=sat
+    N105 (net0245 net0251 net0326 GND) tsmc20N w=600n l=200n as=3e-13 \
+        ad=3e-13 ps=2.2u pd=2.2u m=1 region=sat
+    N104 (net0326 net0242 GND GND) tsmc20N w=600n l=200n as=3e-13 ad=3e-13 \
+        ps=2.2u pd=2.2u m=1 region=sat
+    N103 (SUM\<2\> net0242 net0322 GND) tsmc20N w=300n l=200n as=1.5e-13 \
+        ad=1.5e-13 ps=1.6u pd=1.6u m=1 region=sat
+    N102 (SUM\<2\> net0249 net0325 GND) tsmc20N w=300n l=200n as=1.5e-13 \
+        ad=1.5e-13 ps=1.6u pd=1.6u m=1 region=sat
+    N101 (net0248 net0251 GND GND) tsmc20N w=400n l=200n as=2e-13 ad=2e-13 \
+        ps=1.8u pd=1.8u m=1 region=sat
+    N100 (net0325 net0248 GND GND) tsmc20N w=300n l=200n as=1.5e-13 \
+        ad=1.5e-13 ps=1.6u pd=1.6u m=1 region=sat
+    N99 (net0237 B\<2\> net0331 GND) tsmc20N w=600n l=200n as=3e-13 \
+        ad=3e-13 ps=2.2u pd=2.2u m=1 region=sat
+    N98 (net0331 A\<2\> GND GND) tsmc20N w=600n l=200n as=3e-13 ad=3e-13 \
+        ps=2.2u pd=2.2u m=1 region=sat
+    N97 (net0322 net0251 GND GND) tsmc20N w=300n l=200n as=1.5e-13 \
+        ad=1.5e-13 ps=1.6u pd=1.6u m=1 region=sat
+    N96 (net0236 A\<2\> GND GND) tsmc20N w=400n l=200n as=2e-13 ad=2e-13 \
+        ps=1.8u pd=1.8u m=1 region=sat
+    N95 (net0242 A\<2\> net0328 GND) tsmc20N w=300n l=200n as=1.5e-13 \
+        ad=1.5e-13 ps=1.6u pd=1.6u m=1 region=sat
+    N94 (net0242 net0236 net0330 GND) tsmc20N w=300n l=200n as=1.5e-13 \
+        ad=1.5e-13 ps=1.6u pd=1.6u m=1 region=sat
+    N93 (net0235 B\<2\> GND GND) tsmc20N w=400n l=200n as=2e-13 ad=2e-13 \
+        ps=1.8u pd=1.8u m=1 region=sat
+    N92 (net0330 net0235 GND GND) tsmc20N w=300n l=200n as=1.5e-13 \
+        ad=1.5e-13 ps=1.6u pd=1.6u m=1 region=sat
+    N91 (net0328 B\<2\> GND GND) tsmc20N w=300n l=200n as=1.5e-13 \
+        ad=1.5e-13 ps=1.6u pd=1.6u m=1 region=sat
+    N90 (net0249 net0242 GND GND) tsmc20N w=400n l=200n as=2e-13 ad=2e-13 \
+        ps=1.8u pd=1.8u m=1 region=sat
+    N89 (net0251 net0215 net0334 GND) tsmc20N w=600n l=200n as=3e-13 \
+        ad=3e-13 ps=2.2u pd=2.2u m=1 region=sat
+    N88 (net0334 net0207 GND GND) tsmc20N w=600n l=200n as=3e-13 ad=3e-13 \
+        ps=2.2u pd=2.2u m=1 region=sat
+    N87 (net0215 net0106 net0337 GND) tsmc20N w=600n l=200n as=3e-13 \
+        ad=3e-13 ps=2.2u pd=2.2u m=1 region=sat
+    N86 (net0337 net0212 GND GND) tsmc20N w=600n l=200n as=3e-13 ad=3e-13 \
+        ps=2.2u pd=2.2u m=1 region=sat
+    N85 (SUM\<1\> net0212 net0333 GND) tsmc20N w=300n l=200n as=1.5e-13 \
+        ad=1.5e-13 ps=1.6u pd=1.6u m=1 region=sat
+    N84 (SUM\<1\> net0219 net0336 GND) tsmc20N w=300n l=200n as=1.5e-13 \
+        ad=1.5e-13 ps=1.6u pd=1.6u m=1 region=sat
+    N83 (net0218 net0106 GND GND) tsmc20N w=400n l=200n as=2e-13 ad=2e-13 \
+        ps=1.8u pd=1.8u m=1 region=sat
+    N82 (net0336 net0218 GND GND) tsmc20N w=300n l=200n as=1.5e-13 \
+        ad=1.5e-13 ps=1.6u pd=1.6u m=1 region=sat
+    N81 (net0207 B\<1\> net0342 GND) tsmc20N w=600n l=200n as=3e-13 \
+        ad=3e-13 ps=2.2u pd=2.2u m=1 region=sat
+    N80 (net0342 A\<1\> GND GND) tsmc20N w=600n l=200n as=3e-13 ad=3e-13 \
+        ps=2.2u pd=2.2u m=1 region=sat
+    N79 (net0333 net0106 GND GND) tsmc20N w=300n l=200n as=1.5e-13 \
+        ad=1.5e-13 ps=1.6u pd=1.6u m=1 region=sat
+    N78 (net0206 A\<1\> GND GND) tsmc20N w=400n l=200n as=2e-13 ad=2e-13 \
+        ps=1.8u pd=1.8u m=1 region=sat
+    N77 (net0212 A\<1\> net0339 GND) tsmc20N w=300n l=200n as=1.5e-13 \
+        ad=1.5e-13 ps=1.6u pd=1.6u m=1 region=sat
+    N76 (net0212 net0206 net0341 GND) tsmc20N w=300n l=200n as=1.5e-13 \
+        ad=1.5e-13 ps=1.6u pd=1.6u m=1 region=sat
+    N75 (net0205 B\<1\> GND GND) tsmc20N w=400n l=200n as=2e-13 ad=2e-13 \
+        ps=1.8u pd=1.8u m=1 region=sat
+    N74 (net0341 net0205 GND GND) tsmc20N w=300n l=200n as=1.5e-13 \
+        ad=1.5e-13 ps=1.6u pd=1.6u m=1 region=sat
+    N73 (net0339 B\<1\> GND GND) tsmc20N w=300n l=200n as=1.5e-13 \
+        ad=1.5e-13 ps=1.6u pd=1.6u m=1 region=sat
+    N72 (net0219 net0212 GND GND) tsmc20N w=400n l=200n as=2e-13 ad=2e-13 \
+        ps=1.8u pd=1.8u m=1 region=sat
+    N17 (net0106 net098 net0171 GND) tsmc20N w=600n l=200n as=3e-13 \
+        ad=3e-13 ps=2.2u pd=2.2u m=1 region=sat
+    N16 (net0171 net0130 GND GND) tsmc20N w=600n l=200n as=3e-13 ad=3e-13 \
+        ps=2.2u pd=2.2u m=1 region=sat
+    N15 (net098 CIN net0172 GND) tsmc20N w=600n l=200n as=3e-13 ad=3e-13 \
+        ps=2.2u pd=2.2u m=1 region=sat
+    N14 (net0172 net0126 GND GND) tsmc20N w=600n l=200n as=3e-13 ad=3e-13 \
+        ps=2.2u pd=2.2u m=1 region=sat
+    N12 (SUM\<0\> net0126 net0173 GND) tsmc20N w=300n l=200n as=1.5e-13 \
+        ad=1.5e-13 ps=1.6u pd=1.6u m=1 region=sat
+    N11 (SUM\<0\> net075 net0176 GND) tsmc20N w=300n l=200n as=1.5e-13 \
+        ad=1.5e-13 ps=1.6u pd=1.6u m=1 region=sat
+    N10 (net074 CIN GND GND) tsmc20N w=400n l=200n as=2e-13 ad=2e-13 \
+        ps=1.8u pd=1.8u m=1 region=sat
+    N9 (net0176 net074 GND GND) tsmc20N w=300n l=200n as=1.5e-13 \
+        ad=1.5e-13 ps=1.6u pd=1.6u m=1 region=sat
+    N7 (net0130 B\<0\> net16 GND) tsmc20N w=600n l=200n as=3e-13 ad=3e-13 \
+        ps=2.2u pd=2.2u m=1 region=sat
+    N6 (net16 A\<0\> GND GND) tsmc20N w=600n l=200n as=3e-13 ad=3e-13 \
+        ps=2.2u pd=2.2u m=1 region=sat
+    N8 (net0173 CIN GND GND) tsmc20N w=300n l=200n as=1.5e-13 ad=1.5e-13 \
+        ps=1.6u pd=1.6u m=1 region=sat
+    N5 (net4 A\<0\> GND GND) tsmc20N w=400n l=200n as=2e-13 ad=2e-13 \
+        ps=1.8u pd=1.8u m=1 region=sat
+    N1 (net0126 A\<0\> net18 GND) tsmc20N w=300n l=200n as=1.5e-13 \
+        ad=1.5e-13 ps=1.6u pd=1.6u m=1 region=sat
+    N0 (net0126 net4 net20 GND) tsmc20N w=300n l=200n as=1.5e-13 \
+        ad=1.5e-13 ps=1.6u pd=1.6u m=1 region=sat
+    N4 (net3 B\<0\> GND GND) tsmc20N w=400n l=200n as=2e-13 ad=2e-13 \
+        ps=1.8u pd=1.8u m=1 region=sat
+    N3 (net20 net3 GND GND) tsmc20N w=300n l=200n as=1.5e-13 ad=1.5e-13 \
+        ps=1.6u pd=1.6u m=1 region=sat
+    N2 (net18 B\<0\> GND GND) tsmc20N w=300n l=200n as=1.5e-13 ad=1.5e-13 \
+        ps=1.6u pd=1.6u m=1 region=sat
+    N13 (net075 net0126 GND GND) tsmc20N w=400n l=200n as=2e-13 ad=2e-13 \
+        ps=1.8u pd=1.8u m=1 region=sat
+    P125 (COUT net0275 VDD VDD) tsmc20P w=600n l=200n as=3e-13 ad=3e-13 \
+        ps=2.2u pd=2.2u m=1 region=sat
+    P124 (COUT net0267 VDD VDD) tsmc20P w=600n l=200n as=3e-13 ad=3e-13 \
+        ps=2.2u pd=2.2u m=1 region=sat
+    P123 (net0275 net0281 VDD VDD) tsmc20P w=600n l=200n as=3e-13 ad=3e-13 \
+        ps=2.2u pd=2.2u m=1 region=sat
+    P122 (net0275 net0272 VDD VDD) tsmc20P w=600n l=200n as=3e-13 ad=3e-13 \
+        ps=2.2u pd=2.2u m=1 region=sat
+    P121 (net0279 net0272 VDD VDD) tsmc20P w=900n l=200n as=4.5e-13 \
+        ad=4.5e-13 ps=2.8u pd=2.8u m=1 region=sat
+    P120 (net0315 net0278 VDD VDD) tsmc20P w=1.5u l=200n as=7.5e-13 \
+        ad=7.5e-13 ps=4u pd=4u m=1 region=sat
+    P119 (net0267 B\<3\> VDD VDD) tsmc20P w=600n l=200n as=3e-13 ad=3e-13 \
+        ps=2.2u pd=2.2u m=1 region=sat
+    P118 (net0267 A\<3\> VDD VDD) tsmc20P w=600n l=200n as=3e-13 ad=3e-13 \
+        ps=2.2u pd=2.2u m=1 region=sat
+    P117 (net0278 net0281 VDD VDD) tsmc20P w=900n l=200n as=4.5e-13 \
+        ad=4.5e-13 ps=2.8u pd=2.8u m=1 region=sat
+    P116 (net0266 A\<3\> VDD VDD) tsmc20P w=900n l=200n as=4.5e-13 \
+        ad=4.5e-13 ps=2.8u pd=2.8u m=1 region=sat
+    P115 (net0317 net0265 VDD VDD) tsmc20P w=1.5u l=200n as=7.5e-13 \
+        ad=7.5e-13 ps=4u pd=4u m=1 region=sat
+    P114 (net0319 B\<3\> VDD VDD) tsmc20P w=1.5u l=200n as=7.5e-13 \
+        ad=7.5e-13 ps=4u pd=4u m=1 region=sat
+    P113 (SUM\<3\> net0272 net0315 VDD) tsmc20P w=1.5u l=200n as=7.5e-13 \
+        ad=7.5e-13 ps=4u pd=4u m=1 region=sat
+    P112 (net0272 A\<3\> net0317 VDD) tsmc20P w=1.5u l=200n as=7.5e-13 \
+        ad=7.5e-13 ps=4u pd=4u m=1 region=sat
+    P111 (net0272 net0266 net0319 VDD) tsmc20P w=1.5u l=200n as=7.5e-13 \
+        ad=7.5e-13 ps=4u pd=4u m=1 region=sat
+    P110 (net0314 net0281 VDD VDD) tsmc20P w=1.5u l=200n as=7.5e-13 \
+        ad=7.5e-13 ps=4u pd=4u m=1 region=sat
+    P109 (net0265 B\<3\> VDD VDD) tsmc20P w=900n l=200n as=4.5e-13 \
+        ad=4.5e-13 ps=2.8u pd=2.8u m=1 region=sat
+    P108 (SUM\<3\> net0279 net0314 VDD) tsmc20P w=1.5u l=200n as=7.5e-13 \
+        ad=7.5e-13 ps=4u pd=4u m=1 region=sat
+    P107 (net0281 net0245 VDD VDD) tsmc20P w=600n l=200n as=3e-13 ad=3e-13 \
+        ps=2.2u pd=2.2u m=1 region=sat
+    P106 (net0281 net0237 VDD VDD) tsmc20P w=600n l=200n as=3e-13 ad=3e-13 \
+        ps=2.2u pd=2.2u m=1 region=sat
+    P105 (net0245 net0251 VDD VDD) tsmc20P w=600n l=200n as=3e-13 ad=3e-13 \
+        ps=2.2u pd=2.2u m=1 region=sat
+    P104 (net0245 net0242 VDD VDD) tsmc20P w=600n l=200n as=3e-13 ad=3e-13 \
+        ps=2.2u pd=2.2u m=1 region=sat
+    P103 (net0249 net0242 VDD VDD) tsmc20P w=900n l=200n as=4.5e-13 \
+        ad=4.5e-13 ps=2.8u pd=2.8u m=1 region=sat
+    P102 (net0321 net0248 VDD VDD) tsmc20P w=1.5u l=200n as=7.5e-13 \
+        ad=7.5e-13 ps=4u pd=4u m=1 region=sat
+    P101 (net0237 B\<2\> VDD VDD) tsmc20P w=600n l=200n as=3e-13 ad=3e-13 \
+        ps=2.2u pd=2.2u m=1 region=sat
+    P100 (net0237 A\<2\> VDD VDD) tsmc20P w=600n l=200n as=3e-13 ad=3e-13 \
+        ps=2.2u pd=2.2u m=1 region=sat
+    P99 (net0248 net0251 VDD VDD) tsmc20P w=900n l=200n as=4.5e-13 \
+        ad=4.5e-13 ps=2.8u pd=2.8u m=1 region=sat
+    P98 (net0236 A\<2\> VDD VDD) tsmc20P w=900n l=200n as=4.5e-13 \
+        ad=4.5e-13 ps=2.8u pd=2.8u m=1 region=sat
+    P97 (net0327 net0235 VDD VDD) tsmc20P w=1.5u l=200n as=7.5e-13 \
+        ad=7.5e-13 ps=4u pd=4u m=1 region=sat
+    P96 (net0329 B\<2\> VDD VDD) tsmc20P w=1.5u l=200n as=7.5e-13 \
+        ad=7.5e-13 ps=4u pd=4u m=1 region=sat
+    P95 (SUM\<2\> net0242 net0321 VDD) tsmc20P w=1.5u l=200n as=7.5e-13 \
+        ad=7.5e-13 ps=4u pd=4u m=1 region=sat
+    P94 (net0242 A\<2\> net0327 VDD) tsmc20P w=1.5u l=200n as=7.5e-13 \
+        ad=7.5e-13 ps=4u pd=4u m=1 region=sat
+    P93 (net0242 net0236 net0329 VDD) tsmc20P w=1.5u l=200n as=7.5e-13 \
+        ad=7.5e-13 ps=4u pd=4u m=1 region=sat
+    P92 (net0324 net0251 VDD VDD) tsmc20P w=1.5u l=200n as=7.5e-13 \
+        ad=7.5e-13 ps=4u pd=4u m=1 region=sat
+    P91 (net0235 B\<2\> VDD VDD) tsmc20P w=900n l=200n as=4.5e-13 \
+        ad=4.5e-13 ps=2.8u pd=2.8u m=1 region=sat
+    P90 (SUM\<2\> net0249 net0324 VDD) tsmc20P w=1.5u l=200n as=7.5e-13 \
+        ad=7.5e-13 ps=4u pd=4u m=1 region=sat
+    P89 (net0251 net0215 VDD VDD) tsmc20P w=600n l=200n as=3e-13 ad=3e-13 \
+        ps=2.2u pd=2.2u m=1 region=sat
+    P88 (net0251 net0207 VDD VDD) tsmc20P w=600n l=200n as=3e-13 ad=3e-13 \
+        ps=2.2u pd=2.2u m=1 region=sat
+    P87 (net0215 net0106 VDD VDD) tsmc20P w=600n l=200n as=3e-13 ad=3e-13 \
+        ps=2.2u pd=2.2u m=1 region=sat
+    P86 (net0215 net0212 VDD VDD) tsmc20P w=600n l=200n as=3e-13 ad=3e-13 \
+        ps=2.2u pd=2.2u m=1 region=sat
+    P85 (net0219 net0212 VDD VDD) tsmc20P w=900n l=200n as=4.5e-13 \
+        ad=4.5e-13 ps=2.8u pd=2.8u m=1 region=sat
+    P84 (net0332 net0218 VDD VDD) tsmc20P w=1.5u l=200n as=7.5e-13 \
+        ad=7.5e-13 ps=4u pd=4u m=1 region=sat
+    P83 (net0207 B\<1\> VDD VDD) tsmc20P w=600n l=200n as=3e-13 ad=3e-13 \
+        ps=2.2u pd=2.2u m=1 region=sat
+    P82 (net0207 A\<1\> VDD VDD) tsmc20P w=600n l=200n as=3e-13 ad=3e-13 \
+        ps=2.2u pd=2.2u m=1 region=sat
+    P81 (net0218 net0106 VDD VDD) tsmc20P w=900n l=200n as=4.5e-13 \
+        ad=4.5e-13 ps=2.8u pd=2.8u m=1 region=sat
+    P80 (net0206 A\<1\> VDD VDD) tsmc20P w=900n l=200n as=4.5e-13 \
+        ad=4.5e-13 ps=2.8u pd=2.8u m=1 region=sat
+    P79 (net0338 net0205 VDD VDD) tsmc20P w=1.5u l=200n as=7.5e-13 \
+        ad=7.5e-13 ps=4u pd=4u m=1 region=sat
+    P78 (net0340 B\<1\> VDD VDD) tsmc20P w=1.5u l=200n as=7.5e-13 \
+        ad=7.5e-13 ps=4u pd=4u m=1 region=sat
+    P77 (SUM\<1\> net0212 net0332 VDD) tsmc20P w=1.5u l=200n as=7.5e-13 \
+        ad=7.5e-13 ps=4u pd=4u m=1 region=sat
+    P76 (net0212 A\<1\> net0338 VDD) tsmc20P w=1.5u l=200n as=7.5e-13 \
+        ad=7.5e-13 ps=4u pd=4u m=1 region=sat
+    P75 (net0212 net0206 net0340 VDD) tsmc20P w=1.5u l=200n as=7.5e-13 \
+        ad=7.5e-13 ps=4u pd=4u m=1 region=sat
+    P74 (net0335 net0106 VDD VDD) tsmc20P w=1.5u l=200n as=7.5e-13 \
+        ad=7.5e-13 ps=4u pd=4u m=1 region=sat
+    P73 (net0205 B\<1\> VDD VDD) tsmc20P w=900n l=200n as=4.5e-13 \
+        ad=4.5e-13 ps=2.8u pd=2.8u m=1 region=sat
+    P72 (SUM\<1\> net0219 net0335 VDD) tsmc20P w=1.5u l=200n as=7.5e-13 \
+        ad=7.5e-13 ps=4u pd=4u m=1 region=sat
+    P17 (net0106 net098 VDD VDD) tsmc20P w=600n l=200n as=3e-13 ad=3e-13 \
+        ps=2.2u pd=2.2u m=1 region=sat
+    P16 (net0106 net0130 VDD VDD) tsmc20P w=600n l=200n as=3e-13 ad=3e-13 \
+        ps=2.2u pd=2.2u m=1 region=sat
+    P15 (net098 CIN VDD VDD) tsmc20P w=600n l=200n as=3e-13 ad=3e-13 \
+        ps=2.2u pd=2.2u m=1 region=sat
+    P14 (net098 net0126 VDD VDD) tsmc20P w=600n l=200n as=3e-13 ad=3e-13 \
+        ps=2.2u pd=2.2u m=1 region=sat
+    P13 (net075 net0126 VDD VDD) tsmc20P w=900n l=200n as=4.5e-13 \
+        ad=4.5e-13 ps=2.8u pd=2.8u m=1 region=sat
+    P12 (net0174 net074 VDD VDD) tsmc20P w=1.5u l=200n as=7.5e-13 \
+        ad=7.5e-13 ps=4u pd=4u m=1 region=sat
+    P7 (net0130 B\<0\> VDD VDD) tsmc20P w=600n l=200n as=3e-13 ad=3e-13 \
+        ps=2.2u pd=2.2u m=1 region=sat
+    P6 (net0130 A\<0\> VDD VDD) tsmc20P w=600n l=200n as=3e-13 ad=3e-13 \
+        ps=2.2u pd=2.2u m=1 region=sat
+    P8 (net074 CIN VDD VDD) tsmc20P w=900n l=200n as=4.5e-13 ad=4.5e-13 \
+        ps=2.8u pd=2.8u m=1 region=sat
+    P4 (net4 A\<0\> VDD VDD) tsmc20P w=900n l=200n as=4.5e-13 ad=4.5e-13 \
+        ps=2.8u pd=2.8u m=1 region=sat
+    P2 (net17 net3 VDD VDD) tsmc20P w=1.5u l=200n as=7.5e-13 ad=7.5e-13 \
+        ps=4u pd=4u m=1 region=sat
+    P0 (net19 B\<0\> VDD VDD) tsmc20P w=1.5u l=200n as=7.5e-13 ad=7.5e-13 \
+        ps=4u pd=4u m=1 region=sat
+    P10 (SUM\<0\> net0126 net0174 VDD) tsmc20P w=1.5u l=200n as=7.5e-13 \
+        ad=7.5e-13 ps=4u pd=4u m=1 region=sat
+    P3 (net0126 A\<0\> net17 VDD) tsmc20P w=1.5u l=200n as=7.5e-13 \
+        ad=7.5e-13 ps=4u pd=4u m=1 region=sat
+    P1 (net0126 net4 net19 VDD) tsmc20P w=1.5u l=200n as=7.5e-13 \
+        ad=7.5e-13 ps=4u pd=4u m=1 region=sat
+    P11 (net0175 CIN VDD VDD) tsmc20P w=1.5u l=200n as=7.5e-13 ad=7.5e-13 \
+        ps=4u pd=4u m=1 region=sat
+    P5 (net3 B\<0\> VDD VDD) tsmc20P w=900n l=200n as=4.5e-13 ad=4.5e-13 \
+        ps=2.8u pd=2.8u m=1 region=sat
+    P9 (SUM\<0\> net075 net0175 VDD) tsmc20P w=1.5u l=200n as=7.5e-13 \
+        ad=7.5e-13 ps=4u pd=4u m=1 region=sat
+ends fourbitadder
+// End of subcircuit definition.
+
+// Library name: Design
+// Cell name: fourbitadder_simulate
+// View name: schematic
+C4 (COUT 0) capacitor c=30f m=1
+C3 (SUM\<3\> 0) capacitor c=30f m=1
+C2 (SUM\<2\> 0) capacitor c=30f m=1
+C1 (SUM\<1\> 0) capacitor c=30f m=1
+C0 (SUM\<0\> 0) capacitor c=30f m=1
+V9 (CIN 0) vsource type=pulse val0=1.8 val1=0 delay=3n rise=100p fall=100p
+V8 (B\<3\> 0) vsource type=pulse val0=1.8 val1=0 delay=3n rise=100p \
+        fall=100p
+V7 (B\<2\> 0) vsource type=pulse val0=0 val1=1.8 delay=3n rise=100p \
+        fall=100p
+V6 (B\<1\> 0) vsource type=pulse val0=1.8 val1=0 delay=3n rise=100p \
+        fall=100p
+V5 (B\<0\> 0) vsource type=pulse val0=0 val1=1.8 delay=3n rise=100p \
+        fall=100p
+V4 (A\<3\> 0) vsource type=pulse val0=0 val1=1.8 delay=3n rise=100p \
+        fall=100p
+V3 (A\<2\> 0) vsource type=pulse val0=1.8 val1=0 delay=3n rise=100p \
+        fall=100p
+V1 (A\<0\> 0) vsource type=pulse val0=1.8 val1=0 delay=3n rise=100p \
+        fall=100p
+V2 (A\<1\> 0) vsource type=pulse val0=0 val1=1.8 delay=3n rise=100p \
+        fall=100p
+I0 (A\<3\> A\<2\> A\<1\> A\<0\> B\<3\> B\<2\> B\<1\> B\<0\> CIN COUT 0 \
+        SUM\<3\> SUM\<2\> SUM\<1\> SUM\<0\> vdd!) fourbitadder
+V0 (vdd! 0) vsource type=dc dc=1.8
+simulatorOptions options psfversion="1.1.0" reltol=1e-3 vabstol=1e-6 \
+    iabstol=1e-12 temp=27 tnom=27 scalem=1.0 scale=1.0 gmin=1e-12 rforce=1 \
+    maxnotes=5 maxwarns=5 digits=5 cols=80 pivrel=1e-3 \
+    sensfile="../psf/sens.output" checklimitdest=psf 
+tran tran stop=30n write="spectre.ic" writefinal="spectre.fc" \
+    annotate=status maxiters=5 
+finalTimeOP info what=oppoint where=rawfile
+modelParameter info what=models where=rawfile
+element info what=inst where=rawfile
+outputParameter info what=output where=rawfile
+designParamVals info what=parameters where=rawfile
+primitives info what=primitives where=rawfile
+subckts info what=subckts where=rawfile
+save V0:p 
+saveOptions options save=allpub

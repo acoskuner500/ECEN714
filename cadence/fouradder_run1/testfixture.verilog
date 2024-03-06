@@ -1,0 +1,24 @@
+
+// Verilog stimulus file.
+// Please do not create a module in this file.
+
+
+// Default verilog stimulus. 
+
+initial 
+$monitor ($time," A=%b, B=%b, CIN=%b, SUM=%b, COUT=%b", A, B, CIN, SUM, COUT); 
+
+
+initial
+begin 
+
+   A[3:0] = 4'b0000;
+
+   B[3:0] = 4'b0000;
+
+   CIN = 1'b0;
+
+#50 A[3:0]=4'b1111; B[3:0]=4'b1111; CIN=1'b0;	// {COUT, SUM} = 5'b11110
+#50 A[3:0]=4'b1010; B[3:0]=4'b1010; CIN=1'b1;	// {COUT, SUM} = 5'b10101
+#50 A[3:0]=4'b0101; B[3:0]=4'b0101; CIN=1'b1;	// {COUT, SUM} = 5'b01011
+end 

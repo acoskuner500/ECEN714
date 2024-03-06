@@ -1,0 +1,6 @@
+
+// Library name: Design
+// Cell name: oneadder
+// View name: extracted
+// View type: maskLayout
+subckt oneadder A B C CARRY GND SUM VDD

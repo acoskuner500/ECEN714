@@ -1,0 +1,14 @@
+
+// Library name: Design
+// Cell name: oneadder_simulate
+// View name: schematic
+V0 (vdd! 0) vsource type=dc dc=1.8
+V3 (inC 0) vsource type=pulse val0=0 val1=1.8 period=3n delay=3n rise=100p \
+        fall=100p width=1.325n
+V1 (inA 0) vsource type=pulse val0=0 val1=1.8 period=40n delay=3n \
+        rise=100p fall=100p width=19.9n
+V2 (inB 0) vsource type=pulse val0=0 val1=1.8 period=20n delay=3n \
+        rise=100p fall=100p width=9.9n
+C1 (CARRY 0) capacitor c=50f m=1
+C0 (SUM 0) capacitor c=50f m=1
+I0 (inA inB inC CARRY 0 SUM vdd!) oneadder

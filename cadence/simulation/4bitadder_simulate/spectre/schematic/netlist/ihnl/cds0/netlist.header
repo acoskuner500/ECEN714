@@ -1,0 +1,8 @@
+
+// Library name: Design
+// Cell name: 4bitadder
+// View name: extracted
+// View type: maskLayout
+subckt Design_4bitadder_extracted A\<3\> A\<2\> A\<1\> A\<0\> B\<3\> \
+        B\<2\> B\<1\> B\<0\> CIN COUT GND SUM\<3\> SUM\<2\> SUM\<1\> \
+        SUM\<0\> VDD

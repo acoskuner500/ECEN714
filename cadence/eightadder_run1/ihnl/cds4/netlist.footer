@@ -1,0 +1,9 @@
+DFF I0 ( net9, net1, Clk, net06);
+fouradder I2 ( COUT, SUM[7:4], net22[0:3], net8[0:3], net9);
+fouradder I1 ( net1, net11[0:3], X[3:0], Y[3:0], CIN);
+fourreg I5 ( SUM[3:0], Clk, net11[0:3], net06);
+fourreg I4 ( net8[0:3], Clk, Y[7:4], net06);
+fourreg I3 ( net22[0:3], Clk, X[7:4], net06);
+inv I7 ( net06, Clk);
+
+endmodule

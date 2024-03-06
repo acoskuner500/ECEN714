@@ -1,0 +1,11 @@
+CADENCE IHNL11140
+$model
+Design/oneadder_simulate/schematic oneadder_simulate
+Design/oneadder/extracted oneadder
+$endmodel
+$net
+gnd! 0
+vdd! vdd!
+$endnet
+$param
+$endparam

@@ -1,0 +1,4 @@
+"Design.oneadder.extracted.termorder" (("A" "B" "C" "CARRY" "GND" "SUM" "VDD") ("A" "B" "C" "CARRY" "GND" "SUM" "VDD"))
+"Design.XOR2.extracted.termorder" (("A" "B" "GND" "VDD" "out") ("A" "B" "GND" "VDD" "out"))
+"Design.NAND2.extracted.termorder" (("A" "B" "GND" "VDD" "out") ("A" "B" "GND" "VDD" "out"))
+"Design.oneadder.schematic.termorder" (("A" "B" "C" "CARRY" "GND" "SUM" "VDD") ("A" "B" "C" "CARRY" "GND" "SUM" "VDD"))

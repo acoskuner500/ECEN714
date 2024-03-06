@@ -1,0 +1,42 @@
+\o Program:		@(#)$CDS: cdsLibEditor version 6.1.8 - CAT37 06/26/2020 22:04 (sjfhw830) $
+\o Sub version:		sub-version  s131 
+\o Arguments:		-display :0 -mpssession virtuoso9914 -mpshost zach-127-24.engr.tamu.edu -namespace CDBA -cdslib /home/grads/a/acoskuner500/ecen714/cds.lib 
+\o Working Directory:	zach-127-24.engr.tamu.edu:/home/grads/a/acoskuner500/ecen714
+\o 64-bit offsets
+\a nrSetWindowVisibility(cdsLibEditor "show")
+\o Qt version: 		5.9.1
+\a nrSetCurrentWindow(cdsLibEditor)
+\a nrListItemAction(cdsLibEditor->mainTable 0 0)
+\o Active cell: 0 0 "basic"
+\a nrResizeWindow(cdsLibEditor list(1081 529 500 400))
+\a nrListItemAction(cdsLibEditor->mainTable 3 0)
+\o Active cell: 3 0 "NCSU_TechLib_ami06"
+\a nrListItemAction(cdsLibEditor->mainTable 7 0)
+\o Active cell: 7 0 "NCSU_TechLib_tsmc02d"
+\a nrListItemAction(cdsLibEditor->mainTable 11 0)
+\o Active cell: 11 0 ""
+\a nrListItemAction(cdsLibEditor->mainTable 0 0)
+\o Active cell: 0 0 "basic"
+\a cdsLibEditor->fileOpenButton->value = t
+\o INFO (CLE-137): Open both files to edit the union of library definition lists used by Cadence tools. 
+\o INFO (CLE-139): Most Cadence tools use only "cds.lib" for the library definition list.\n\nEditing "lib.defs" is optional for use with other programs.                                        
+\a fileOpenGroupDialog->openLibDefsCheckBox->value = nil
+\a fileOpenGroupDialog->openCdsLibText->value = "cds.lib"
+\a fileOpenGroupDialog->openLibDefsText->value = "lib.defs"
+\a fileOpenGroupDialog->openLibDefsText->value = ""
+\a nrSetWindowVisibility(fileOpenGroupDialog "show")
+\a nrSetCurrentWindow(fileOpenGroupDialog)
+\a nrResizeWindow(fileOpenGroupDialog list(1086 615 490 228))
+\a fileOpenGroupDialog->openCdsLibBrowse->value = t
+\a openCdsLibFileDialog->fileNameEdit->value = "cds.lib"
+\a nrSetWindowVisibility(openCdsLibFileDialog "show")
+\a nrSetCurrentWindow(openCdsLibFileDialog)
+\a nrResizeWindow(openCdsLibFileDialog list(1022 524 619 410))
+\a openCdsLibFileDialog->Open->value = t
+\a nrSetCurrentWindow(fileOpenGroupDialog)
+\a nrResizeWindow(openCdsLibFileDialog list(1022 487 619 410))
+\a fileOpenGroupDialog->okButton->value = t
+\a nrSetCurrentWindow(cdsLibEditor)
+\a nrResizeWindow(fileOpenGroupDialog list(1086 578 490 228))
+\a nrSetCurrentWindow(cdsLibEditor)
+\a exit(0)

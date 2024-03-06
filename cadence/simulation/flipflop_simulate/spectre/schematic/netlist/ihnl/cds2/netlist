@@ -1,0 +1,42 @@
+    \+19 (Q 12 VDD VDD) tsmc20P w=9e-07 l=2e-07 as=4.5e-13 ad=4.5e-13 \
+        ps=1.9e-06 pd=1.9e-06 m=1 region=sat
+    \+18 (10 CLK 13 VDD) tsmc20P w=9e-07 l=2e-07 as=2.7e-13 ad=4.5e-13 \
+        ps=6e-07 pd=1.9e-06 m=1 region=sat
+    \+17 (13 12 VDD VDD) tsmc20P w=9e-07 l=2e-07 as=4.5e-13 ad=2.7e-13 \
+        ps=1.9e-06 pd=6e-07 m=1 region=sat
+    \+16 (12 10 VDD VDD) tsmc20P w=9e-07 l=2e-07 as=4.5e-13 ad=4.5e-13 \
+        ps=1.9e-06 pd=1.9e-06 m=1 region=sat
+    \+15 (8 _CLK 11 VDD) tsmc20P w=9e-07 l=2e-07 as=2.7e-13 ad=4.5e-13 \
+        ps=6e-07 pd=1.9e-06 m=1 region=sat
+    \+14 (11 9 VDD VDD) tsmc20P w=9e-07 l=2e-07 as=4.5e-13 ad=2.7e-13 \
+        ps=1.9e-06 pd=6e-07 m=1 region=sat
+    \+13 (10 _CLK 9 VDD) tsmc20P w=9e-07 l=2e-07 as=2.7e-13 ad=4.5e-13 \
+        ps=6e-07 pd=1.9e-06 m=1 region=sat
+    \+12 (9 8 VDD VDD) tsmc20P w=9e-07 l=2e-07 as=4.5e-13 ad=2.7e-13 \
+        ps=1.9e-06 pd=6e-07 m=1 region=sat
+    \+11 (8 CLK 7 VDD) tsmc20P w=9e-07 l=2e-07 as=2.7e-13 ad=4.5e-13 \
+        ps=6e-07 pd=1.9e-06 m=1 region=sat
+    \+10 (7 D VDD VDD) tsmc20P w=9e-07 l=2e-07 as=4.5e-13 ad=2.7e-13 \
+        ps=1.9e-06 pd=6e-07 m=1 region=sat
+    \+9 (Q 12 GND GND) tsmc20N w=3e-07 l=2e-07 as=1.9e-13 ad=1.9e-13 \
+        ps=1.5e-06 pd=1.5e-06 m=1 region=sat
+    \+8 (10 _CLK 13 GND) tsmc20N w=3e-07 l=2e-07 as=1.1e-13 ad=1.9e-13 \
+        ps=7e-07 pd=1.5e-06 m=1 region=sat
+    \+7 (13 12 GND GND) tsmc20N w=3e-07 l=2e-07 as=1.9e-13 ad=1.1e-13 \
+        ps=1.5e-06 pd=7e-07 m=1 region=sat
+    \+6 (12 10 GND GND) tsmc20N w=3e-07 l=2e-07 as=1.9e-13 ad=1.9e-13 \
+        ps=1.5e-06 pd=1.5e-06 m=1 region=sat
+    \+5 (8 CLK 11 GND) tsmc20N w=3e-07 l=2e-07 as=1.1e-13 ad=1.9e-13 \
+        ps=7e-07 pd=1.5e-06 m=1 region=sat
+    \+4 (11 9 GND GND) tsmc20N w=3e-07 l=2e-07 as=1.9e-13 ad=1.1e-13 \
+        ps=1.5e-06 pd=7e-07 m=1 region=sat
+    \+3 (10 CLK 9 GND) tsmc20N w=3e-07 l=2e-07 as=1.1e-13 ad=1.9e-13 \
+        ps=7e-07 pd=1.5e-06 m=1 region=sat
+    \+2 (9 8 GND GND) tsmc20N w=3e-07 l=2e-07 as=1.9e-13 ad=1.1e-13 \
+        ps=1.5e-06 pd=7e-07 m=1 region=sat
+    \+1 (8 _CLK 7 GND) tsmc20N w=3e-07 l=2e-07 as=1.1e-13 ad=1.9e-13 \
+        ps=7e-07 pd=1.5e-06 m=1 region=sat
+    \+0 (7 D GND GND) tsmc20N w=3e-07 l=2e-07 as=1.9e-13 ad=1.1e-13 \
+        ps=1.5e-06 pd=7e-07 m=1 region=sat
+ends flipflop_extracted
+// End of subcircuit definition.

@@ -1,0 +1,39 @@
+TOOL:	ncxlmode	15.20-s086: Started on Sep 08, 2022 at 16:08:52 CDT
+ncxlmode
+	+delay_mode_path
+	+typdelays
+	-l
+	simout.tmp
+	/home/grads/a/acoskuner500/ecen714/fulladder_run1/testfixture.template
+	-f /home/grads/a/acoskuner500/ecen714/fulladder_run1/verilog.inpfiles
+		/opt/coe/ncsu/ncsu-cdk-1.6.0.beta/lib/NCSU_Digital_Parts/nand2/functional/verilog.v
+		/opt/coe/ncsu/ncsu-cdk-1.6.0.beta/lib/NCSU_Digital_Parts/xor2/functional/verilog.v
+		ihnl/cds0/netlist
+	+nostdout
+	+nocopyright
+	+ncvlogargs+" -neverwarn -nostdout -nocopyright "
+	+ncelabargs+" -neg_tchk  -nonotifier  -sdf_NOCheck_celltype  -access +r  -pulse_e 100  -pulse_r 100  -neverwarn  -timescale 1ns/1ns -nostdout -nocopyright"
+	+ncsimargs+" -neverwarn  -nocopyright -gui -input /home/grads/a/acoskuner500/ecen714/fulladder_run1/.simTmpNCCmd "
+	+mpssession+virtuoso9914
+	+mpshost+zach-127-24.engr.tamu.edu
+
+-------------------------------------
+Relinquished control to SimVision...
+ncsim> 
+ncsim> source /opt/coe/cadence/INCISIVE152/tools/inca/files/ncsimrc
+ncsim> database -open shmWave -shm -default -into shm.db
+Created default SHM database shmWave
+ncsim> probe -create -shm test  -all   -depth 1
+Created probe 1
+ncsim> run
+                   0 A=0, B=0, C=0, SUM=0, CARRY=0
+                  50 A=0, B=0, C=1, SUM=1, CARRY=0
+                 100 A=0, B=1, C=0, SUM=1, CARRY=0
+                 150 A=0, B=1, C=1, SUM=0, CARRY=1
+                 200 A=1, B=0, C=0, SUM=1, CARRY=0
+                 250 A=1, B=0, C=1, SUM=0, CARRY=1
+                 300 A=1, B=1, C=0, SUM=0, CARRY=1
+                 350 A=1, B=1, C=1, SUM=1, CARRY=1
+ncsim> ^C
+ncsim> exit
+TOOL:	ncxlmode	15.20-s086: Exiting on Sep 08, 2022 at 16:30:50 CDT  (total: 00:21:58)

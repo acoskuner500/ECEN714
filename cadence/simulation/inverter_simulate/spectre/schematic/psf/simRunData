@@ -1,0 +1,10 @@
+HEADER
+"PSFversion" "1.00"
+"design" "(\"Design\" \"inverter_simulate\" \"schematic\" \"\")"
+"simulator" "spectre"
+"temperature" "27"
+"host" ""
+"date" "Oct  6 16:02:51 2022"
+"title" ""
+"analysisList" "()"
+END

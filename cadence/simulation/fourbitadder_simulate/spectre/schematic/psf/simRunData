@@ -1,0 +1,10 @@
+HEADER
+"PSFversion" "1.00"
+"design" "(\"Design\" \"fourbitadder_simulate\" \"schematic\" \"\")"
+"simulator" "spectre"
+"temperature" "27"
+"host" ""
+"date" "Nov 15 20:12:16 2022"
+"title" ""
+"analysisList" "()"
+END

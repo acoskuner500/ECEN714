@@ -1,0 +1,9 @@
+
+** Library name: Design
+** Cell name: NAND2_simulate
+** View name: schematic
+xi0 ina inb 0 vdd! out NAND2
+v0 vdc
+v2 vpulse
+v1 vpulse
+c0 cap

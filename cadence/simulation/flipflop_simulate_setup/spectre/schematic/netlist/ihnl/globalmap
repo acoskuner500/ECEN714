@@ -1,0 +1,12 @@
+CADENCE IHNL11140
+$model
+Design/flipflop/extracted flipflop
+Design/flipflop_simulate_setup/schematic flipflop_simulate_setup
+$endmodel
+$net
+gnd! 0
+vdd! vdd!
+$endnet
+$param
+delay delay
+$endparam
